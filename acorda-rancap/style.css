@@ -1,0 +1,91 @@
+body , html
+{
+   height: 100%; 
+}
+.bg
+{
+    background-image: url('img.jpg');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carousel-inner > .carousel-item > img
+{
+    object-fit: cover;
+    object-position: center;
+    height: 60vh;
+    overflow: hidden;
+}
+.container , .btn-primary
+{
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 14px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+h1
+{
+    text-align: center;
+    font-size: 40px;
+    font-family: Courier New;
+    color: #FFFFFF;
+        
+}
+label , .text-center
+{
+   font-size: 16px;
+   font-family: Courier New;
+   color: #FFFFFF; 
+}
+.form-text , .text-right
+{
+   font-size: 12px;
+   font-family: Courier New;
+   color: #FFFFFF;
+   font-style: italic;
+}
+.text-right
+{
+    float: right;
+}
+.text-right a
+{
+    color: #000000;
+}
+.btn
+{
+    width: 100%;
+    color: #000000;
+}
+.btn-facebook , .btn-google
+{
+    color: #000000;
+    outline: 1px solid #FFFFFF;
+}
+.forget-link, .register-link{
+  color: #007bff;
+  font-weight: bold;
+}
+
+.forget-link:hover, .register-link:hover{
+  color: #0069d9;
+  text-decoration: none;
+}
+
+.btn-social{
+  color: white !important;
+  border: 0;
+  font-weight: bold;
+}
+
+.btn-facebook:hover{
+  background: #4866a8;
+}
+
+.btn-google:hover{
+  background: #da3f34;
+}

@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+    background:#d6d6d6;
+}
+
+.navigation{
+    overflow: hidden;
+    background-image: url("../assets/BG1.png");
+
+}
+
+.navigation a{
+    float: left;
+    display: block;
+    color:#96d678;
+    text-decoration: none;
+    font-size: 18px;
+
+}

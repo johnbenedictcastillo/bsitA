@@ -4,11 +4,9 @@ body , html
 }
 .bg
 {
-    background-image: url(assets/img.jpg);
+    background-color: #000000;
     height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    
 }
 
 .carousel-inner > .carousel-item > img

@@ -6,11 +6,12 @@ PROJECT NAME:JOMALIG BEACH WEBSITE
 
 
 Group Members
-John Benedict Castillo
-  -Homepage
-  -Product Page
+
+    John Benedict Castillo
+        -Homepage
+        -Product Page
 
 
-John Benedict Castillo
-  -Login Page
-  -Registration Page
+    John Benedict Castillo
+        -Login Page
+        -Registration Page

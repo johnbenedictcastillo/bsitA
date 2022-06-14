@@ -2,31 +2,49 @@
 <html>
     <head>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="https://cdn.staticaly.com/gh/hung1001/font-awesome-pro/4cac1a6/css/all.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+		<script src="scripts\homescript.js"></script>
 		<link rel="stylesheet" href="..\styles\homestyle.css">
 		<title>Home</title>
 	</head>
 	<body>
 		<div>
-			<img scr="..\assets\logo.png" alt="Rae's Menu logo">
-			<nav class="navigation" id="myNav">
-				<a href="#">Home</a>
-				<a href="#">Menu</a>
-				<a href="#">About</a>
-				<a href="#">Contact</a>
-				<a href="#"><i class="fa-solid fa-user"></i></a>
-				<a href="javascript:void(0);" class="menu" onclick="myfunction()"><i class="fa-solid fa-bars"></i></a>
+			<nav class="navbar">
+				<div  class="logo">
+					<img src="..\assets\logo.png" alt="Rae's Menu logo">
+				</div>
+				<div class="toggle">
+					<a href="#">
+						<a href="#"><i class="fa-solid fa-angle-down"></i></a>
+					</a>
+				</div>				
+				<div class="nav-link">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Menu</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact</a></li>
+						<li><a href="#"><i class="fa-solid fa-user" id="user"></i></a></li>
+					</ul>
+				</div>
 			</nav>
 		</div>
+		<div class="left">
+			
+		</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 		<script>
-			function myFunction() {
-    var x = document.getElementById("myNav");
-    if (x.className === "navigation") {
-      x.className += " responsive";
-    } else {
-      x.className = "navigation";
-    }
-  }
+			$(function(){
+				$(".toggle").on("click", function(){
+					if($(".nav-link ul").hasClass("active")){
+						$(".nav-link ul").removeClass("active");
+						$(this).find("a").html("<i class='fa-solid fa-angle-down'></i>");
+					} else{
+						$(".nav-link ul").addClass("active");
+						$(this).find("a").html("<i class='fa-solid fa-angle-up'></i>");
+					}
+				});
+			});
 		</script>
 	</body>
     </html>

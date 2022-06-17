@@ -67,6 +67,37 @@ body{
     display:none;
 }
 
+.left{
+    float: left;
+    width:40%;
+    height: 50%;
+}
+.left .container{
+    background-image: url("../assets/BG1.png");
+    background-position: center;
+    background-repeat: 2px;
+    background-size: 800px;
+    display:block;
+}
+.left .container2{
+    background-image: url("../assets/BG2.png");
+    background-position: center;
+    background-repeat: 2px;
+    background-size: 800px;
+}
+.content{
+    
+}
+.content .product{
+    height:280px;
+    width:auto;
+}
+.right{
+    float: right;
+    width:50%;
+    height: 50%;
+}
+
 @media (max-width:800px){
     body{
         margin: 0;

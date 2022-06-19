@@ -1,4 +1,4 @@
-PROJECT NAME:JOMALIG BEACH WEBSITE
+PROJECT NAME:RAE'S MENU
 
     This project contains the place of jomalig in quezon. We want other people to know how incredible jomalig was, not many people know this island is, so we want to create this type of website to notice and to love this unknown beautiful place here in the Philippines.
 
@@ -7,11 +7,11 @@ PROJECT NAME:JOMALIG BEACH WEBSITE
 
 Group Members
 
-    John Benedict Castillo
+    Hannah Rae Bunye
         -Homepage
-        -Product Page
+        -About Page
 
 
-    John Benedict Castillo
+    Raina Gemanel
         -Login Page
         -Registration Page

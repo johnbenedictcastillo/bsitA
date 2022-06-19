@@ -1,4 +1,4 @@
-var swiper = new Swiper(".image-slider", {
+var swiper = new Swiper(".mySwiper", {
     effect: "coverflow",
     grabCursor: true,
     centeredSlides: true,
@@ -6,16 +6,15 @@ var swiper = new Swiper(".image-slider", {
     coverflowEffect: {
         rotate: 0,
         stretch: 0,
-        depth: 100,
-        modifier: 2,
+        depth: 200,
+        modifier: 1,
         slideShadows: true,
     },
-    loop:true,
-    autoplay: {
-          delay: 2000,
-          disableOnInteraction: false,
+    pagination: {
+        el: ".swiper-pagination",
     },
-});    
+    loop: true,
+});
 
 let menu = document.querySelector('#menu-bar');
 let navbar = document.querySelector('.navbar');
@@ -30,3 +29,4 @@ window.onscroll = () =>{
     navbar.classList.remove('nav-toggle');
 };
  
+

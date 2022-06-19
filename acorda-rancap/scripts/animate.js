@@ -1,4 +1,4 @@
-ar textWrapper = document.querySelector('.text');
+var textWrapper = document.querySelector('.text');
                     textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
                      anime.timeline({loop: true})

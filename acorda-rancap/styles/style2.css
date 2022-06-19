@@ -170,7 +170,7 @@ section .circle {
     background-size: cover;
   }
 }
-.card
+.card 
 {
   background: rgba(255, 255, 255, 0.14);
   border-radius: 16px;
@@ -183,7 +183,7 @@ section .circle {
   font-family: 'Courier New', Courier, monospace;
   text-align: center;
 }
-.card-title
+.card-title 
 {
   font-weight: 400;
   font-size: 60px;
@@ -230,5 +230,28 @@ transition: all 1.5s ease;
 {
 transform: scale(1.5);
 }
+.point
+{
+  margin-top: 100px;
+  background-image: url(../assets/img1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h4
+{
+  font-weight: 400;
+  font-size: 60px;
+  font-family: 'Tangerine', cursive;
+  color: #fff;
+  margin-top: 160px;
+  text-align: center;
 
-    
+}
+.text4 , .text5
+{
+  color: #f0efc6;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 24px;
+  text-align: center;
+
+}

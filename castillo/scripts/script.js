@@ -27,6 +27,6 @@ $(document).ready(function(){
       let lname = $('#last-name').val();
       let email = $('#email').val();
       let pic = $('#profile-pic').prop('files');
-      saveImage(pic)
+      saveImage(pic[0])
     });
   });

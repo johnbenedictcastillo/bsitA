@@ -14,7 +14,7 @@ async function saveImage(){
   const { data, error } = await connection
   .storage
   .from('images')
-  .upload(`public/${fileName}.jpg`, pic, {
+  .upload(`public/${fileName}.jpg`, pic[0], {
     upsert: true
   })
   if(data) {      

@@ -61,7 +61,7 @@ async function getStudent() {
        <td>${res.data[i].first_name}</td>
        <td>${res.data[i].last_name}</td>
        <td>${res.data[i].email}</td>
-       <td><img src="${res.data[i].image_url}" ></td>
+       <td><img src="${res.data[i].image_url}" height="100" width="100"></td>
        </tr>`;
       }
       tbody.html(tr);

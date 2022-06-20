@@ -53,7 +53,7 @@ $(document).ready(function(){
       let email = $('#email').val();
       let pic = $('#profile-pic').prop('files');
       let fileName = lname.replace(" ","");
-      let picPath = saveImage(pic[0], `${fileName}.jpg`)
+      let picPath = await saveImage(pic[0], `${fileName}.jpg`)
       if (picPath){
         picPath = `${PROJECT}/storage/v1/object/${picPath}`
         register(fname,lname,email,picPath)

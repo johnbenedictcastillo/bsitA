@@ -33,12 +33,35 @@ async function register(fname, lname, email, picPath){
 })
   if(data) {
     console.log(data)
-    return 1
+    getStudent();
 
   }
   if(error) {
     console.log(error)
     return null
+
+  }
+
+}
+
+async function getStudent() {
+  let tbody = $("#tbody");
+  let loading = $("#loading");
+  let tr = "";
+  loading.text("Loadding....")
+  const res = await connection.from("students").select("*");
+  if (res) {
+      for (var i in res.data) {
+          tr += `<tr>
+       <td>${res.data[i].id}</td>
+       <td>${res.data[i].first_name}</td>
+       <td>${res.data[i].last_name}</td>
+       <td>${res.data[i].email}</td>
+       <td><img src="${res.data[i].image_url}" ></td>
+       </tr>`;
+      }
+      tbody.innerHTML = tr;
+      loading.innerText = ""
 
   }
 

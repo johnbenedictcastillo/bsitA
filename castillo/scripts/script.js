@@ -18,7 +18,7 @@ async function saveImage(){
     upsert: true
   })
   if(data) {      
-    picPath = `${PROJECT}/storage/v1/object/${data["Key"]}`
+    picPath = `${PROJECT}/storage/v1/object/public/${data["Key"]}`
     register(fname,lname,email,picPath)
 
   }

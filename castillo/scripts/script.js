@@ -13,6 +13,7 @@ async function saveImage(pic, fileName){
   })
   if(data) {
     console.log(data)
+    console.log(data["Key"])
     return data["Key"]
 
   }
@@ -32,7 +33,7 @@ async function register(fname, lname, email, picPath){
 })
   if(data) {
     console.log(data)
-    return data["Key"]
+    return 1
 
   }
   if(error) {

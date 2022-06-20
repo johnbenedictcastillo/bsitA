@@ -52,7 +52,7 @@ async function getStudent() {
   let tbody = $("#tbody");
   let loading = $("#loading");
   let tr = "";
-  loading.text("Loadding....")
+  loading.text("Loading....")
   const res = await connection.from("students").select("*");
   if (res) {
       for (var i in res.data) {
@@ -64,8 +64,8 @@ async function getStudent() {
        <td><img src="${res.data[i].image_url}" ></td>
        </tr>`;
       }
-      tbody.innerHTML = tr;
-      loading.innerText = ""
+      tbody.html(tr);
+      loading.text("")
 
   }
 

@@ -24,14 +24,13 @@ section .circle {
   clip-path: circle(60% at right -10%);
 }
 
-.nav-link, .navbar-brand
+.nav-link, .navbar-brand , .dropdown-menu , .form-control
 {
   font-weight: 400;
   font-family: Courier New;
   font-size: 18px;
-  line-height: 28px;
   align-items: center;
-  margin: 0px 20px;
+  margin: 0px 10px;
 }
 .navbar-brand
 {
@@ -232,7 +231,7 @@ transform: scale(1.5);
 }
 .point
 {
-  margin-top: 100px;
+  margin-top: 160px;
   background-image: url(../assets/img1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -254,4 +253,61 @@ h4
   font-size: 24px;
   text-align: center;
 
+}
+.btn1
+{
+ 
+  color: #161616;
+  border-radius: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  width: 100px;
+  height: auto;
+  transition: all .35s;
+  display: inline-block;
+  position: relative;
+  border: none;
+
+}
+.btn1:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #5b632f;
+  transition: all .35s;
+}
+
+.btn1:hover{
+  color: #fff;
+}
+
+.btn1:hover:after {
+  width: 100%;
+}
+span
+{
+  position: relative;
+  z-index: 2;
+}
+h5 
+{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.d-flex
+{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+}
+.served
+{
+  background: #5b632f;
+  color: #fff;
 }

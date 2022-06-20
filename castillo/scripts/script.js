@@ -10,7 +10,7 @@ async function saveImage(){
   let lname = $('#last-name').val();
   let email = $('#email').val();
   let pic = $('#profile-pic').prop('files');
-  let fileName = lname.replace(" ","").toLowerCase();
+  let fileName = lname.replace(" ","").toLowerCase() + lname.replace(" ","").toLowerCase();
   const { data, error } = await connection
   .storage
   .from('images')

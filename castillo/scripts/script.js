@@ -49,6 +49,7 @@ async function register(fname, lname, email, picPath){
 }
 
 async function getStudent() {
+  $('#students-table').show();
   let tbody = $("#tbody");
   let loading = $("#loading");
   let tr = "";
@@ -71,7 +72,7 @@ async function getStudent() {
 
 }
 $(document).ready(function(){
-
+    $('#students-table').hide();
     // jQuery methods go here
     $( "#registration" ).submit(function( event ) {
       event.preventDefault();

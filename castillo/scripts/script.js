@@ -14,11 +14,11 @@ async function saveImage(){
   const { data, error } = await connection
   .storage
   .from('images')
-  .upload(`${fileName}.jpg`, pic[0], {
+  .upload(`public/${fileName}.jpg`, pic[0], {
     upsert: true
   })
   if(data) {      
-    picPath = `${PROJECT}/storage/v1/object/public/${data["Key"]}`
+    picPath = `${PROJECT}/storage/v1/object/${data["Key"]}`
     register(fname,lname,email,picPath)
 
   }

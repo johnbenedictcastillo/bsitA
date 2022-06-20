@@ -7,7 +7,7 @@ async function saveImage(pic){
   const { data, error } = await connection
   .storage
   .from('images')
-  .upload('public/profie.png', pic, {
+  .upload('public/profile.png', pic, {
     cacheControl: '3600',
     upsert: true
   })
@@ -26,7 +26,7 @@ $(document).ready(function(){
       let fname = $('#first-name').val();
       let lname = $('#last-name').val();
       let email = $('#email').val();
-      let pic = $('#fileinput').prop('files');
+      let pic = $('#profile-pic').prop('files');
       saveImage(pic)
     });
   });

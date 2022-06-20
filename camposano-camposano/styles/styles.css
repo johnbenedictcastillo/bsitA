@@ -146,7 +146,7 @@ nav ul li a:hover{
 
 
 body {
-	background-image: url("..\assets\ARTSXYNA.png");
+	background-image: url("../assets/ARTSXYNA.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;

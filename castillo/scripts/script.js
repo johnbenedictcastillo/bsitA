@@ -6,10 +6,10 @@ const connection = supabase.createClient('https://zzivlqstynxhbfabxhpi.supabase.
 async function saveImage(pic){
   const { data, error } = await connection
   .storage
-  .from('avatars')
+  .from('images')
   .upload('public/profie.png', pic, {
     cacheControl: '3600',
-    upsert: false
+    upsert: true
   })
   if(data) 
     console.log(data)
@@ -22,7 +22,6 @@ $(document).ready(function(){
 
     // jQuery methods go here
     $( "#registration" ).submit(function( event ) {
-      alert( "Handler for .submit() called." );
       event.preventDefault();
       let fname = $('#first-name').val();
       let lname = $('#last-name').val();

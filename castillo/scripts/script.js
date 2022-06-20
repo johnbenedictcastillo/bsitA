@@ -11,15 +11,13 @@ async function saveImage(pic, fileName){
   .upload(`public/${fileName}`, pic, {
     upsert: true
   })
-  if(data) {
-    console.log(data)
-    console.log(data["Key"])
-    return data["Key"]
+  if(data) {      
+    picPath = `${PROJECT}/storage/v1/object/${data["Key"]}`
+    register(fname,lname,email,picPath)
 
   }
   if(error) {
     console.log(error)
-    return null
 
   }
 
@@ -76,10 +74,7 @@ $(document).ready(function(){
       let email = $('#email').val();
       let pic = $('#profile-pic').prop('files');
       let fileName = lname.replace(" ","");
-      let picPath = await saveImage(pic[0], `${fileName}.jpg`)
-      if (picPath){
-        picPath = `${PROJECT}/storage/v1/object/${picPath}`
-        register(fname,lname,email,picPath)
-      }
+      saveImage(pic[0], `${fileName}.jpg`)
+
     });
   });

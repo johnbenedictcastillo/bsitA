@@ -402,3 +402,9 @@ main.sign-up-mode .carousel {
     padding: 1rem 2rem 1.5rem;
   }
 }
+#register
+{
+  color: #fff;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+}

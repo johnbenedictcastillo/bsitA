@@ -4,123 +4,195 @@
 }
 body{
     background:#D6D6D6;
-    margin: 0 70px 0 70px;
-    padding:0;
 }
 .navbar{
-    display:flex;
-    align-items:center;
     background-image: url("../assets/BG1.png");
     background-position: center;
     background-repeat: 2px;
-    background-size: 800px;
+    background-size: 900px;
 }
-.logo img{
-    height: 90px;
-    width:auto;
+.Part1 a .logo{
+    height: auto;
+    width: 250px;
 }
-.logo{
-    flex:1;
+.Part1 li{
+	display: block;
 }
-.nav-link ul{
-    display:flex;
-    align-items:center;
-    list-style:none;
-    font-size: 20px;
+.Part1 li a{
+    display: inline-block;
+    padding-left: 30px;
+    color: #A6FF9A;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-decoration: none;
+    margin: 0px 20px;
+    align-items: center;
 }
-.nav-link li {
-    padding:15px 70px;
-}
-.nav-link li a{
-    position: relative;
-    text-decoration:none;
-    color:#A6FF9A;
-    padding: 10px 0 10px 0;  
-}
-.nav-link li a::before{
-    content:"";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 0;
-    height:2px;
-}
-.nav-link li a::after{
-    content:"";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 0;
-    height:2px;
-}
-.nav-link a:hover::before, .nav-link a:hover::after{
-    left: 0;
-    width: 100%;
-    background-color:#96A4FB;
-
-}
-.nav-link li a:hover{
+.Part1 li a:hover{
     color:#FFF6BC;
 }
-.toggle{
-    font-size: 30px;
-    display:none;
+.Part2{
+    margin-left:100px;
 }
-
-.left{
-    float: left;
-    width:40%;
-    height: 50%;
+.Part2 #procPart{
+    margin-top:10px;
+    margin-left:40px;
 }
-.left .container{
+.Part2 #tabPart{
+    margin-left:250px;
+    margin-bottom:20px;
+}
+.Part2 h5{
+    margin-left:110px;
+    font-weight: 600;
+}
+.Part2 img{
+    width: 100%;
+    height: auto;
+    padding-top:10px;
+}
+.Part2 #pic1{
     background-image: url("../assets/BG1.png");
     background-position: center;
     background-repeat: 2px;
-    background-size: 800px;
-    display:block;
+    background-size: cover;
 }
-.left .container2{
+.Part2 #pic2{
     background-image: url("../assets/BG2.png");
     background-position: center;
     background-repeat: 2px;
-    background-size: 800px;
+    background-size: cover;
+    margin-top:10px;
 }
-.content{
-    
-}
-.content .product{
-    height:280px;
-    width:auto;
-}
-.right{
-    float: right;
-    width:50%;
-    height: 50%;
+#Part3 .tableLine{
+    margin-left:450px;
+    margin-top:-650px;
+    font-size:28px;
 }
 
-@media (max-width:800px){
-    body{
-        margin: 0;
+@media screen and (max-width: 1149px){
+    .Part2 #procPart{
+        margin-top:10px;
+        margin-left:0;
     }
-    .navbar{
-        display:block;
-        position: relative;
-        
+    .Part2 #tabPart{
+        margin-left:170px;
+        margin-bottom:20px;
     }
-    .logo img{
-        height: 80px;
-        width:auto;
+    .Part2 h5{
+        margin-left:75px;
+        font-weight: 600;
     }
-    .nav-link ul{
+    #Part3 .tableLine{
+        margin-left:300px;
+        margin-top:-500px;
+    }
+}
+
+@media screen and (max-width: 991px){
+    .Part2 #procPart{
+        margin-top:10px;
+        margin-left:0;
+        font-size:25px;
+    }
+    .Part2 #tabPart{
+        margin-left:120px;
+        margin-bottom:20px;
+        font-size:25px;
+    }
+    .Part2 h5{
+        margin-left:45px;
+        font-weight: 600;
+        font-size:18px
+    }
+    #Part3 .tableLine{
+        margin-left:230px;
+        margin-top:-400px;
+    }
+}
+@media screen and (max-width: 767px){
+    .Part1 a .logo{
+        height: auto;
+        width: 350px;
+    }
+    .Part2{
+        margin-left:0;
+    }
+    .Part2 img{
+        width: 100%;
+        height: auto;
+        padding-top:10px;
+    }
+    .Part2 #procPart {
+        margin-top:10px;
+        margin-left:170px;
+        font-size:25px;
+    }
+    .Part2 #tabPart{
         margin-top:15px;
-        display:none;
+        margin-left:170px;
+        font-size:25px;
     }
-    .nav-link ul.active, .toggle{
-        display:block;
+    .Part2 h5{
+        margin-left:70px;
+        font-weight: 600;
+        font-size:18px
     }
-    .toggle{
-        position:absolute;
-        top:0;
-        right:20%;
+    #Part3 .tableLine{
+        margin-left:0;
+        margin-top:0;
+    }
+}
+
+@media screen and (max-width: 991px){
+    .Part1 li{
+        margin-left:150px;
+    }
+    .Part2 #procPart{
+        margin-top:10px;
+        margin-left:0;
+        font-size:25px;
+    }
+    .Part2 #tabPart{
+        margin-left:120px;
+        margin-bottom:20px;
+        font-size:25px;
+    }
+    .Part2 h5{
+        margin-left:45px;
+        font-weight: 600;
+        font-size:18px
+    }
+    #Part3 .tableLine{
+        margin-left:230px;
+        margin-top:-400px;
+    }
+}
+@media screen and (max-width: 575px){
+    .Part1 li{
+        margin-left:150px;
+    }
+    .Part2 img{
+        width: 100%;
+        height: auto;
+        padding-top:10px;
+    }
+    .Part2 #procPart {
+        margin-top:10px;
+        font-size:25px;
+        text-align: center;
+    }
+    .Part2 #tabPart{
+        margin-top:15px;
+        font-size:25px;
+        margin-left:200px;
+    }
+    .Part2 h5{
+        text-align: center;
+    }
+    #Part3 .tableLine{
+        margin-left:0;
+        margin-top:0;
     }
 }

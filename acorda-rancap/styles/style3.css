@@ -298,7 +298,7 @@ main.sign-up-mode .carousel {
     top: -2px;
   }
   
-  .login-btn 
+  .float-left
   {
     display: inline-block;
     width: 100%;
@@ -313,7 +313,7 @@ main.sign-up-mode .carousel {
     transition: 0.3s;
   }
   
-  .login-btn:hover {
+  .float-left:hover {
     background-color: #5b632f;
   }
 @media (max-width: 850px) {

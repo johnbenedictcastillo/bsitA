@@ -22,7 +22,7 @@ async function saveImage(){
  
   if(data) {      
     //picPath = `${PROJECT}/storage/v1/object/public/${data["Key"]}`
-    picPath = 'https://zzivlqstynxhbfabxhpi.supabase.co/storage/v1/object/'+$data["Key"]
+    picPath = 'https://zzivlqstynxhbfabxhpi.supabase.co/storage/v1/object/'+data["Key"]
     register(fname,lname,email,picPath)
 
   }

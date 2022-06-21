@@ -39,6 +39,8 @@ img {
 /* Next & previous buttons */
 .prev,
 .next {
+  margin-left: 280px;
+  background-color: black;  
   cursor: pointer;
   position: absolute;
   top: 40%;
@@ -48,15 +50,16 @@ img {
   color: white;
   font-weight: bold;
   font-size: 20px;
-  border-radius: 0 3px 3px 0;
+  border-radius: 50px;
   user-select: none;
   -webkit-user-select: none;
 }
 
 /* Position the "next button" to the right */
 .next {
+  margin-right: 300px;
   right: 0;
-  border-radius: 3px 0 0 3px;
+  border-radius: 50px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -65,6 +68,8 @@ img {
   border-radius: 50px;
   background-color: rgba(166,84,201,0.77);
   color: #FFF;
+  -webkit-box-shadow: 1px 1px 27px 10px #000000; 
+box-shadow: 1px 1px 27px 10px #000000;
 }
 
 
@@ -146,7 +151,7 @@ nav ul li a:hover{
 
 
 body {
-	background-image: url("../assets/ARTSXYNA.png");
+	background-image: url("assets\ARTSXYNA.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -213,4 +218,95 @@ body {
 .yna:hover {
   transition: 0.2s;
   text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
+}
+
+.intro_column {
+  margin: 150px 0 -50px 0;
+  text-align: center;
+  height: 200px;
+  width: auto;
+  background-color: white;
+  opacity: 75%;
+  border-radius: 40px;
+}
+
+.ml15 {
+  overflow: hidden;
+  padding: 20px;
+  font-weight: 800;
+  font-size: 3.8vw;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+}
+
+.ml15 .word {
+  display: inline-block;
+  line-height: 1em;
+}
+
+@media screen and (max-width: 990px) {
+  .intro_column {
+    height: 170px;
+  }
+  .prev, .next {
+    margin-left: 120px;
+  }
+  .next {
+    margin-right: 120px;
+  }
+}
+
+@media screen and (max-width: 989px) {
+  .intro_column {
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .intro_column {
+    height: 130px;
+  }
+}
+
+
+@media screen and (max-width: 766px) {
+  .intro_column {
+    height: 170px;
+  }
+  .prev, .next {
+    margin-left: 85px;
+  }
+  .next {
+    margin-right: 100px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .intro_column {
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .intro_column {
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .prev, .next {
+    margin-left: 40px;
+  }
+  .next {
+    margin-right: 50px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .prev, .next {
+    margin-left: 20px;
+  }
+  .next {
+    margin-right: 30px;
+  }
 }

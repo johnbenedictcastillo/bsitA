@@ -1,3 +1,20 @@
+.main {
+	background-image: url("../assets/ARTSXYNA.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center center;
+}
+
+.loginbody {
+  background-image: url("../assets/notext.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+
 .slideshow{
 	margin-top: 140px;
 }
@@ -148,22 +165,6 @@ nav ul li a:hover{
   opacity: 1;
 }
 
-
-.main {
-	background-image: url("./assets/ARTSXYNA.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	background-position: center center;
-}
-
-.loginbody {
-  background-image: url("./assets/notext.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center center;
-}
 
 .card-list {
   justify-items: center;

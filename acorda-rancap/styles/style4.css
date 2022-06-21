@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Italianno&family=Tangerine&display=swap');
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#video
+{
+  object-fit: cover;
+  position: fixed;
+  z-index: -2;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  
+}
+@media (min-aspect-ratio: 16/9) {
+  #video
+  {
+    width: 100%;
+    height: 100%;
+  }
+  
+}
+@media (max-aspect-ratio: 16/9) {
+  #video
+  {
+    width: 100%;
+    height: 100%;
+  }
+  
+}
+@media (max-width: 767px) {
+  #video{
+    display: block;
+  }
+  body {
+    background-color: #161616;
+    background-size: cover;
+    object-fit: cover;
+
+  }
+}
+
+.container{
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 14px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    
+}
+.container header{
+    position: relative;
+    font-family: 'Tangerine', cursive;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.container form{
+    position: relative;
+    margin-top: 16px;
+    min-height: 490px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 14px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    overflow: hidden;
+}
+.container form .form{
+    position: absolute;
+    transition: 0.3s ease;
+}
+
+.container form .title{
+    display: block;
+    margin-bottom: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    margin-top: 15px;
+    text-align: center;
+}
+.container form .fields{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    font-weight: 500;
+}
+form .fields .input-field{
+    display: flex;
+    width: calc(100% / 3 - 15px);
+    flex-direction: column;
+    margin: 4px;
+
+}
+.input-field label{
+    font-size: 15px;
+    font-weight: 500;
+    color:#fff;
+}
+.input-field input, select{
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #5b632f;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+}
+.input-field input :focus,
+.input-field select:focus{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.13);
+}
+.input-field select,
+.input-field input[type="date"]{
+    color: #707070;
+}
+.input-field input[type="date"]:valid{
+    color: #333;
+}
+.container form button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    max-width: 200px;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    margin: 25px 0;
+    background-color: #aaa;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+.container form .btnText{
+    font-size: 14px;
+    font-weight: 400;
+}
+form button:hover{
+    background-color: #5b632f;
+}
+form button i,
+form i{
+    margin: 0 6px;
+}
+form .backBtn i{
+    transform: rotate(180deg);
+}
+form .buttons{
+    display: flex;
+    align-items: center;
+}
+form .buttons button {
+    margin-right: 14px;
+}
+
+@media (max-width: 750px) {
+    .container form{
+        overflow-y: scroll;
+    }
+    .container form::-webkit-scrollbar{
+       display: none; 
+    }
+    form .fields .input-field{
+        width: calc(100% / 2 - 15px);
+    }
+}
+
+@media (max-width: 550px) {
+    form .fields .input-field{
+        width: 100%;
+    }
+}

@@ -101,7 +101,6 @@ box-shadow: 1px 1px 27px 10px #000000;
 }
 
 .navbar a {
-  float: left;
   display: block;
   color: #f2f2f2;
   text-align: center;
@@ -150,12 +149,20 @@ nav ul li a:hover{
 }
 
 
-body {
-	background-image: url("../assets/ARTSXYNA.png");
+.main {
+	background-image: url("../ARTSXYNA.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center center;
+}
+
+.loginbody {
+  background-image: url("../assets/notext.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
 }
 
 .card-list {
@@ -173,10 +180,15 @@ body {
 }
 
 .login_column {
+  color: black;
+  width: 30rem;
+  height: 25rem;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, .15);
+  
+  backdrop-filter: blur(5px);
   border-radius: 10px;
-  background-color: #FFE6FF;
-  height: 400px;
-  width: 400px;
 }
 
 #reset, #login {
@@ -185,7 +197,7 @@ body {
   font-weight: bold;
   background-color: #AE3FB2;
   color: black;
-  margin-top: 10px;
+  margin-top: 20px;
   border: none;
 }
 #reset {
@@ -223,7 +235,7 @@ body {
 .intro_column {
   margin: 150px 0 -50px 0;
   text-align: center;
-  height: 200px;
+  height: 180px;
   width: auto;
   background-color: white;
   opacity: 75%;
@@ -243,6 +255,30 @@ body {
   display: inline-block;
   line-height: 1em;
 }
+
+
+@media screen and (max-width: 1059px) {
+
+
+  #navbar-nav {
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #B755B7;
+    border-radius: 40px;
+    width: auto;
+    list-style:none;
+    text-align: center;
+  }
+
+  nav ul li a:hover{
+  border-radius: 40px;
+  background-color: #934493;
+  font-weight: bold;
+  transition: 0.1s;
+}
+
+
 
 @media screen and (max-width: 990px) {
   .intro_column {
@@ -309,4 +345,26 @@ body {
   .next {
     margin-right: 30px;
   }
+}
+
+}
+
+.feature {
+  margin-top: 100px;
+  background-color: white;
+  opacity: 80%;
+}
+
+.registerlink {
+  margin-top: 40px;
+}
+
+#registerlink {
+  color: #59FF4D;
+}
+
+#registerlink:hover {
+  color: white;
+  font-weight: bold;
+  text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 10px #49ff18, 0 0 20px #49FF18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 50px #49ff18;
 }

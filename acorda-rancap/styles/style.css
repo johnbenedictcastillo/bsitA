@@ -89,6 +89,8 @@ body , html
     border: 1px solid #fff;
     background: none;
     color: #fff;
+    margin-top: 50px;
+    margin-bottom: 100px;
   }
   
   #myButton:hover {

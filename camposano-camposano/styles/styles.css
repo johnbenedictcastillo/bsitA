@@ -150,7 +150,7 @@ nav ul li a:hover{
 
 
 .main {
-	background-image: url("../ARTSXYNA.png");
+	background-image: url("./assets/ARTSXYNA.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -158,7 +158,7 @@ nav ul li a:hover{
 }
 
 .loginbody {
-  background-image: url("../assets/notext.png");
+  background-image: url("./assets/notext.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;

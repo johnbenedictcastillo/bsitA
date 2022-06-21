@@ -21,7 +21,7 @@
 
               <div class="main-form">
                 <div class="input-wrap">
-                  <input type="email" id="email" class="input-field" autocomplete="off" required/>
+                  <input type="email" id="email" maxlength="50" class="input-field" autocomplete="off" required/>
                   <label>Email</label>
                 </div>
 
@@ -30,7 +30,7 @@
                   <label>Password</label>
                 </div>
 
-                <input type="submit" value="Login" class="login-btn" />
+                <button id="login" class="float-left submit-button" >Login</button>
 
                 <p class="text">
                   Incorrect Password?
@@ -54,7 +54,7 @@
               
                 <q>Cuisine is only about making foods taste the way they are supposed to taste.</q>
                 <figcaption>— Charlie Trotter</figcaption>
-                <input type="submit" value="Sign Up" class="login-btn" />
+                <button id="register" class="float-left submit-button" >Register</button>
 
                
               </div>
@@ -100,13 +100,13 @@
     <script src="../scripts/form.js"></script>
 
     <script type="text/javascript">
-      document.getElementById("LgnBtn").onclick = function () {
+      document.getElementById("login").onclick = function () {
           location.href = "https://johnbenedictcastillo.github.io/bsitA/acorda-rancap/pages/home.html";
       };
-      document.getElementById("SignBtn").onclick = function () {
+      
+      document.getElementById("register").onclick = function () {
           location.href = "https://johnbenedictcastillo.github.io/bsitA/acorda-rancap/pages/registration.html";
       };
   </script>
-    
   </body>
 </html>

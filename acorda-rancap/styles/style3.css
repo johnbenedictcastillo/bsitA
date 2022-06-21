@@ -114,7 +114,7 @@ form.sign-up-form {
     color: #fff;
     font-size: 60px;
     margin-top: 60px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     line-break: normal;
     font-weight: 400;
     font-family: 'Tangerine', cursive;
@@ -232,7 +232,14 @@ main.sign-up-mode .carousel {
     font-size: 2.5rem;
     color: #5b632f;
 }
-
+.actual-form
+{
+    font-weight: 500;
+    font-family: 'Tangerine', cursive;
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+}
 .bullets {
   display: flex;
   align-items: center;

@@ -1,7 +1,10 @@
 
 // Create a single supabase client for interacting with your database 
 const PROJECT = 'https://zzivlqstynxhbfabxhpi.supabase.co'
-const connection = supabase.createClient(PROJECT, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp6aXZscXN0eW54aGJmYWJ4aHBpIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NTQ0MDE5NzAsImV4cCI6MTk2OTk3Nzk3MH0.wntGDWfy7wcuhepHw2XwbInty25vUG_6AI4U4GsJTKg')
+const KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp6aXZscXN0eW54aGJmYWJ4aHBpIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NTQ0MDE5NzAsImV4cCI6MTk2OTk3Nzk3MH0.wntGDWfy7wcuhepHw2XwbInty25vUG_6AI4U4GsJTKg'
+
+
+const connection = supabase.createClient(PROJECT, KEY)
 
 
 async function saveImage(){
@@ -11,20 +14,20 @@ async function saveImage(){
   let email = $('#email').val();
   let pic = $('#profile-pic').prop('files');
   let fileName = fname.replace(" ","").toLowerCase() +"_" +lname.replace(" ","").toLowerCase();
-  const { data, error } = await connection
-  .storage
-  .from('images')
+
+  const { data, error } = await connection.storage.from('products')
   .upload(`public/${fileName}.jpg`, pic[0], {
     upsert: true
   })
+ 
   if(data) {      
-    picPath = `${PROJECT}/storage/v1/object/public/${data["Key"]}`
+    //picPath = `${PROJECT}/storage/v1/object/public/${data["Key"]}`
+    picPath = 'https://zzivlqstynxhbfabxhpi.supabase.co/storage/v1/object/'+$data["Key"]
     register(fname,lname,email,picPath)
 
   }
   if(error) {
     console.log(error)
-
   }
 
 }

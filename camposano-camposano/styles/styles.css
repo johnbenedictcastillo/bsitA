@@ -1,20 +1,3 @@
-.main {
-	background-image: url("../assets/ARTSXYNA.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	background-position: center center;
-}
-
-.loginbody {
-  background-image: url("../assets/notext.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center center;
-}
-
-
 .slideshow{
 	margin-top: 140px;
 }
@@ -166,6 +149,22 @@ nav ul li a:hover{
 }
 
 
+.main {
+	background-image: url("E:/Documents/BSIT 2-A/2nd sem/website/Ate Shar/assets/ARTSXYNA.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center center;
+}
+
+.loginbody {
+  background-image: url("E:/Documents/BSIT 2-A/2nd sem/website/Ate Shar/assets/notext.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
 .card-list {
   justify-items: center;
 }
@@ -183,7 +182,7 @@ nav ul li a:hover{
 .login_column {
   color: black;
   width: 30rem;
-  height: 25rem;
+  height: 33rem;
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
   border-radius: 5px;
   background-color: rgba(255, 255, 255, .15);
@@ -247,7 +246,7 @@ nav ul li a:hover{
   overflow: hidden;
   padding: 20px;
   font-weight: 800;
-  font-size: 3.8vw;
+  font-size: 50px;
   text-transform: uppercase;
   letter-spacing: 0.5em;
 }
@@ -257,8 +256,14 @@ nav ul li a:hover{
   line-height: 1em;
 }
 
+.feature{
+  margin-top: 100px;
+  background-color: #FFF;
+  opacity: 80%;
+}
 
-@media screen and (max-width: 1059px) {
+
+@media screen and (max-width: 991px) {
 
 
   #navbar-nav {
@@ -281,10 +286,14 @@ nav ul li a:hover{
 
 
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 991px) {
   .intro_column {
-    height: 170px;
+    height: 130px;
   }
+  .ml15 {
+    font-size: 35px;
+  }
+
   .prev, .next {
     margin-left: 120px;
   }
@@ -292,6 +301,7 @@ nav ul li a:hover{
     margin-right: 120px;
   }
 }
+
 
 @media screen and (max-width: 989px) {
   .intro_column {
@@ -322,11 +332,14 @@ nav ul li a:hover{
   .intro_column {
     height: 100px;
   }
+  .ml15 {
+    font-size: 25px;
+  }
 }
 
 @media screen and (max-width: 500px) {
   .intro_column {
-    height: 80px;
+    height: 100px;
   }
 }
 
@@ -337,23 +350,23 @@ nav ul li a:hover{
   .next {
     margin-right: 50px;
   }
+  .ml15 {
+    font-size: 20px;
+  }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 405px) {
   .prev, .next {
     margin-left: 20px;
   }
   .next {
     margin-right: 30px;
   }
+  .intro_column {
+    height: 110px;
+  }
 }
 
-}
-
-.feature {
-  margin-top: 100px;
-  background-color: white;
-  opacity: 80%;
 }
 
 .registerlink {
@@ -369,4 +382,13 @@ nav ul li a:hover{
   font-weight: bold;
   text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 10px #49ff18, 0 0 20px #49FF18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 50px #49ff18;
 }
- 
+
+.ynalogo {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  right: 0;
+  top: 0;
+  height: 100px;
+  width: auto;
+}

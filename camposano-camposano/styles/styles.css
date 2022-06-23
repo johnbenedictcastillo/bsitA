@@ -385,7 +385,15 @@ nav ul li a:hover{
   }
 }
 
-
+@media screen and (max-width: 767px) {
+  .card-body {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 300px;
+  }
+}
+	
 @media screen and (max-width: 766px) {
   .intro_column {
     height: 170px;

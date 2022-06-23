@@ -357,6 +357,11 @@ nav ul li a:hover{
 
 
 @media screen and (max-width: 991px) {
+	
+  .login_column {
+    width:100%; display: block; margin-left: auto; margin-right: auto;
+  }
+	
   .intro_column {
     height: 130px;
   }
@@ -435,21 +440,21 @@ nav ul li a:hover{
 
 @media screen and (max-width: 480px) {
   .card-area {
-    width:auto; display: block; margin-left: auto; margin-right: auto
+    width:100%; display: block; margin-left: auto; margin-right: auto;
   }
 
   .feature {
-    width:auto; display: block; margin-left: auto; margin-right: auto
+    width:100%; display: block; margin-left: auto; margin-right: auto;
   }
 }
 	
 @media screen and (max-width: 416px) {
   .card-area {
-    width:auto; display: block; margin-left: auto; margin-right: auto
+    width:100%; display: block; margin-left: auto; margin-right: auto;
   }
 
   .feature {
-    width: 25em; display: block; margin-left: auto; margin-right: auto
+    width:100%; display: block; margin-left: auto; margin-right: auto;
   }
 }
 	

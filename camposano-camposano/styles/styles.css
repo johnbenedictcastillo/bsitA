@@ -435,19 +435,23 @@ nav ul li a:hover{
 
 @media screen and (max-width: 480px) {
   .card-area {
-    width: 450px;
-    text-align: center;
-    margin-right: auto;
-    margin-left: auto;
+    width:auto; display: block; margin-left: auto; margin-right: auto
   }
 
   .feature {
-    width: 450px;
-    text-align: center;
-    margin-right: auto;
-    margin-left: auto;
+    width:auto; display: block; margin-left: auto; margin-right: auto
   }
-}	
+}
+	
+@media screen and (max-width: 416px) {
+  .card-area {
+    width:auto; display: block; margin-left: auto; margin-right: auto
+  }
+
+  .feature {
+    width: 25em; display: block; margin-left: auto; margin-right: auto
+  }
+}
 	
 @media screen and (max-width: 405px) {
   .prev, .next {

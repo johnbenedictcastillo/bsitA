@@ -358,6 +358,24 @@ nav ul li a:hover{
 
 @media screen and (max-width: 991px) {
 	
+  #navbar-nav {
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #B755B7;
+    border-radius: 40px;
+    width: auto;
+    list-style:none;
+    text-align: center;
+  }
+
+  nav ul li a:hover{
+  border-radius: 40px;
+  background-color: #934493;
+  font-weight: bold;
+  transition: 0.1s;
+}	
+	
   .login_column {
     width:100%; display: block; margin-left: auto; margin-right: auto;
   }
@@ -379,6 +397,25 @@ nav ul li a:hover{
 
 
 @media screen and (max-width: 989px) {
+	
+  #navbar-nav {
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #B755B7;
+    border-radius: 40px;
+    width: auto;
+    list-style:none;
+    text-align: center;
+  }
+
+  nav ul li a:hover{
+  border-radius: 40px;
+  background-color: #934493;
+  font-weight: bold;
+  transition: 0.1s;
+}
+	
   .intro_column {
     height: 150px;
   }
@@ -400,6 +437,25 @@ nav ul li a:hover{
 }
 	
 @media screen and (max-width: 766px) {
+	
+  #navbar-nav {
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #B755B7;
+    border-radius: 40px;
+    width: auto;
+    list-style:none;
+    text-align: center;
+  }
+
+  nav ul li a:hover{
+  border-radius: 40px;
+  background-color: #934493;
+  font-weight: bold;
+  transition: 0.1s;
+}
+	
   .intro_column {
     height: 170px;
   }
@@ -439,6 +495,25 @@ nav ul li a:hover{
 }
 
 @media screen and (max-width: 480px) {
+	
+  #navbar-nav {
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #B755B7;
+    border-radius: 40px;
+    width: auto;
+    list-style:none;
+    text-align: center;
+  }
+
+  nav ul li a:hover{
+  border-radius: 40px;
+  background-color: #934493;
+  font-weight: bold;
+  transition: 0.1s;
+}
+	
   .card-area {
     width:100%; display: block; margin-left: auto; margin-right: auto;
   }

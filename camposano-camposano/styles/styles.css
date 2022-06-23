@@ -336,7 +336,7 @@ nav ul li a:hover{
 @media screen and (max-width: 991px) {
 
 
-  #navbar-nav {
+  .navbar-nav {
     max-width: 800px;
     margin-right: auto;
     margin-left: auto;
@@ -358,7 +358,7 @@ nav ul li a:hover{
 
 @media screen and (max-width: 991px) {
 	
-  #navbar-nav {
+  .navbar-nav {
     max-width: 800px;
     margin-right: auto;
     margin-left: auto;
@@ -398,7 +398,7 @@ nav ul li a:hover{
 
 @media screen and (max-width: 989px) {
 	
-  #navbar-nav {
+  .navbar-nav {
     max-width: 800px;
     margin-right: auto;
     margin-left: auto;
@@ -438,7 +438,7 @@ nav ul li a:hover{
 	
 @media screen and (max-width: 766px) {
 	
-  #navbar-nav {
+  .navbar-nav {
     max-width: 800px;
     margin-right: auto;
     margin-left: auto;
@@ -496,7 +496,7 @@ nav ul li a:hover{
 
 @media screen and (max-width: 480px) {
 	
-  #navbar-nav {
+  .navbar-nav {
     max-width: 800px;
     margin-right: auto;
     margin-left: auto;

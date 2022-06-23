@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #D6D6D6;
+    margin-bottom:0;
+}
+.navbar{
+    background-image: url("../assets/BG1.png");
+    background-position: center;
+    background-repeat: 2px;
+    background-size: 900px;
+}
+.Part1 a .logo{
+    height: auto;
+    width: 250px;
+}
+.Part1 li{
+	display: block;
+}
+.Part1 li a{
+    display: inline-block;
+    padding-left: 30px;
+    color: #A6FF9A;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-decoration: none;
+    margin: 0px 20px;
+    align-items: center;
+}
+.Part1 li a:hover{
+    color:#FFF6BC;
+}
+.businessAbout h2{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight:200px;
+    font-size:50px;
+    text-align: center;
+    margin-top:20px;
+}
+.businessAbout p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    text-align: justify;
+}
+.ownerAbout .owner{
+    height:45%;
+    width:auto;
+    border:none;
+    border-radius: 500px;
+    margin-left:30px;
+    margin-top:10px;
+}
+.ownerAbout h2{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight:200px;
+    font-size:45px;
+}
+.ownerAbout h4{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:30px;
+}
+.ownerAbout p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+}
+
+@media screen and (max-width: 800px){
+    .Part1 li{
+        margin-left:150px;
+    }
+    .businessAbout h2{
+        font-size:30px;
+        margin-top:10px;
+    }
+    .businessAbout p{
+        font-size: 18px;
+    }
+    .ownerAbout .owner{
+        height:45%;
+        width:auto;
+        margin-left:60px;
+    }
+    .ownerAbout h2{
+        font-size:30px;
+        margin-top:-350px;
+        text-align:center;
+    }
+    .ownerAbout h4{
+        font-size:20px;
+        text-align:center;
+    }
+    .ownerAbout p{
+        font-size: 18px;
+        text-align:justify;
+    }
+    
+}

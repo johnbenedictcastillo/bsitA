@@ -32,6 +32,26 @@ body{
 .Part1 li a:hover{
     color:#FFF6BC;
 }
+.Part1 .dropdown-menu{
+    background-image: url("../assets/BG1.png");
+    background-position: center;
+    background-repeat: 2px;
+    background-size: cover;
+}
+.Part1 #user{
+    color: #A6FF9A;
+}
+.Part1 .dropdown-menu li{
+    display:block;
+    padding-left: 0;
+    color: #A6FF9A;
+    font-weight: 0;
+    font-size: 18px;
+    line-height: 0;
+    text-decoration: none;
+    margin: 0 20px;
+    align-items: center;
+}
 .businessAbout h2{
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-weight:200px;

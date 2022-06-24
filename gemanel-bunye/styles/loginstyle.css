@@ -149,7 +149,21 @@ margin-bottom: 10px;
    font-size: 70px;
 
 }
-@media screen and (max-width: 900px) {
+@media only screen and (max-width: 1500px) {
+ .greet {
+    top: 440px;
+    left: 180px;
+    font-size: 45px;
+    text-align: left;
+
+  }
+  .logo {
+    width: 450px;
+    height: 150px;
+    right: 140px;
+  }
+}
+@media only screen and (max-width: 1000px) {
  .greet {
     top: 180px;
     left: 240px;
@@ -160,7 +174,7 @@ margin-bottom: 10px;
   .logo {
     width: 450px;
     height: 150px;
-    margin-left: 210px;
+    right: 140px;
   }
   .login-card {
     position: absolute;
@@ -179,45 +193,19 @@ margin-bottom: 10px;
   border: 3px solid #605444;
 
 }
-@media screen and (max-width: 800px) {
- .greet {
-    top: 180px;
-    font-size: 35px;
-    text-align: center;
 
-  }
-  .logo {
-    width: 350px;
-    height: 120px;
-  }
-  .login-card {
-    position: absolute;
-
-  padding: 40px;
-  width: 374px;
-  background-color: #9A8269;
-  margin: 0 auto 10px;
-  border-radius: 2px;
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-  overflow: hidden;
-  margin-top: 350px;
-  margin-right: 30px;
-  margin-left: 60px;
-  color: white;
-  border: 3px solid #605444;
-
-}
-}
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 768px){
    .greet {
     top: 120px;
     font-size: 25px;
+    left: 140px;
     text-align: center;
 
   }
   .logo {
     width: 250px;
     height: 100px;
+    left: 40px;
   }
   .login-card {
     position: absolute;

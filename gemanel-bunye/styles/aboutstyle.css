@@ -20,14 +20,16 @@ body{
 }
 .Part1 li a{
     display: inline-block;
-    padding-left: 30px;
+    padding-left: 40px;
+    padding-top: 10px;
     color: #A6FF9A;
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
     text-decoration: none;
-    margin: 0px 20px;
-    align-items: center;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
 }
 .Part1 li a:hover{
     color:#FFF6BC;
@@ -35,22 +37,28 @@ body{
 .Part1 .dropdown-menu{
     background-image: url("../assets/BG1.png");
     background-position: center;
-    background-repeat: 2px;
-    background-size: cover;
+    background-size: 300px;
 }
 .Part1 #user{
     color: #A6FF9A;
+    padding-left: 40px;
+    margin-left:auto;
+    margin-right:auto;
 }
 .Part1 .dropdown-menu li{
     display:block;
-    padding-left: 0;
-    color: #A6FF9A;
-    font-weight: 0;
-    font-size: 18px;
-    line-height: 0;
     text-decoration: none;
-    margin: 0 20px;
-    align-items: center;
+    text-align:center;
+}
+.Part1 .dropdown-item{
+    display:block;
+    padding-left: 0;
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+}
+.Part1 .dropdown-item:hover{
+    background-color:#95A4FB;
 }
 .businessAbout h2{
     font-family:Georgia, 'Times New Roman', Times, serif;
@@ -88,8 +96,18 @@ body{
 }
 
 @media screen and (max-width: 800px){
-    .Part1 li{
-        margin-left:150px;
+    .Part1 li a{
+        display: block;
+        padding-left:0;
+        padding-top: 0;
+        text-align:center;
+    }
+    .Part1 #user{
+        padding-left: 0;
+        text-align:center;
+    }
+    .Part1 .dropdown-menu{
+        background-size: 540px;
     }
     .businessAbout h2{
         font-size:30px;

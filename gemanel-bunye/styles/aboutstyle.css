@@ -3,7 +3,7 @@
 }
 body{
     background-color: #D6D6D6;
-    margin-bottom:0;
+    margin:0;
 }
 .navbar{
     background-image: url("../assets/BG1.png");
@@ -65,36 +65,30 @@ body{
     font-weight:200px;
     font-size:50px;
     text-align: center;
-    margin-top:20px;
 }
-.businessAbout p{
+.businessAbout p, .ownerAbout p{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 24px;
+    font-size: 28px;
     text-align: justify;
 }
 .ownerAbout .owner{
     display:block;
-    height:45%;
+    height:350px;
     width:auto;
+    border-radius: 500px;
     margin-left:auto;
     margin-right:auto;
-    border-radius: 500px;
-    margin-top:10px;
 }
 .ownerAbout h2{
     font-family:Georgia, 'Times New Roman', Times, serif;
-    font-weight:200px;
     font-size:45px;
+    text-align:justify;
 }
 .ownerAbout h4{
     font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size:30px;
+    font-size:35px;
+    text-align:justify;
 }
-.ownerAbout p{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 24px;
-}
-
 @media screen and (max-width: 800px){
     .Part1 li a{
         display: block;
@@ -113,21 +107,25 @@ body{
         font-size:30px;
         margin-top:10px;
     }
-    .businessAbout p{
+    .businessAbout p, .ownerAbout p{
         font-size: 18px;
+        text-align:justify;
+    }
+    .ownerAbout .owner{
+        display:block;
+        height:250px;
+        width:auto;
+        border-radius: 500px;
+        margin-left:auto;
+        margin-right:auto;
     }
     .ownerAbout h2{
+        margin-top:10px;
         font-size:30px;
-        margin-top:-350px;
         text-align:center;
     }
     .ownerAbout h4{
         font-size:20px;
         text-align:center;
     }
-    .ownerAbout p{
-        font-size: 18px;
-        text-align:justify;
-    }
-    
-}
+ }

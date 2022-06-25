@@ -65,11 +65,12 @@ body{
     text-align: justify;
 }
 .ownerAbout .owner{
+    display:block;
     height:45%;
     width:auto;
-    border:none;
+    margin-left:auto;
+    margin-right:auto;
     border-radius: 500px;
-    margin-left:30px;
     margin-top:10px;
 }
 .ownerAbout h2{
@@ -96,11 +97,6 @@ body{
     }
     .businessAbout p{
         font-size: 18px;
-    }
-    .ownerAbout .owner{
-        height:45%;
-        width:auto;
-        margin-left:60px;
     }
     .ownerAbout h2{
         font-size:30px;

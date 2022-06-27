@@ -9,6 +9,7 @@ Group Members
     Hannah Rae Bunye
         -Homepage
         -About Page
+        -Contact Page
 
 
     Raina Gemanel

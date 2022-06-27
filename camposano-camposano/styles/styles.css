@@ -30,6 +30,14 @@ img {
   display: none;
 }
 
+.mySlides img {
+  width:auto; 
+  height: 300px; 
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto;
+}
+
 @keyframes fadeIn {
   0% { opacity: 0; }
   100% { opacity: 1; }
@@ -145,6 +153,11 @@ nav ul li a:hover{
 /* Add a transparency effect for thumnbail images */
 .demo {
   opacity: 0.6;
+}
+
+.demo-cursor {
+  width:100%; 
+  height:100px;
 }
 
 .active,
@@ -332,6 +345,65 @@ nav ul li a:hover{
   opacity: 95%;
 }
 
+.feature1 {
+  text-align: justify;
+  text-justify: inter-word;
+  background-color: #FFF;
+  margin-top: 100px;
+}
+
+.nav p {
+  color: white;
+}
+
+.nav li{
+  font-weight: 600;
+  height: 25px;
+  text-align: center;
+  margin-top: 10px;
+  width: 200px;
+  background-color: #A654C9;
+  border-radius: 10px;
+}
+
+.nav .nav-item1{
+  height: 50px;
+  text-align: center;
+  margin-top: 10px;
+  width: 200px;
+  background-color: #A654C9;
+  border-radius: 10px;
+}
+
+.nav li a:hover {
+  background-color: #A654C9;
+  box-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+  border-radius: 0;
+  transform: scale(1.2);
+}
+
+.nav p:hover {
+  color: white;
+}
+
+
+.aboutus {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.aboutush1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.aboutush3 {
+  margin-bottom: 30px;
+}
+
+.aboutusp {
+  margin-bottom: 80px;
+}
 
 @media screen and (max-width: 991px) {
 
@@ -357,29 +429,10 @@ nav ul li a:hover{
 
 
 @media screen and (max-width: 991px) {
-	
-  .navbar-nav {
-    max-width: 800px;
-    margin-right: auto;
-    margin-left: auto;
-    background-color: #B755B7;
-    border-radius: 40px;
-    width: auto;
-    list-style:none;
-    text-align: center;
-  }
-
-  nav ul li a:hover{
-  border-radius: 40px;
-  background-color: #934493;
-  font-weight: bold;
-  transition: 0.1s;
-}	
-	
   .login_column {
     width:100%; display: block; margin-left: auto; margin-right: auto;
   }
-	
+
   .intro_column {
     height: 130px;
   }
@@ -397,25 +450,6 @@ nav ul li a:hover{
 
 
 @media screen and (max-width: 989px) {
-	
-  .navbar-nav {
-    max-width: 800px;
-    margin-right: auto;
-    margin-left: auto;
-    background-color: #B755B7;
-    border-radius: 40px;
-    width: auto;
-    list-style:none;
-    text-align: center;
-  }
-
-  nav ul li a:hover{
-  border-radius: 40px;
-  background-color: #934493;
-  font-weight: bold;
-  transition: 0.1s;
-}
-	
   .intro_column {
     height: 150px;
   }
@@ -435,10 +469,12 @@ nav ul li a:hover{
     width: 300px;
   }
 }
-	
+
+
+
 @media screen and (max-width: 766px) {
-	
-  .navbar-nav {
+
+    .navbar-nav {
     max-width: 800px;
     margin-right: auto;
     margin-left: auto;
@@ -455,7 +491,7 @@ nav ul li a:hover{
   font-weight: bold;
   transition: 0.1s;
 }
-	
+
   .intro_column {
     height: 170px;
   }
@@ -494,26 +530,8 @@ nav ul li a:hover{
   }
 }
 
-@media screen and (max-width: 480px) {
-	
-  .navbar-nav {
-    max-width: 800px;
-    margin-right: auto;
-    margin-left: auto;
-    background-color: #B755B7;
-    border-radius: 40px;
-    width: auto;
-    list-style:none;
-    text-align: center;
-  }
 
-  nav ul li a:hover{
-  border-radius: 40px;
-  background-color: #934493;
-  font-weight: bold;
-  transition: 0.1s;
-}
-	
+@media screen and (max-width: 480px) {
   .card-area {
     width:100%; display: block; margin-left: auto; margin-right: auto;
   }
@@ -522,17 +540,17 @@ nav ul li a:hover{
     width:100%; display: block; margin-left: auto; margin-right: auto;
   }
 }
-	
+
 @media screen and (max-width: 416px) {
   .card-area {
     width:100%; display: block; margin-left: auto; margin-right: auto;
   }
 
   .feature {
-    width:100%; display: block; margin-left: auto; margin-right: auto;
+    width: 100%; display: block; margin-left: auto; margin-right: auto;
   }
 }
-	
+
 @media screen and (max-width: 405px) {
   .prev, .next {
     margin-left: 20px;
@@ -546,6 +564,7 @@ nav ul li a:hover{
 }
 
 }
+
 
 .registerlink {
   margin-top: 40px;

@@ -7,10 +7,11 @@ Group Members
 Aira Merin
     -Homepage
     -Login page
+    -registration form
 
 
 Elirose Dalit
-    -beach
+    -place of beaches
     
 Mark Randel Zantua
     - style.css

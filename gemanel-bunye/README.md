@@ -15,3 +15,4 @@ Group Members
     Raina Gemanel
         -Login Page
         -Registration Page
+        -Profile Page

@@ -14,7 +14,7 @@ section .circle {
   top: 0;
   left: 0;
   width: 100%;
-  background-image: url(../assets/img.jpg);
+  background-image: url(./assets/img.jpg);
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;

@@ -1,45 +1,352 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>C - Merged Main-Page</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="stylesheet" href=".\styles\style.css">
-  </head>
-  <body>
-    <main>
-            <video id="video" poster="./assets/img1.jpg" autoplay muted loop>
-                <source src="./assets/videoplayback.mp4" type="video/mp4">
-               </video>
-               
-               <div class="content">
-                <h1>C - Merged</h1>
-                <figure>
-                    <q>C - Merged will provide you the taste, experiences and offers of three cultures and tradition combined in one place.</q>
-                        <p>A thousands taste only in one place.</p>
-                   
-                    <figcaption>— C - Merged, <cite>Acorda - Rancap Headmaster's</cite></figcaption>
-                </figure>
-                <button id="myButton" class="float-left submit-button" >Get Started</button>
-              </div>
-             
-             
-    </main>
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="C - Merged">
+    <meta name="author" content="Acorda, Jaedee & Rancap, Sharlyn">
+    <title>C - Merged</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<body>
+   
+<section class="main">
+    <div class="circle"></div>
+        <header class="header_area">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+                <div class="container">
+                  <a class="navbar-brand" href="#">C - Merged</a>
+                      <button 
+                          class="navbar-toggler" 
+                          type="button" 
+                          data-bs-toggle="collapse" 
+                          data-bs-target="#navbarSupportedContent" 
+                          aria-controls="navbarSupportedContent" 
+                          aria-expanded="false" 
+                          aria-label="Toggle navigation">
+
+                          <span class="navbar-toggler-icon" style="color: #000000"></span>
+                      </button>
+
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="navbar-nav me-auto mb-2 mb-lg-0"></div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Products</a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Filipino Cuisine</a></li>
+                            <li><a class="dropdown-item" href="#">Korean Cuisine</a></li>
+                            <li><a class="dropdown-item" href="#">Japanese Cuisine</a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                      </ul>
+                      <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                        <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+                      </form>
+                      <div class="text-end">
+                        <button type="button" class="btn1"><span>Login</span></button>
+                        <button type="button" class="btn1"><span>Sign-up</span></button>
+                      </div>
+                  </div>
+                </div>
+                
+            </nav>
+            
+        </header>
+        
     
-    <script type="text/javascript">
-        document.getElementById("myButton").onclick = function () {
-            location.href = "https://johnbenedictcastillo.github.io/bsitA/acorda-rancap/pages/login.html";
-        };
-    </script>
+<div class="container">
+<div class="row">
+   <div class="col-md-6">
+        <div class="maincontent">
+            <div class="left">
+                <h1 class="text">C - Merged</h1>
+                <p class="text1">One thousand flavors in one place.</p>
+                <a href="#">Learn More</a>
 
-  </body>
+            </div>
+        </div>
+    </div> 
+        <div class="col-md-6">
+            <div class="swiperimg">
+ 
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./assets/1.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/2.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/3.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/4.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/5.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/6.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/7.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/8.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/9.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/10.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/11.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/12.jpg" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>     
+    </div>
+   
+    </section>
+   
+   
+    <div class="features">
+        <video id="video" poster="..//assets/img1.jpg" autoplay muted loop>
+            <source src="./assets/videoplayback.mp4" type="video/mp4">
+           </video>
+    
+        <div class="card-area">
+            <div class="container card-list">
+                <div class="row g-4 mt-4 mb-5">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card">
+                            <div class="inner">
+                                <img src="./assets/1.jpg" class="card-img-top" alt="..." style="height: 260px;">
+                                </div>
+                                <div class="card-body">
+                                  <h5 class="card-title">Filipino Cuisine</h5>
+                                  <p class="scard-text">Filipino food is a mix of Asian and Western influences transformed through local cooking techniques.</p>
+                                  <a href="#" class="btn">Learn More</a>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card">
+                            <div class="inner">
+                                <img src="./assets/5.jpg" class="card-img-top" alt="..." style="height: 260px;">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Korean Cuisine</h5>
+                                    <p class="scard-text">Korean cuisine is one of the world's healthiest because of the wide use of natural and seasonal components of their food sources, like tofu, beans, garlic, and their all-natural kimchi.</p>
+                                    <a href="#" class="btn">Learn More</a>
+                                </div>
+                        </div>
+                   </div>     
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card">
+                            <div class="inner">
+                                <img src="./assets/11.jpg" class="card-img-top" alt="..." style="height: 260px;">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Japanese Cuisine</h5>
+                                    <p class="scard-text">Japanese cuisine offers an abundance of gastronomical delights with a boundless variety of regional and seasonal dishes.</p>
+                                    <a href="#" class="btn">Learn More</a>
+                                </div>
+                        </div>
+            </div>
+        </div>
+                
+            </div>
+        </div>
+    <div class="qoute">One thousand flavors in one place.</div>
+    </div>  
+   
+<section class="point">
+    <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-12">
+            <h4>Filipino Cuisine</h4>
+            <p class="text5"><i>"Kain Tayo"</i></p>
+            <p class="text4">One thousand flavors in one place.</p>
+          </div>
+          <div class="col-md-8 col-sm-12">
+            <div class="swiperimg">
+ 
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./assets/1.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/2.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/3.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/4.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/13.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/14.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/15.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/16.jpg" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-md-8 col-sm-12">
+            <div class="swiperimg">
+ 
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./assets/5.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/6.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/7.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/8.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/17.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/18.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/19.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/20.jpg" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <h4>Korean Cuisine</h4>
+            <p class="text5"><i>"먹자"</i></p>
+            <p class="text4">One thousand flavors in one place.</p>
+          </div>
+
+          <div class="col-md-4 col-sm-12">
+            <h4>Japanese Cuisine</h4>
+            <p class="text5"><i>"いただきます"</i></p>
+            <p class="text4">One thousand flavors in one place.</p>
+          </div>
+          <div class="col-md-8 col-sm-12">
+            <div class="swiperimg">
+ 
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./assets/9.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/10.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/11.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/12.jpg" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+</section>
+
+<section class="served">
+    <div class="container">
+      <footer class="container py-5">
+        <div class="row">
+          <div class="col-md-3">
+            <h5>DEVELOPED BY</h5>
+            <small class="d-block mb-3 text-muted">&copy; 2022 All rights reserved. <br>
+              C-Merged</small>
+              <ul class="list-unstyled text-small">
+                <li><a class="mb-2" href="#">PRIVACY POLICY</a></li>
+              </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>FEATURES</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="mb-2" href="#">FILIPINO</a></li>
+              <li><a class="mb-2" href="#">KOREAN</a></li>
+              <li><a class="mb-2" href="#">JAPANESE</a></li>
+              
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>RESOURCES</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="" href="#">PRODUCT</a></li>
+              <li><a class="mb-2" href="#">CONTACT US</a></li>
+              <li><a class="mb-2" href="#">ABOUT US</a></li>
+              <li><a class="mb-2" href="#">DEALS</a></li>
+              <li><a class="mb-2" href="#">FAQS</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>BE THE FIRST TO KNOW</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="mb-2"><p>
+                Check out C - Merged 's latest culinary discoveries, events, promotions, & more.
+              </p></a></li>
+              <li><a class="mb-2" href="#"><p>
+                SIGN-UP NOW
+              </p></a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      </div>
+      
+</section>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="./scripts/swiper.js"></script>
+    <script src="./scripts/animate.js"></script>
+
+</body>
 </html>

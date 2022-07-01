@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Italianno&family=Tangerine&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+  background-image: url(../assets/about-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  image-resolution: inherit;
+}
+
+.nav-link, .navbar-brand , .dropdown-menu , .form-control
+{
+  font-weight: 400;
+  font-family: Courier New;
+  font-size: 18px;
+  align-items: center;
+  margin: 0px 10px;
+}
+.navbar-brand
+{
+  font-weight: 400;
+  font-size: 34px;
+  font-family: 'Tangerine', cursive;
+}
+
+.btn1
+{
+ 
+  color: #161616;
+  border-radius: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  width: 100px;
+  height: auto;
+  transition: all .35s;
+  display: inline-block;
+  position: relative;
+  border: none;
+
+}
+.btn1:hover{
+    color: #fff;
+    background-color: #313327;
+  }
+
+.served
+{
+  background-color: #5b632f;
+  color: #fff;
+}
+.list-unstyled a
+{
+  color: #f0efc6;
+  text-decoration: none;
+  margin: 10px;
+  font-family: 'Courier New', Courier, monospace;
+
+}
+.list-unstyled a:hover
+{
+  color: #4caef0;
+ 
+}
+
+
+.contact
+{
+  margin-top: 100px;
+}
+.contact .info {
+  width: 100%;
+}
+.contact .info i {
+  font-size: 40px;
+  float: left;
+  width: 60px;
+  height: 60px;
+  background: #3c3f2d;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  margin: 0;
+  
+}
+.contact .info h3 {
+  padding: 0 0 0 60px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  color: #cda45e;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.contact .info p {
+  padding: 0 0 0 60px;
+  margin-bottom: 0;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  color: #f0efc6;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.contact .info a
+{
+  text-decoration: none;
+  color: #f0efc6;
+}
+.contact .info a:hover
+{
+  color: #e49815;
+}
+.contact-title h1
+{
+  margin-bottom: 30px;
+  font-size: 60px;
+  font-weight: 900;
+  color: #fdfdfd;
+  font-weight: 400;
+  font-family: 'Tangerine', cursive;
+  text-align: center;
+}
+
+.contact .info .open-hours, .contact .info .email, .contact .info .phone {
+  margin-top: 40px;
+}
+.contact .php-email-form {
+  width: 100%;
+}
+.contact .php-email-form .form-group {
+  padding-bottom: 8px;
+}
+.contact .php-email-form .validate {
+  display: none;
+  color: red;
+  margin: 0 0 15px 0;
+  font-weight: 400;
+  font-size: 13px;
+}
+.contact .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+.contact .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+.contact .php-email-form .loading {
+  display: none;
+  text-align: center;
+  padding: 15px;
+}
+.contact .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #e49815;
+  border-top-color: #aa9e85;
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite;
+}
+.contact .php-email-form input, .contact .php-email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+  background: #3c3f2d;
+  border-color: #ebe4d4;
+  color: #fff;
+  margin: 0;
+ 
+}
+.contact .php-email-form input::-moz-placeholder, .contact .php-email-form textarea::-moz-placeholder {
+  color: #ebe4d4;
+  font-size: 16px;
+}
+.contact .php-email-form input::placeholder, .contact .php-email-form textarea::placeholder {
+  color: #ebe4d4;
+  font-size: 16px;
+}
+.contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
+  border-color: #cda45e;
+}
+.contact .php-email-form input {
+  height: 44px;
+}
+.contact .php-email-form textarea {
+  padding: 10px 12px;
+}
+.contact .php-email-form button[type=submit] {
+  background: #3c3f2d;
+  border: 0;
+  padding: 10px 35px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+.contact .php-email-form button[type=submit]:hover {
+  background: #5b632f;
+}
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

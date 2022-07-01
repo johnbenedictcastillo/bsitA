@@ -4,7 +4,7 @@
 }
 
 .slideshow .container {
- background-color: black;
+ background-color: white;
 }
 
 * {
@@ -70,7 +70,6 @@ img {
 .column {
   border-radius: 40px;
   height: 150px;
-  background-color: black;
   float: left;
   width: 16.66%;
 }
@@ -102,24 +101,27 @@ img {
 
 /* Position the "next button" to the right */
 .next {
-  color: white;
+  color: gray;
   margin-right: 300px;
   right: 0;
   border-radius: 50px;
 }
 
 .prev {
-  color: white;
+  color: gray;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover,
 .next:hover {
-  border-radius: 50px;
+  border-radius: 20px 50px 50px 20px;
   background-color: rgba(166,84,201,0.77);
   color: #FFF;
-  -webkit-box-shadow: 1px 1px 27px 10px #000000; 
-box-shadow: 1px 1px 27px 10px #000000;
+}
+
+.prev:hover {
+  border-radius: 50px 20px 20px 50px;
+  background-color: rgba(166,84,201,0.77);
+  color: #FFF;
 }
 
 
@@ -128,9 +130,9 @@ box-shadow: 1px 1px 27px 10px #000000;
   margin: 10px 10px 10px 10px;
   text-align: center;
   font-family: "Comic Sans MS", cursive, sans-serif;
-  background: white;
+  background: black;
   padding: 2px 16px;
-  color: #000;
+  color: #fff;
   font-size: 30px;
   letter-spacing: .1em;
   }

@@ -2,15 +2,27 @@
 	max-width: 840px;
 	margin: 0 auto;
 }
+.ikaw {text-align: left;
+	display: inline-block;
+}
+
+.ako {
+	text-align: center;
+	list-style-position: inside;
+}
 
 .intro {
 	text-align: center;
 }
+
+.gitnangp {
+	text-align: center;
+}
 p {
-	color: brown;
+	color: black;
 }
 h3 {
-	color: green;
+	color: black;
 }
 .class="about-list-item"> {
 	font-style: italic;
@@ -18,6 +30,8 @@ h3 {
 #my-name {
 	color: darkmagenta;
 }
+
+
 /*
 Element Selector
 Class Selector

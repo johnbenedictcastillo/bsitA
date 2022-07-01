@@ -1,5 +1,10 @@
 .slideshow{
+  opacity: 95%;
 	margin-top: 140px;
+}
+
+.slideshow .container {
+ background-color: black;
 }
 
 * {
@@ -23,7 +28,6 @@ img {
 /* Hide the images by default */
 .mySlides {
   border-radius: 30px;
-  background-color: black;
   animation: fadeIn 1s;
   -webkit-animation: fadeIn 1s;
   -moz-animation: fadeIn 1s;
@@ -214,8 +218,8 @@ nav ul li a:hover{
   margin-right: auto;
   margin-left: auto;
   background-color: black;
+  margin-top: 50px;
   opacity: 95%; 
-  margin-top: 130px;
   height: 100%;
 
 }

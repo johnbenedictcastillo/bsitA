@@ -18,10 +18,20 @@ img {
   border-radius: 10px;
 }
 
+
 /* Position the image container (needed to position the left and right arrows) */
 .container {
   position: relative;
 }
+
+.navbar-toggler {
+  color: violet;
+}
+
+.navbar-toggler:hover {
+    background-color: violet;
+}
+
 
 /* Hide the images by default */
 .mySlides {
@@ -142,12 +152,15 @@ img {
   padding: 20px 15px;
 }  
 
+
+
 .navbar::-webkit-scrollbar {
   display: none;
 }
 
 
 .navbar {
+    background-color: black;
     overflow: scroll !important; 
     max-height: 100vh;
     top: 0; /* Stay on top */
@@ -219,7 +232,7 @@ nav ul li a:hover{
   margin-right: auto;
   margin-left: auto;
   background-color: black;
-  margin-top: 30px;
+  margin-top: 20px;
   opacity: 95%; 
   height: 100%;
 
@@ -335,11 +348,9 @@ nav ul li a:hover{
   text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
 }
 
-.mycontainer {
-}
 
 .intro_column {
-  margin: 150px 0 0 0;
+  margin: 500px 0 0 0;
   text-align: center;
   height: 180px;
   width: auto;
@@ -457,6 +468,7 @@ nav ul li a:hover{
   }
 
   .intro_column {
+    margin-top: 100px;
     height: 130px;
   }
   .ml15 {
@@ -474,12 +486,14 @@ nav ul li a:hover{
 
 @media screen and (max-width: 989px) {
   .intro_column {
+    margin-top: 100px;
     height: 150px;
   }
 }
 
 @media screen and (max-width: 900px) {
   .intro_column {
+    margin-top: 100px;
     height: 130px;
   }
 }
@@ -516,6 +530,7 @@ nav ul li a:hover{
 }
 
   .intro_column {
+    margin-top: 100px;
     height: 170px;
   }
   .prev, .next {
@@ -528,6 +543,7 @@ nav ul li a:hover{
 
 @media screen and (max-width: 700px) {
   .intro_column {
+    margin-top: 100px;
     height: 100px;
   }
   .ml15 {
@@ -537,11 +553,15 @@ nav ul li a:hover{
 
 @media screen and (max-width: 500px) {
   .intro_column {
+    margin-top: 100px;
     height: 100px;
   }
 }
 
 @media screen and (max-width: 499px) {
+  .intro_column {
+    margin-top: 100px;
+  }
   .prev, .next {
     margin-left: 40px;
   }
@@ -555,6 +575,9 @@ nav ul li a:hover{
 
 
 @media screen and (max-width: 480px) {
+  .intro_column {
+    margin-top: 100px;
+  }
   .card-area {
     width:100%; display: block; margin-left: auto; margin-right: auto;
   }
@@ -565,6 +588,9 @@ nav ul li a:hover{
 }
 
 @media screen and (max-width: 416px) {
+  .intro_column {
+    margin-top: 100px;
+  }
   .card-area {
     width:100%; display: block; margin-left: auto; margin-right: auto;
   }
@@ -582,6 +608,7 @@ nav ul li a:hover{
     margin-right: 30px;
   }
   .intro_column {
+    margin-top: 100px;
     height: 110px;
   }
 }

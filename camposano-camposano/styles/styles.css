@@ -1,11 +1,9 @@
 .slideshow{
+  background-color: white;
   opacity: 95%;
 	margin-top: 140px;
 }
 
-.slideshow .container {
- background-color: white;
-}
 
 * {
   box-sizing: border-box;
@@ -221,7 +219,7 @@ nav ul li a:hover{
   margin-right: auto;
   margin-left: auto;
   background-color: black;
-  margin-top: 50px;
+  margin-top: 30px;
   opacity: 95%; 
   height: 100%;
 

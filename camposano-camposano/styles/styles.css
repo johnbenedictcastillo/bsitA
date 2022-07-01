@@ -22,43 +22,72 @@ img {
 
 /* Hide the images by default */
 .mySlides {
+  border-radius: 30px;
+  background-color: black;
   animation: fadeIn 1s;
   -webkit-animation: fadeIn 1s;
   -moz-animation: fadeIn 1s;
   -o-animation: fadeIn 1s;
   -ms-animation: fadeIn 1s;
-  display: none;
+  display: block;
 }
 
-.mySlides img {
+#slides {
+  padding-top: 20px;
+  padding-bottom: 20px;
   width:auto; 
-  height: 300px; 
+  height: 400px; 
   display: block; 
   margin-left: auto; 
   margin-right: auto;
 }
+
+.demo {
+  border-radius: 30px;
+  margin-top: 25px;
+  opacity: 80%;
+  width:100%; 
+  height:100px;
+}
+
+.demo:hover {
+  transform: scale(1.2,1.5);
+  width:100%; 
+  height:100px;
+}
+
+.active,
+.demo:hover {
+    transform: scale(1.2,1.5);
+  opacity: 1;
+}
+
+
+.column {
+  border-radius: 40px;
+  height: 150px;
+  background-color: black;
+  float: left;
+  width: 16.66%;
+}
+
 
 @keyframes fadeIn {
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
 
-/* Add a pointer when hovering over the thumbnail images */
-.cursor {
-  cursor: pointer;
-}
 
 /* Next & previous buttons */
 .prev,
 .next {
   margin-left: 280px;
-  background-color: black;  
   cursor: pointer;
   position: absolute;
   top: 40%;
   width: auto;
   padding: 16px;
-  margin-top: -50px;
+  margin-top: -100px;
   color: white;
   font-weight: bold;
   font-size: 20px;
@@ -69,9 +98,14 @@ img {
 
 /* Position the "next button" to the right */
 .next {
+  color: white;
   margin-right: 300px;
   right: 0;
   border-radius: 50px;
+}
+
+.prev {
+  color: white;
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -90,13 +124,18 @@ box-shadow: 1px 1px 27px 10px #000000;
   margin: 10px 10px 10px 10px;
   text-align: center;
   font-family: "Comic Sans MS", cursive, sans-serif;
-  background: transparent;
+  background: white;
   padding: 2px 16px;
-  color: #FFF;
+  color: #000;
   font-size: 30px;
   letter-spacing: .1em;
-  text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0,0,0,0.9);
-}
+  }
+
+.nav-link {
+  font-weight: bold;
+  color: #000; 
+  padding: 20px 15px;
+}  
 
 .navbar::-webkit-scrollbar {
   display: none;
@@ -142,27 +181,6 @@ nav ul li a:hover{
   content: "";
   display: table;
   clear: both;
-}
-
-/* Six columns side by side */
-.column {
-  float: left;
-  width: 16.66%;
-}
-
-/* Add a transparency effect for thumnbail images */
-.demo {
-  opacity: 0.6;
-}
-
-.demo-cursor {
-  width:100%; 
-  height:100px;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
 }
 
 
@@ -250,7 +268,7 @@ nav ul li a:hover{
 
 .card-area3 .login_column {
   margin-top: 130px;
-  height: 39rem;
+  height: 50rem;
 }
 
 .login_your_account {

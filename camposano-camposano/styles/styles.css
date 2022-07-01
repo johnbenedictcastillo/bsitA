@@ -52,6 +52,7 @@ img {
   opacity: 80%;
   width:100%; 
   height:100px;
+  transition: ease-in-out .2s;
 }
 
 .demo:hover {

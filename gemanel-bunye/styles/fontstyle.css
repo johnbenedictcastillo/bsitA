@@ -1,0 +1,78 @@
+.h3font, .namefont, .devprt-name-font{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.statusfont, .productfont, .devprt-status-font{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.h3font{
+    font-size:45px;
+    text-align: center;
+}
+.namefont{
+    font-size:38px;
+    text-align: justify;
+}
+.statusfont{
+    font-size:30px;
+    text-align: justify;
+}
+.productfont{
+    font-size:28px;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+    font-weight: 600;
+}
+.parafont{
+    font-size:25px;
+    text-align: justify;
+}
+.thfont{
+    font-size:24px;
+    text-align:center;
+}
+.tdfont{
+    font-size:20px;
+}
+.devprt-name-font{
+    font-size:28px;
+    text-align: justify;
+}
+.devprt-status-font{
+    font-size:24px;
+    text-align: justify;
+}
+@media screen and (max-width: 800px){
+    .h3font{
+        font-size:35px;
+        text-align: center;
+    }
+    .namefont{
+        font-size:30px;
+        text-align: center;
+    }
+    .statusfont{
+        font-size:20px;
+        text-align: center;
+    }
+    .productfont{
+        font-size:20px;
+    }
+    .parafont{
+        font-size:18px;
+    }
+    .thfont{
+        font-size:18px;
+    }
+    .tdfont{
+        font-size:15px;
+    }
+    .devprt-name-font{
+        font-size:20px;
+        text-align: center;
+    }
+    .devprt-status-font{
+        font-size:18px;
+        text-align: center;
+    }
+}

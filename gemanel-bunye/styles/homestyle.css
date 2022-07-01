@@ -1,79 +1,10 @@
 *{
     box-sizing: border-box;
-    font-family:Arial, Helvetica, sans-serif;
 }
 body{
     background:#D6D6D6;
 }
-.navbar{
-    background-image: url("../assets/BG1.png");
-    background-position: center;
-    background-repeat: 2px;
-    background-size: 900px;
-}
-.Part1 a .logo{
-    height: auto;
-    width: 250px;
-}
-.Part1 li{
-	display: block;
-}
-.Part1 li a{
-    display: inline-block;
-    padding-left: 40px;
-    padding-top: 10px;
-    color: #A6FF9A;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 28px;
-    text-decoration: none;
-    margin-left:auto;
-    margin-right:auto;
-    text-align:center;
-}
-.Part1 li a:hover{
-    color:#FFF6BC;
-}
-.Part1 .dropdown-menu{
-    background-image: url("../assets/BG1.png");
-    background-position: center;
-    background-size: 300px;
-}
-.Part1 #user{
-    color: #A6FF9A;
-    padding-left: 40px;
-    margin-left:auto;
-    margin-right:auto;
-}
-.Part1 .dropdown-menu li{
-    display:block;
-    text-decoration: none;
-    text-align:center;
-}
-.Part1 .dropdown-item{
-    display:block;
-    padding-left: 0;
-    text-align:center;
-    margin-left:auto;
-    margin-right:auto;
-}
-.Part1 .dropdown-item:hover{
-    background-color:#95A4FB;
-}
-.Part1 h2{
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    font-weight:200px;
-    font-size:50px;
-    text-align: center;
-}
-.Part1 h5{
-    text-align: center;
-    margin-left:auto;
-    margin-right:auto;
-    font-weight: 600;
-    font-size:24px;
-}
-.Part1 .product{
+.productpart .product{
     display:block;
     width: 75%;
     height: auto;
@@ -81,45 +12,22 @@ body{
     margin-right:auto;
     margin-top:20px;
 }
-.Part1 #pic1{
+.productpart #latestpic1{
     background-image: url("../assets/BG1.png");
     background-position: center;
     background-size: cover;
 }
-.Part1 #pic2{
+.productpart #latestpic2{
     background-image: url("../assets/BG2.png");
     background-position: center;
     background-size: cover;
 }
-#Part1 th, td, #names{
-    font-size:20px;
+.table{
+    border:1px;
 }
 @media screen and (max-width: 800px){
-    .Part1 li a{
-        display: block;
-        padding-left:0;
-        padding-top: 0;
-        text-align:center;
-    }
-    .Part1 #user{
-        padding-left: 0;
-        text-align:center;
-    }
-    .Part1 .dropdown-menu{
-        background-size: 540px;
-    }
-    .Part1 h2{
-        font-size:40px;
-        margin-top:0;
-    }
-    .Part1 .product{
+    .productpart .product{
         width: 50%;
         height: auto;
-    }
-    .Part1 h5{
-        font-size:20px;
-    }
-    #Part1 th, td, #names{
-        font-size:18px;
     }
 }

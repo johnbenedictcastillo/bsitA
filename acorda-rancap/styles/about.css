@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Italianno&family=Tangerine&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-link, .navbar-brand , .dropdown-menu , .form-control
+{
+  font-weight: 400;
+  font-family: Courier New;
+  font-size: 18px;
+  align-items: center;
+  margin: 0px 10px;
+}
+.navbar-brand
+{
+  font-weight: 400;
+  font-size: 34px;
+  font-family: 'Tangerine', cursive;
+}
+
+.btn1
+{
+ 
+  color: #161616;
+  border-radius: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  width: 100px;
+  height: auto;
+  transition: all .35s;
+  display: inline-block;
+  position: relative;
+  border: none;
+
+}
+.btn1:hover{
+    color: #fff;
+    background-color: #313327;
+  }
+
+
+.about-bg{
+    background-image: url(../assets/img1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.inner-section{
+    width: 100%;
+    background-color: #313327;
+    margin-top: 200px;
+    margin-bottom: 50px;
+    padding: 140px;
+    background: rgba(255, 255, 255, .10);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.inner-section h1{
+    margin-bottom: 30px;
+    font-size: 60px;
+    font-weight: 900;
+    color: #fdfdfd;
+    font-weight: 400;
+    font-family: 'Tangerine', cursive;
+   
+}
+.text{
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #ecf5f5;
+    line-height: 30px;
+    text-align: justify;
+    text-indent: 50px;
+    margin: 30px;
+
+}
+.contact button{
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    border: none;
+    padding: 8px;
+    width: 200px;
+    background-color: #5b632f;
+    color: white;
+    cursor: pointer;
+}
+.contact button:hover{
+    transition: 2s;
+    background-color: #ecf5f5;
+    color: #5b632f;
+}
+@media screen and (max-width:1200px){
+    .inner-section {
+        padding: 20px;
+    }
+}
+@media screen and (max-width:1000px){
+    .about-us{
+        background-size: 100%;
+        padding: 0;
+    }
+    .inner-section{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .about-us{
+        padding: 0;
+    }
+    .inner-section{
+        padding: 60px;
+    }
+    .contact button{
+        font-size: 19px;
+        padding: 5px;
+        width: 160px;
+    }
+}
+
+
+
+
+.about {
+    background: url("../assets/about-img.jpg") center center;
+    background-size: cover;
+    position: relative;
+    padding: 80px 0;
+  }
+  
+  .about .about-img {
+    position: relative;
+    transition: 0.5s;
+    max-width: 650px;
+    max-height: 400px;
+  }
+  .about .about-img img {
+    width: 500px;
+    height: 400px;
+    align-items: center;
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+  }
+  .about .about-img::before {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: 60px;
+    height: 60px;
+    z-index: 1;
+    content: "";
+    border-left: 5px solid #cda45e;
+    border-top: 5px solid #cda45e;
+    transition: 0.5s;
+  }
+  .about .about-img::after {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    width: 60px;
+    height: 60px;
+    z-index: 2;
+    content: "";
+    border-right: 5px solid #cda45e;
+    border-bottom: 5px solid #cda45e;
+    transition: 0.5s;
+  }
+  .about .about-img:hover {
+    transform: scale(1.03);
+  }
+  .about .about-img:hover::before {
+    left: 10px;
+    top: 10px;
+  }
+  .about .about-img:hover::after {
+    right: 10px;
+    bottom: 10px;
+  }
+  .about .content h2 {
+    font-weight: 600;
+    font-size: 50px;
+    font-family: 'Tangerine', cursive;
+    color: #fdfdfd;
+  }
+  .about .content ul {
+    list-style: none;
+    padding: 0;
+  }
+  .about .content ul li {
+    padding-bottom: 10px; 
+  }
+  .about .content a
+  {
+    color: #ecf5f5;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+  }
+  .about .content a:hover
+    {
+        color: #edf036;
+    }
+  .about .content p:last-child {
+    margin-bottom: 0;
+  }
+  @media (min-width: 1024px) {
+    .about {
+      background-attachment: fixed;
+    
+    }
+  }
+  .profile
+  {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+.fst-italic
+{
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #cda45e;
+    text-align: justify;
+}
+
+.served
+{
+  background-color: #5b632f;
+  color: #fff;
+}
+.list-unstyled a
+{
+  color: #f0efc6;
+  text-decoration: none;
+  margin: 10px;
+  font-family: 'Courier New', Courier, monospace;
+
+}
+.list-unstyled a:hover
+{
+  color: #4caef0;
+ 
+}

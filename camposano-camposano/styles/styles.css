@@ -1,7 +1,7 @@
 .slideshow{
   background-color: white;
   opacity: 95%;
-	margin-top: 140px;
+  margin-top: 20px;
 }
 
 
@@ -358,6 +358,31 @@ nav ul li a:hover{
   opacity: 90%;
   border-radius: 40px;
 }
+
+.iintro {
+  background-color: black;
+  opacity: 95%;
+}
+
+.iintro_column {
+  margin: 100px 0 24px 0;
+  text-align: center;
+  height: auto;
+  width: auto;
+  background-color: black;
+  opacity: 95%;
+}
+
+.ml14 {
+  color: violet;
+  overflow: hidden;
+  padding: 90px 0 0 0;
+  font-weight: 800;
+  font-size: 50px;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+}
+
 
 .ml15 {
   color: white;

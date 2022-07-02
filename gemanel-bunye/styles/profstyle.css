@@ -2,7 +2,7 @@
     font-family:Arial, Helvetica, sans-serif;
 }
 .navbar{
-    background-image: url("BG1.png");
+    background-image: url("../assets/BG1.png");
     background-position: center;
     background-repeat: 2px;
     background-size: 900px;
@@ -35,7 +35,7 @@
     color: #5EE9FF;
 }
 .navigation .dropdown-menu{
-    background-image: url("BG1.png");
+    background-image: url("../assets/BG1.png");
     background-position: center;
     background-size: 300px;
 }

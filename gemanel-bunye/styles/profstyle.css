@@ -312,3 +312,141 @@ body{
         background-size: 540px;
     }
 }
+@media only screen and (max-width: 1500px) {
+ 
+  .login-card {
+   position: absolute;
+
+  padding: 40px;
+  width: 454px;
+  background-color: none;
+  margin: 0 auto 10px;
+  border-radius: 2px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  position: relative;
+  top: -350px;
+  margin-right: 0px;
+  color: black;
+  border: 3px solid #605444;
+
+}
+.button1 {
+    position: relative;
+    left: 650px;
+    top: -305px;
+    display: inline-block;
+    width: 300px;
+height: 100px;
+}
+.button2 {
+    position: relative;
+    left: 790px;
+    top: -405px;
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+}
+}
+@media only screen and (max-width: 1000px) {
+ 
+  .login-card {
+   position: absolute;
+
+  padding: 40px;
+  width: 454px;
+  background-color: none;
+  margin: 0 auto 10px;
+  border-radius: 2px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  position: relative;
+  top: 150px;
+  margin-right: 100px;
+  color: black;
+  border: 3px solid #605444;
+
+}
+.avatar {
+   position: relative; 
+   top: 80px; 
+   left: 180px;
+   font-size: 30px;
+}
+.default {
+    width: 200px;
+    height: 200px;
+    border-radius: 170px;
+    margin-left: 100px;
+    margin-bottom: 10px;
+    border: solid 3px white;
+}
+
+.button1 {
+    position: relative;
+    left: 250px;
+    top: 205px;
+    display: inline-block;
+    width: 300px;
+height: 100px;
+}
+.button2 {
+    position: relative;
+    left: 390px;
+    top: 105px;
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+}
+}
+@media only screen and (max-width: 768px){
+   
+  .login-card {
+    position: absolute;
+
+  padding: 40px;
+  width: 454px;
+  background-color: none;
+  margin: 0 auto 10px;
+  border-radius: 2px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  position: relative;
+  top: 150px;
+  margin-right: 0px;
+  color: black;
+  border: 3px solid #605444;
+
+}
+.avatar {
+   position: relative; 
+   top: 80px; 
+   left: 45px;
+   font-size: 30px;
+}
+.default {
+    width: 200px;
+    height: 200px;
+    border-radius: 170px;
+    margin-left: 90px;
+    margin-bottom: 10px;
+    border: solid 3px white;
+}
+
+.button1 {
+    position: relative;
+    left: 100px;
+    top: 205px;
+    display: inline-block;
+    width: 300px;
+height: 100px;
+}
+.button2 {
+    position: relative;
+    left: 240px;
+    top: 105px;
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+}
+}

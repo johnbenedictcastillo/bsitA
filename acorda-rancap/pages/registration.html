@@ -122,12 +122,12 @@
             }
           })
 
-          const { error, data } = await supabase.from('register').insert([submission])
+          const { error } = await supabase.from('entries').insert([submision], { returning: 'minimal'})
 
           if (error) {
               alert('There was an error please try again')
           } else {
-              alert('Thanks for signing-up.')
+              alert('Thanks for contacting us')
           }
 
           formInputs.forEach(element => element.value = '')

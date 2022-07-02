@@ -105,7 +105,7 @@
     
     <script>
      const { createClient } = supabase
-     supabase = createClient("https://ddxshjmkblhpqyglzqtr.supabase.co", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRkeHNoam1rYmxocHF5Z2x6cXRyIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NTY3MzE5NDgsImV4cCI6MTk3MjMwNzk0OH0.h_ZMXboAgEOLf5_V9Fk7jmfwZDVPhJCzmLTayDiR-60")
+     supabase = createClient("https://oshjuleduvmnddaqivyr.supabase.co", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9zaGp1bGVkdXZtbmRkYXFpdnlyIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NTY3NjIxNjEsImV4cCI6MTk3MjMzODE2MX0._yjcfKCZWL87QGOU4QCQTJ44cUP52aTl_WxX7EytOtg")
         
         const form = document.querySelector('#register-form')
       form.addEventListener('submit', async (event) => {
@@ -122,7 +122,7 @@
             }
           })
 
-          const { error } = await supabase.from('entries').insert([submision], { returning: 'minimal'})
+          const { error , data } = await supabase.from('registers').insert([submision])
 
           if (error) {
               alert('There was an error please try again')

@@ -22,7 +22,7 @@
     <div class="row">
         <header>C - Merged Registration</header>
       
-           <form action="" id="register-form">
+           <form action="" id="register_form" method="post" role="form" class="php-email-form">
                <div class="form first">
                    <div class="details personal">
                        <span class="title">Personal Details</span>
@@ -107,22 +107,22 @@
      const { createClient } = supabase
      supabase = createClient("https://oshjuleduvmnddaqivyr.supabase.co", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9zaGp1bGVkdXZtbmRkYXFpdnlyIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NTY3NjIxNjEsImV4cCI6MTk3MjMzODE2MX0._yjcfKCZWL87QGOU4QCQTJ44cUP52aTl_WxX7EytOtg")
         
-        const form = document.querySelector('#register-form')
+          const form = document.querySelector('#register_form')
       form.addEventListener('submit', async (event) => {
           event.preventDefault()
 
-          const formInputs = form.querySelectorAll('input, select, textarea')
+          const formInputs = form.querySelectorAll('input, select')
 
-          let submission = {}
+          let submision = {}
 
           formInputs.forEach(element => {
             const { value, name } = element
             if (value) {
-                submission[name] = value
+                submision[name] = value
             }
           })
 
-          const { error , data } = await supabase.from('registers').insert([submission])
+          const { error, data } = await supabase.from('registers').insert([submision])
 
           if (error) {
               alert('There was an error please try again')

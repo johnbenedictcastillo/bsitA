@@ -106,7 +106,7 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <form action="" method="post" role="form" class="php-email-form">
+            <form action="" id="contact-form" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" id="name" name="name" class="form-control" placeholder="Name" required>
@@ -190,5 +190,38 @@
           
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-</body>
+    <script src="https://unpkg.com/@supabase/supabase-js"></script>
+    
+    <script>
+     const { createClient } = supabase
+     supabase = createClient("https://ddxshjmkblhpqyglzqtr.supabase.co", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRkeHNoam1rYmxocHF5Z2x6cXRyIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NTY3MzE5NDgsImV4cCI6MTk3MjMwNzk0OH0.h_ZMXboAgEOLf5_V9Fk7jmfwZDVPhJCzmLTayDiR-60")
+        
+        const form = document.querySelector('#contact-form')
+      form.addEventListener('submit', async (event) => {
+          event.preventDefault()
+
+          const formInputs = form.querySelectorAll('input, textarea')
+
+          let submision = {}
+
+          formInputs.forEach(element => {
+            const { value, name } = element
+            if (value) {
+                submision[name] = value
+            }
+          })
+
+          const { error, data } = await supabase.from('entries').insert([submision])
+
+          if (error) {
+              alert('There was an error please try again')
+          } else {
+              alert('Thanks for contacting us')
+          }
+
+          formInputs.forEach(element => element.value = '')
+
+      })
+    </script>
+    </body>
 </html>

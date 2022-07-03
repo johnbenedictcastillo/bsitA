@@ -62,10 +62,10 @@
                 </nav>
           </header>
 
-          <div class="card-area3">
+          <div class="card-area4">
                 <div class="container d-flex justify-content-center card-list">
                     <div class="row g-2">
-                        <div class="login_column col-md-12 col-sm-12 text-wrap">
+                        <div class="llogin_column col-md-12 col-sm-12 text-wrap">
                             <div class="info-right">
                                         <div class="ynalogo">
                                             <img class="ynalogo" src="..\assets\ynalogo.png">
@@ -88,8 +88,6 @@
 
                                         <label for="Password" id="loginpwd">Confirm Password:</label><br>
                                         <input class ="col-md-8 col-sm-8" type="password" id="pswd" name="Password"><br>
-                                        <input type="checkbox" id="checkbox" name="checkbox" onclick="myfunction()">
-                                        <label for="showpass" id="showpss"> Show Password</label><br>
 
                                         <script>
                                             function myFunction() {
@@ -100,16 +98,7 @@
                                                 else {
                                                     x.type = "password";
                                                 }
-                                            }
-                                            function myfunction() {
-                                                var x = document.getElementById("pswd");
-                                                if (x.type === "password") {
-                                                    x.type = "text";
-                                                }
-                                                else {
-                                                    x.type = "password";
-                                                }
-                                            }
+                                            }s
 
                                             function myFunctionCP() {
                                                 var x = document.getElementById("pwd");
@@ -118,12 +107,18 @@
                                                     alert("incorrect password");
                                                 }
 
-                                                else{
-                                                    
-                                                    alert("registration succesful");
+                                                else if (x.value == "" || y.value == "") {
+                                                    alert("incorrect password")
+                                                }
+
+                                                else {
+                                                    alert("registration successful")
                                                 }
 
                                             }
+
+
+
 
                                                       
 

@@ -257,7 +257,16 @@ nav ul li a:hover{
   text-align: center;
   margin-right: auto;
   margin-left: auto;
-  background-color: black;
+  background-color: white;
+  opacity: 95%; 
+  height: 100%;
+}
+
+.card-area4 {
+  margin-top: 150px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
   opacity: 95%; 
   height: 100%;
 }
@@ -349,6 +358,19 @@ box-shadow: -1px 0px 91px 32px rgba(14,196,110,1);
   color: black;
   width: 30rem;
   height: 33rem;
+  box-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px, 2px 2px 4px rgba(206,89,55,0);
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, .15);
+  
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+}
+
+.llogin_column {
+  margin-bottom: 50px;
+  color: black;
+  width: 30rem;
+  height: 48rem;
   box-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px, 2px 2px 4px rgba(206,89,55,0);
   border-radius: 5px;
   background-color: rgba(255, 255, 255, .15);

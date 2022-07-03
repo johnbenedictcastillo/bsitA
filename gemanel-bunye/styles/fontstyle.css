@@ -1,7 +1,7 @@
-.h3font, .namefont, .devprt-name-font{
+.h3font, .namefont, .devprt-name-font, .diffproduct{
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
-.statusfont, .productfont, .devprt-status-font{
+.statusfont, .productfont, .devprt-status-font, .pricing{
     font-family: Arial, Helvetica, sans-serif;
 }
 .h3font{
@@ -19,8 +19,6 @@
 .productfont{
     font-size:28px;
     text-align: center;
-    margin-left:auto;
-    margin-right:auto;
     font-weight: 600;
 }
 .parafont{
@@ -41,6 +39,15 @@
 .devprt-status-font{
     font-size:24px;
     text-align: justify;
+}
+.diffproduct{
+    font-size:38px;
+    text-align: center;
+}
+.pricing{
+    font-size:20px;
+    font-weight: 600;
+    text-align: center;
 }
 @media screen and (max-width: 800px){
     .h3font{
@@ -74,5 +81,11 @@
     .devprt-status-font{
         font-size:18px;
         text-align: center;
+    }
+    .diffproduct{
+        font-size:30px;
+    }
+    .pricing{
+        font-size:18px;
     }
 }

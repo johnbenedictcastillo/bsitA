@@ -53,10 +53,11 @@ async function register(fname, lname, email, picPath){
 
 async function getStudent() {
   $('#students-table').show();
+
   let tbody = $("#tbody");
   let loading = $("#loading");
   let tr = "";
-  loading.text("Loading....")
+  loading.text("Loading...")
   const res = await connection.from("students").select("*");
   if (res) {
       for (var i in res.data) {
@@ -76,6 +77,8 @@ async function getStudent() {
 }
 $(document).ready(function(){
     $('#students-table').hide();
+    $('#navigation').load("../pages/nav.html");
+    
     // jQuery methods go here
     $( "#registration" ).submit(function( event ) {
       event.preventDefault();

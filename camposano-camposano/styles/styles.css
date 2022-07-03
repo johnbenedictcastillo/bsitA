@@ -195,6 +195,21 @@ nav ul li a:hover{
 	margin-top: 10px;
 }
 
+.h2 {
+  margin-bottom: 40px;
+  height: 100px;
+  background-color: #F7C1C1;
+}
+
+.h2title {
+  margin-left: 50px;
+  padding-top: 20px;
+  font-size: 40px;
+  color: #FFFFFF;
+  background: #F7C1C1;
+  text-shadow: 4px 3px 0px #7A7A7A;
+}
+
 .row:after {
   content: "";
   display: table;
@@ -235,15 +250,26 @@ nav ul li a:hover{
   margin-top: 20px;
   opacity: 95%; 
   height: 100%;
+}
 
+.card-area3 {
+  margin-top: 20px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: black;
+  opacity: 95%; 
+  height: 100%;
 }
 
 .myfeature {
   margin-top: 120px;
 }
 
+
 .card {
-  background-color: darkgray;
+  height: 500px;
+  background-color: violet;
   margin-bottom: 100px;
   border-radius: 20px;
 }
@@ -280,6 +306,23 @@ nav ul li a:hover{
 
 .zoro:hover {
   box-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+  border-radius: 0;
+  transform: scale(1.2);
+}
+
+.zoro1 {
+  border: 3px solid #333333;
+  margin-top: 50px;
+  border-radius: 50%;
+  height: 200px;
+  width: 75%;
+  transition: ease-in-out .2s;
+}
+
+.zoro1:hover {
+box-shadow: -1px 0px 91px 32px rgba(14,196,110,1);
+-webkit-box-shadow: -1px 0px 91px 32px rgba(14,196,110,1);
+-moz-box-shadow: -1px 0px 91px 32px rgba(14,196,110,1);
   border-radius: 0;
   transform: scale(1.2);
 }
@@ -365,9 +408,9 @@ nav ul li a:hover{
 }
 
 .iintro_column {
-  margin: 100px 0 24px 0;
+  margin: 50px 0 24px 0;
   text-align: center;
-  height: auto;
+  height: 300px;
   width: auto;
   background-color: black;
   opacity: 95%;
@@ -409,6 +452,12 @@ nav ul li a:hover{
   text-justify: inter-word;
   background-color: #FFF;
   margin-top: 100px;
+}
+
+.feature2 {
+  background-color: #FFF;
+  margin-top: 20px;
+  z-index: -1;
 }
 
 .nav p {
@@ -496,7 +545,17 @@ nav ul li a:hover{
     margin-top: 100px;
     height: 130px;
   }
+
+  .iintro_column {
+    margin-top: 100px;
+    height: 230px;
+  }
+
   .ml15 {
+    font-size: 35px;
+  }
+
+  .ml14 {
     font-size: 35px;
   }
 
@@ -510,20 +569,53 @@ nav ul li a:hover{
 
 
 @media screen and (max-width: 989px) {
+
+    .h2 {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    height: 150px;
+  }
+
   .intro_column {
     margin-top: 100px;
-    height: 150px;
+    height: 250px;
+  }
+
+  .iintro_column {
+    margin-top: 100px;
+    height: 250px;
   }
 }
 
 @media screen and (max-width: 900px) {
+
+    .h2 {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    height: 150px;
+  }
+
   .intro_column {
     margin-top: 100px;
     height: 130px;
   }
+
+  .iintro_column {
+    margin-top: 100px;
+    height: 230px;
+  }
 }
 
 @media screen and (max-width: 767px) {
+    .h2 {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    height: 150px;
+  }
+
   .card-body {
     text-align: center;
     margin-right: auto;
@@ -535,6 +627,13 @@ nav ul li a:hover{
 
 
 @media screen and (max-width: 766px) {
+  .h2 {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    height: 150px;
+  }
+
 
     .navbar-nav {
     max-width: 800px;
@@ -558,6 +657,11 @@ nav ul li a:hover{
     margin-top: 100px;
     height: 170px;
   }
+
+  .iintro_column {
+    margin-top: 100px;
+    height: 270px;
+  }
   .prev, .next {
     margin-left: 85px;
   }
@@ -567,24 +671,66 @@ nav ul li a:hover{
 }
 
 @media screen and (max-width: 700px) {
+  .myfeature1 .g-4{
+    margin-top: 100px;
+  }
+
+    .h2 {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    height: 150px;
+  }
+  .h2title {
+    margin-right: 50px;
+  }
   .intro_column {
     margin-top: 100px;
     height: 100px;
   }
+  .iintro_column {
+    margin-top: 100px;
+    height: 200px;
+  }
   .ml15 {
+    font-size: 25px;
+  }
+  .ml14 {
     font-size: 25px;
   }
 }
 
 @media screen and (max-width: 500px) {
+
+
+  .h2 {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    height: 150px;
+  }
+  .h2title {
+    height: 200px;
+  }
   .intro_column {
     margin-top: 100px;
     height: 100px;
   }
+  .iintro_column {
+    margin-top: 100px;
+    height: 200px;
+  }
 }
 
 @media screen and (max-width: 499px) {
+  .h2 {
+    text-align: center;
+    height: 200px;
+  }
   .intro_column {
+    margin-top: 100px;
+  }
+  .iintro_column {
     margin-top: 100px;
   }
   .prev, .next {
@@ -596,11 +742,23 @@ nav ul li a:hover{
   .ml15 {
     font-size: 20px;
   }
+  .ml14 {
+    font-size: 20px;
+  }
 }
 
 
 @media screen and (max-width: 480px) {
+  .h2 {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    height: 150px;
+  }
   .intro_column {
+    margin-top: 100px;
+  }
+  .iintro_column {
     margin-top: 100px;
   }
   .card-area {
@@ -613,7 +771,16 @@ nav ul li a:hover{
 }
 
 @media screen and (max-width: 416px) {
+  .h2 {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    height: 150px;
+  }
   .intro_column {
+    margin-top: 100px;
+  }
+  .iintro_column {
     margin-top: 100px;
   }
   .card-area {
@@ -626,6 +793,12 @@ nav ul li a:hover{
 }
 
 @media screen and (max-width: 405px) {
+  .h2 {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    height: 200px;
+  }
   .prev, .next {
     margin-left: 20px;
   }
@@ -635,6 +808,10 @@ nav ul li a:hover{
   .intro_column {
     margin-top: 100px;
     height: 110px;
+  }
+  .iintro_column {
+    margin-top: 100px;
+    height: 210px;
   }
 }
 
@@ -664,4 +841,61 @@ nav ul li a:hover{
   height: 100px;
   width: auto;
 
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn { 
+  background-color: #3e8e41;
+}
+
+.dropbtn {
+  border-radius: 10px;
+  background-color: #04AA6D;
+  color: white;
+  padding: 20px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+    opacity: 100%;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.dropdown-content {
+  opacity: 100%;
+  display: none;
+  position: absolute;
+  padding: 10px;
+  background-color: #f1f1f1;
+  width: 355px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content ul li {
+  float: left;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content ul li a{
+  color: blue;
+  padding: 12px 16px;
+} 
+
+.hiddenli {
+  visibility: hidden;
+  display: none;
 }

@@ -7,9 +7,10 @@ PROJECT NAME:RAE'S MENU
 Group Members
 
     Hannah Rae Bunye
-        -Homepage
+        -Home Page
         -About Page
         -Contact Page
+        -Menu Page
 
 
     Raina Gemanel

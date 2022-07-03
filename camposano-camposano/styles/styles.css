@@ -268,6 +268,13 @@ nav ul li a:hover{
 
 
 .card {
+  height: 400px;
+  background-color: black;
+  margin-bottom: 100px;
+  border-radius: 20px;
+}
+
+.card1 {
   height: 500px;
   background-color: violet;
   margin-bottom: 100px;

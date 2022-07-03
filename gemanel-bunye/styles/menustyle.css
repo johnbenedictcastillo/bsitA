@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background:#D6D6D6;
+}
+.pastapart .product, .dishpart .product, .dessertpart .product{
+    display:block;
+    width: 75%;
+    height: auto;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:20px;
+}
+.pastapart #latestpic1, .dishpart #latestpic1, .dessertpart #latestpic1{
+    background-image: url("../assets/BG1.png");
+    background-position: center;
+    background-size: cover;
+}
+.pastapart #latestpic2, .dishpart #latestpic2, .dessertpart #latestpic2{
+    background-image: url("../assets/BG2.png");
+    background-position: center;
+    background-size: cover;
+}
+@media screen and (max-width: 800px){
+    .pastapart .product, .dishpart .product, .dessertpart .product{
+        width: 50%;
+        height: auto;
+    }
+}

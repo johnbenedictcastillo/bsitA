@@ -77,7 +77,7 @@ async function getStudent() {
 }
 $(document).ready(function(){
     $('#students-table').hide();
-    $('#navigation').load("../pages/nav.html");
+    $('#navigation').load("/castillo/pages/nav.html");
     
     // jQuery methods go here
     $( "#registration" ).submit(function( event ) {

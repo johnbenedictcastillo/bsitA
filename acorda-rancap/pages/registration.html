@@ -120,7 +120,7 @@
                 submision[name] = value
             }
           })
-
+          console.log(submision)
           const { error, data } = await supabase.from('entries').insert([submision])
           console.log(error)
 

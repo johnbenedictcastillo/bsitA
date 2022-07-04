@@ -112,16 +112,16 @@
 
           const formInputs = form.querySelectorAll('input, select')
 
-          let submision = {}
+          let submission = {}
 
           formInputs.forEach(element => {
             const { value, name } = element
             if (value) {
-                submision[name] = value
+                submission[name] = value
             }
           })
          
-          const { error, data } = await supabase.from('registers').insert([submision])
+          const { error, data } = await supabase.from('registers').insert([submission])
           
 
           if (error) {

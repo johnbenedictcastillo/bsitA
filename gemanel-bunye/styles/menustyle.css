@@ -52,7 +52,7 @@ button:hover{
     font-size:20px;
 }
 
-@media screen(max-width: 800px){
+@media screen and (max-width: 800px){
     .pastapart .product, .dishpart .product, .dessertpart .product{
         width: 50%;
         height: auto;

@@ -1,7 +1,8 @@
 var navId = document.currentScript.getAttribute("navId")
 
 $(document).ready(function() {
-    $('#navigation').load("nav.html")
-    $('#'+navId).addClass('active')
+    $('#navigation').load("nav.html", function(){
+        $('#'+navId).addClass('active')
+    })
 
 });

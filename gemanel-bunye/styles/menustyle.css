@@ -12,17 +12,47 @@ body{
     margin-right:auto;
     margin-top:20px;
 }
-.pastapart #latestpic1, .dishpart #latestpic1, .dessertpart #latestpic1{
+.pastapart .product1, .dishpart .product1, .dessertpart .product1{
     background-image: url("../assets/BG1.png");
     background-position: center;
     background-size: cover;
 }
-.pastapart #latestpic2, .dishpart #latestpic2, .dessertpart #latestpic2{
+.pastapart .product2, .dishpart .product2, .dessertpart .product2{
     background-image: url("../assets/BG2.png");
     background-position: center;
     background-size: cover;
 }
-@media screen and (max-width: 800px){
+figure{
+    display:inline-block;
+    text-align: center;
+}
+button{
+    margin-bottom:10px;
+    border: none;
+    background-color:#A6FF9A;
+}
+button:hover{
+    background-color:rgb(166, 255, 154, 0.75);
+}
+.select{
+    display:block;
+    width:100%;
+}
+.select figure{
+    display:inline-block;
+    width:25%;
+    height:auto;
+    background-color:rgb(114, 115, 114, 0.75);
+}
+.select figure .product{
+    height:auto;
+    width:100px;
+}
+.select figure .productfont, .pricing, .labelfont{
+    font-size:20px;
+}
+
+@media screen(max-width: 800px){
     .pastapart .product, .dishpart .product, .dessertpart .product{
         width: 50%;
         height: auto;

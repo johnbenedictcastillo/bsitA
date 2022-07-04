@@ -121,7 +121,7 @@
             }
           })
          
-          const { error, data } = await supabase.from('entries').insert([submision])
+          const { error, data } = await supabase.from('registers').insert([submision])
           
 
           if (error) {

@@ -77,6 +77,8 @@ async function getStudent() {
 }
 $(document).ready(function(){
     $('#students-table').hide();
+    test = document.currentScript.getAttribute('data');
+    console.log(test)
     $('#navigation').load("/castillo/pages/nav.html");
     
     // jQuery methods go here

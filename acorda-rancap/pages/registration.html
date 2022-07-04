@@ -29,28 +29,28 @@
    
                        <div class="fields">
                            <div class="input-field">
-                               <label>Full Name</label>
-                               <input type="text" id="flname" placeholder="Enter your name" required />
+                               <label for="fullname">Full Name</label>
+                               <input type="text" name="fullname" id="flname" placeholder="Enter your name" required />
                            </div>
    
                            <div class="input-field">
-                               <label>Date of Birth</label>
-                               <input type="date" id="birth" placeholder="Enter birth date" required />
+                               <label for="birth">Date of Birth</label>
+                               <input type="date" name="birth" id="birth" placeholder="Enter birth date" required />
                            </div>
    
                            <div class="input-field">
-                               <label>Email</label>
-                               <input type="email" id="email" placeholder="Enter your email" required />
+                               <label for="email">Email</label>
+                               <input type="email" name="email" id="email" placeholder="Enter your email" required />
                            </div>
    
                            <div class="input-field">
-                               <label>Mobile Number</label>
-                               <input type="text" id="mobile_num" placeholder="Enter mobile number" required />
+                               <label for="number">Mobile Number</label>
+                               <input type="text" name="number" id="mobile_num" placeholder="Enter mobile number" required />
                            </div>
    
                            <div class="input-field">
-                               <label>Gender</label>
-                               <select required>
+                               <label for="gender">Gender</label>
+                               <select name="gender" required/>
                                    <option disabled selected>Gender :</option>
                                    <option>Male</option>
                                    <option>Female</option>
@@ -65,18 +65,18 @@
 
                     <div class="fields">
                         <div class="input-field">
-                            <label>Street No.</label>
-                            <input type="text" id="street" placeholder="Enter Street No." required />
+                            <label for="street">Street No.</label>
+                            <input type="text" name="street" id="street" placeholder="Enter Street No." required />
                         </div>
 
                         <div class="input-field">
-                         <label>Municipality</label>
-                         <input type="text" id="municipality" placeholder="Enter Municipality" required />
+                         <label for="municipality">Municipality</label>
+                         <input type="text" name="municipality" id="municipality" placeholder="Enter Municipality" required />
                      </div>
 
                      <div class="input-field">
-                         <label>Province</label>
-                         <input type="text" id="province" placeholder="Enter Province" required />
+                         <label for="province">Province</label>
+                         <input type="text" name="province" id="province" placeholder="Enter Province" required />
                      </div>
 
                     </div>
@@ -120,14 +120,14 @@
                 submision[name] = value
             }
           })
-          console.log(submision)
+         
           const { error, data } = await supabase.from('entries').insert([submision])
-          console.log(error)
+          
 
           if (error) {
               alert('There was an error please try again')
           } else {
-              alert('Thanks for contacting us')
+              alert('You are registered.')
           }
 
           formInputs.forEach(element => element.value = '')

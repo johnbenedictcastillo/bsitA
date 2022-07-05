@@ -103,12 +103,16 @@ body{
     border-radius: 0 10px 10px 0;
     padding: 10px;
 }
+.cart-item .item-info .product{
+    font-size:16px;
+    text-align: center;
+}
 .cart-item .item-info:hover {
     background-color: rgba(149, 164, 251, 0.6);
     cursor: pointer;
 }
 .cart-item .item-info img {
-    width: 50%;
+    width: 25%;
 }
   /* unit price */
 .cart-item .unit-price {
@@ -190,6 +194,10 @@ body{
         width: 100%;
         position: none;
         margin-top:100px;
+    }
+    .cart-item .item-info .product{
+    font-size:15px;
+    text-align: center;
     }
     .cart-footer div {
         display: block;

@@ -46,7 +46,7 @@ body{
     margin-bottom:10px;
     margin-top:15px;
 }
-.products .item .item-container .product {
+.products .item .item-container .desc .product {
     color: rgb(130, 250, 202, 1);
     font-size:18px;
 }
@@ -176,7 +176,7 @@ body{
         width: auto;
         height: 50%;
     }
-    .products .item .item-container .product {
+    .products .item .item-container .desc .product {
         color: rgb(130, 250, 202, 1);
 	font-size:15px;
     } 

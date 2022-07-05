@@ -49,6 +49,7 @@ body{
 .products .item .item-container .desc .product {
     color: rgb(130, 250, 202, 1);
     font-size:18px;
+    text-align: center;
 }
 .products .item .item-container .add-to-cart {
     background-color: rgba(var(--right-side-bg-color), 0.7);
@@ -179,6 +180,7 @@ body{
     .products .item .item-container .desc .product {
         color: rgb(130, 250, 202, 1);
 	font-size:15px;
+	text-align: center;
     } 
     .products .item .item-container .add-to-cart i{
         font-size:18px;

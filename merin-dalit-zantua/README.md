@@ -12,6 +12,7 @@ Aira Merin
 
 Elirose Dalit
     -place of beaches
+    -index
     
 Mark Randel Zantua
     - style.css

@@ -14,8 +14,8 @@ function renderProdcuts() {
                         <img src="${product.imgSrc}" alt="${product.name}">
                     </div>
                     <div class="desc">
-                        <h2 class="labelfont">${product.name}</h2>
-                        <h2 class="numfont"><small>Php&nbsp;</small>${product.price}</h2>
+                        <h2 class="product">${product.name}</h2>
+                        <h2 class="product"><small>Php&nbsp;</small>${product.price}</h2>
                     </div>
                     <div class="add-to-cart" onclick="addToCart(${product.id})">
                         <p><i class="fa-solid fa-cart-shopping"></i></p>

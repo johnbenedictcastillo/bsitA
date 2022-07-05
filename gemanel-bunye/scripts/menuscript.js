@@ -78,7 +78,7 @@ function renderCartItems() {
     cartItemsEl.innerHTML += `
         <div class="cart-item">
             <div class="item-info" onclick="removeItemFromCart(${item.id})">
-                <img src="${item.imgSrc}" alt="${item.name}" class="proimg">
+                <img src="${item.imgSrc}" alt="${item.name}">
                 <p class="product">${item.name}</p>
             </div>
             <div class="unit-price">

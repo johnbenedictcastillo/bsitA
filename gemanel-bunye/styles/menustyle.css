@@ -47,13 +47,10 @@ body{
     margin-top:15px;
 }
 .products .item .item-container .desc {
-    width: 100%;
     color: rgb(130, 250, 202, 1);
-    padding: 10px;
 }
 .products .item .item-container .add-to-cart {
     background-color: rgba(var(--right-side-bg-color), 0.7);
-    /* background-color: rgb(242, 255, 58); */
     display: flex;
     justify-content: center;
     align-items: center;

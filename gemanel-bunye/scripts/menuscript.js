@@ -14,8 +14,8 @@ function renderProdcuts() {
                         <img src="${product.imgSrc}" alt="${product.name}">
                     </div>
                     <div class="desc">
-                        <h2 class="product">${product.name}</h2>
-                        <h2 class="product"><small>Php&nbsp;</small>${product.price}</h2>
+                        <p class="product">${product.name}</p>
+                        <p class="product"><small>Php&nbsp;</small>${product.price}</p>
                     </div>
                     <div class="add-to-cart" onclick="addToCart(${product.id})">
                         <p><i class="fa-solid fa-cart-shopping"></i></p>
@@ -78,8 +78,8 @@ function renderCartItems() {
     cartItemsEl.innerHTML += `
         <div class="cart-item">
             <div class="item-info" onclick="removeItemFromCart(${item.id})">
-                <img src="${item.imgSrc}" alt="${item.name}">
-                <h4 class="numfont">${item.name}</h4>
+                <img src="${item.imgSrc}" alt="${item.name}" class="proimg">
+                <p class="product">${item.name}</p>
             </div>
             <div class="unit-price">
                 <small>Php&nbsp</small>${item.price}

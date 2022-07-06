@@ -1,0 +1,452 @@
+*{
+    font-family:Arial, Helvetica, sans-serif;
+}
+.navbar{
+    background-image: url("../assets/BG1.png");
+    background-position: center;
+    background-repeat: 2px;
+    background-size: 900px;
+
+}
+.navigation a .logo{
+    height: auto;
+    width: 250px;
+}
+.navigation li{
+	display: block;
+}
+.navigation li a{
+    display: inline-block;
+    padding-left: 40px;
+    padding-top: 10px;
+    color: #A6FF9A;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-decoration: none;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+}
+.navigation li a:hover{
+    color:#FFF6BC;
+}
+.navigation li a.active{
+    color: #5EE9FF;
+}
+.navigation .dropdown-menu{
+    background-image: url("../assets/BG1.png");
+    background-position: center;
+    background-size: 300px;
+}
+.navigation #navbarDropdownMenuLink{
+    color: #A6FF9A;
+    padding-left: 40px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.navigation .dropdown-menu li{
+    display:block;
+    text-decoration: none;
+    text-align:center;
+}
+.navigation .dropdown-item{
+    display:block;
+    padding-left: 0;
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+}
+.navigation .dropdown-item:hover{
+    background-color:rgb(149, 164, 251, 0.50);
+}
+.login-card {
+  padding: 40px;
+  width: 774px;
+  background-color: none;
+  margin: 0 auto 10px;
+  border-radius: 2px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  position: relative;
+  top: -350px;
+  margin-right: 0px;
+  color: black;
+  border: 3px solid #605444;
+
+}
+.login-card h1 {
+  font-weight: 100;
+  text-align: center;
+  font-size: 2.3em;
+}
+
+.login-card input[type=submit] {
+  display: inline-block;
+  width: 50%;
+  margin-bottom: 5px;
+  position: relative;
+
+}
+
+
+.login-card input[type=text], input[type=password] {
+  height: 44px;
+  font-size: 16px;
+  width: 100%;
+  -webkit-appearance: none;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  border-top: 1px solid #c0c0c0;
+  /* border-radius: 2px; */
+  padding: 0 8px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.login-card input[type=text]:hover, input[type=password]:hover {
+  border: 1px solid #b9b9b9;
+  border-top: 1px solid #a0a0a0;
+  -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+
+}
+
+.login {
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Arial', sans-serif;
+  font-weight: 700;
+  height: 36px;
+  padding: 0 8px;
+
+/* border-radius: 3px; */
+/* -webkit-user-select: none;
+  user-select: none; */
+}
+
+
+.login-card a {
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+  text-align: center;
+  display: inline;
+  opacity: 0.6;
+  transition: opacity ease 0.5s;
+ 
+}
+
+.login-card a:hover {
+  opacity: 1;
+}
+
+.login-help {
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+}
+.avatar {
+   position: relative; 
+   top: 120px; 
+   left: 60px;
+   font-size: 30px;
+}
+.default {
+    width: 250px;
+    height: 250px;
+    border-radius: 170px;
+    margin-left: 70px;
+    margin-bottom: 10px;
+    border: solid 3px white;
+}
+
+.button1 {
+    position: relative;
+    left: 1000px;
+    top: -355px;
+    display: inline-block;
+    width: 300px;
+height: 100px;
+}
+.button2 {
+    position: relative;
+    left: 1160px;
+    top: -455px;
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+}
+.action_btn 
+    {
+width: 100px;
+height: 40px;
+margin: 0 auto;
+
+font-family: Times New Roman;
+font-size: 20px;
+
+}
+
+
+.action_btn {
+
+  border: 0px;
+  color: #fff;
+  text-shadow: 0 1px rgba(0,0,0,0.1); 
+  background-color: #605444;
+  display: inline;
+ 
+}
+
+.action_btn:hover {
+  border: 0px;
+  text-shadow: 0 1px rgba(0,0,0,0.3);
+  background-color: black;
+ 
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    background:#D6D6D6;
+}
+
+.h3font, .namefont, .devprt-name-font{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.statusfont, .productfont, .devprt-status-font{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.h3font{
+    font-size:45px;
+    text-align: center;
+}
+.namefont{
+    font-size:38px;
+    text-align: justify;
+}
+.statusfont{
+    font-size:30px;
+    text-align: justify;
+}
+.productfont{
+    font-size:28px;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+    font-weight: 600;
+}
+.parafont{
+    font-size:25px;
+    text-align: justify;
+}
+.thfont{
+    font-size:24px;
+    text-align:center;
+}
+.tdfont{
+    font-size:20px;
+}
+.devprt-name-font{
+    font-size:28px;
+    text-align: justify;
+}
+.devprt-status-font{
+    font-size:24px;
+    text-align: justify;
+}
+@media screen and (max-width: 800px){
+    .h3font{
+        font-size:35px;
+        text-align: center;
+    }
+    .namefont{
+        font-size:30px;
+        text-align: center;
+    }
+    .statusfont{
+        font-size:20px;
+        text-align: center;
+    }
+    .productfont{
+        font-size:20px;
+    }
+    .parafont{
+        font-size:18px;
+    }
+    .thfont{
+        font-size:18px;
+    }
+    .tdfont{
+        font-size:15px;
+    }
+    .devprt-name-font{
+        font-size:20px;
+        text-align: center;
+    }
+    .devprt-status-font{
+        font-size:18px;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 800px){
+    .productpart .product{
+        width: 50%;
+        height: auto;
+    }
+}
+@media screen and (max-width: 800px){
+    .navigation li a{
+        display: block;
+        padding-left:0;
+        padding-top: 0;
+        text-align:center;
+    }
+    .navigation #navbarDropdownMenuLink{
+        padding-left: 0;
+        text-align:center;
+    }
+    .navigation .dropdown-menu{
+        background-size: 540px;
+    }
+}
+@media only screen and (max-width: 1500px) {
+ 
+  .login-card {
+   position: absolute;
+
+  padding: 40px;
+  width: 454px;
+  background-color: none;
+  margin: 0 auto 10px;
+  border-radius: 2px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  position: relative;
+  top: -350px;
+  margin-right: 0px;
+  color: black;
+  border: 3px solid #605444;
+
+}
+.button1 {
+    position: relative;
+    left: 650px;
+    top: -305px;
+    display: inline-block;
+    width: 300px;
+height: 100px;
+}
+.button2 {
+    position: relative;
+    left: 790px;
+    top: -405px;
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+}
+}
+@media only screen and (max-width: 1000px) {
+ 
+  .login-card {
+   position: absolute;
+
+  padding: 40px;
+  width: 454px;
+  background-color: none;
+  margin: 0 auto 10px;
+  border-radius: 2px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  position: relative;
+  top: 150px;
+  margin-right: 100px;
+  color: black;
+  border: 3px solid #605444;
+
+}
+.avatar {
+   position: relative; 
+   top: 80px; 
+   left: 180px;
+   font-size: 30px;
+}
+.default {
+    width: 200px;
+    height: 200px;
+    border-radius: 170px;
+    margin-left: 100px;
+    margin-bottom: 10px;
+    border: solid 3px white;
+}
+
+.button1 {
+    position: relative;
+    left: 250px;
+    top: 205px;
+    display: inline-block;
+    width: 300px;
+height: 100px;
+}
+.button2 {
+    position: relative;
+    left: 390px;
+    top: 105px;
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+}
+}
+@media only screen and (max-width: 768px){
+   
+  .login-card {
+    position: absolute;
+
+  padding: 40px;
+  width: 454px;
+  background-color: none;
+  margin: 0 auto 10px;
+  border-radius: 2px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  position: relative;
+  top: 150px;
+  margin-right: 0px;
+  color: black;
+  border: 3px solid #605444;
+
+}
+.avatar {
+   position: relative; 
+   top: 80px; 
+   left: 45px;
+   font-size: 30px;
+}
+.default {
+    width: 200px;
+    height: 200px;
+    border-radius: 170px;
+    margin-left: 90px;
+    margin-bottom: 10px;
+    border: solid 3px white;
+}
+
+.button1 {
+    position: relative;
+    left: 100px;
+    top: 205px;
+    display: inline-block;
+    width: 300px;
+height: 100px;
+}
+.button2 {
+    position: relative;
+    left: 240px;
+    top: 105px;
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+}
+}

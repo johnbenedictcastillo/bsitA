@@ -79,11 +79,18 @@ body{
     justify-content: space-around;
     padding: 10px 0;
 }
+  /* cart items */
+.cart-items {
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
   /* cart item */
 .cart-item {
     display: flex;
     justify-content: space-around;
     padding: 10px 0;
+    height:100%;
 }
 .cart-item div {
     display: flex;

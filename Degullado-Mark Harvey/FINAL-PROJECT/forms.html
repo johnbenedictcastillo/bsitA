@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html>
+<title>  Registration Form </title>
+
+<style>
+
+
+	#body
+	{
+		background-image: url("store.jpg");
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: center;
+		background-size: cover;
+
+	}
+
+	.table1
+	{
+		margin-top: 20px;
+	    border-color:black;
+	    background-color:black;
+	    opacity: .7;
+	    color: deepskyblue;
+	    border-radius: 20px 20px 20px 20px;
+	    font-family: impact;
+
+	    
+
+	}
+
+	.text
+     {
+     	color: white;
+     	opacity: .7;
+     }
+	.div1
+	{
+		margin-top: 20px;
+	}   
+
+    .i1
+    {
+       margin-right: 20px;
+       border-color: black;
+       background-color: dimgray;
+     
+    }
+    
+    .l1
+    {
+    	margin-left: 20px;
+    	margin-top: 350px;
+     	display: inline-block;
+    }
+
+    .l2
+    {
+    	margin-top: 20px;
+    	margin-left: 20px;      
+    	display: inline-block;
+
+    }
+
+    .form
+    {
+
+      margin-top: -400px;
+      font-size: 17px;
+
+    }
+
+    .i2
+    {
+    	margin-top: 30px;
+    	margin-left: 5px;
+    	 border-color: black;
+    	 background-color: dimgray;
+    }
+
+    .in
+    {
+    	margin-top: 20px;
+    	margin-left: 20px;
+    	display: inline-block;
+    }
+
+    .Submit
+    {
+    	text-align: center;
+    	margin-top: 50px;
+    	opacity: .7;
+
+
+    }
+
+ 
+</style> 
+
+
+
+<body  id="body" >
+
+
+<div>
+<table border="5" width="300" height="50" align="center"  bgcolor="black" style="border-color: deepskyblue;" class="text">
+	<tr>
+		<td>
+		<p style=" text-align: center; font-size: 20px; font-family: georgia;"> Create Account </p>
+    </td>
+    </tr>
+</table>   		
+</div>
+
+
+<div class="div1">
+	<table border="5" width="650" height="800" align="center" class="table1">
+		<tr>
+			<td>
+				<div>
+				<form class="form">
+
+					
+					<label for="fname" class="l1">Firstname :</label>
+						<input type="text" id="fname" name="fname" class="i1" style=" width:464px; height:30px;"><br>
+					
+					<label for="Lname" style="margin-left: 20px;">Lastname :</label>
+						<input type="text" id="Lname" name="Lname" style=" border-color:black; background-color:dimgray; margin-left:1px; margin-top: 10px; width:465px; height:30px;"> <br>
+
+
+					<label for="Age" class="in">Age :</label>
+					    <input type="Number" name="Age" min="0"  max="150" maxlength="5" style="margin-top: 20px; margin-left: 5px; border-color: black; background-color: dimgray;">
+
+                    <label for="Gender" class="in">Gender :</label>
+                    <label for="Male" class="in">Male</label>
+					    <input type="radio" name="Gender">
+	                <label for="Female" class="in">Female</label>
+					    <input type="radio" name="Gender">
+
+                    <label for="Status" class="in">Status :</label>
+
+    
+                    <input list="Status" style="width:70px; border-color: black; background-color: dimgray;" >
+                     <datalist id="Status">
+                    	<option value="Single">
+                    	<option value=" Married">
+                    	<option value="Divorced">
+                        <option value="Separated">
+                        <option value="Widowed">
+                        <option value="In a relationship">
+                        <option value="Divorced">
+                        <option value="Engaged">
+                        <option value="In a civil union">
+                        <option value="In a domestic partnership">
+                    </datalist><br>
+
+					<label for="Email" class="l2"> Email Address : </label>
+					    <input type="text" name="Email" class="i2" style="width: 425px; height: 30px; margin-left: 8px;"><br>
+
+					<label for="phone#" class="l2"> Phone Number : </label>
+					    <input type="text" name="phone#" class="i2" style="width: 425px; height: 30px; "> <br>
+
+
+					<label for="Address" class="l2">Address : </label>
+					    <input type="text" name="Address" class="i2" style="width: 425px; height: 30px; margin-left: 50px;"> <br>
+
+					
+					<label for="Country" class="l2"> Country : </label>
+					    <input type="text" name="phone#" class="i2" style="width: 425px; height: 30px; margin-left: 55px; "> <br>
+
+					<label for="phone#" class="l2"> Phone Number : </label>
+					    <input type="text" name="phone#" class="i2" style="width: 425px; height: 30px; "><br>
+
+
+					<label for="Uname" class="l2"> Username : </label>
+					    <input type="text" name="Uname" class="i2" style="width: 425px; height: 30px; margin-left: 38px; "> <br>
+
+                    <label for="Pword" class="l2"> Password : </label>
+					    <input type="Password" name="Pword" minlength="4" maxlength="15" required  class="i2" style="width: 425px; height: 30px; margin-left: 41px; ">		
+
+                   <div class="Submit">
+				   <input type="button" name="Submit"  value="REGISTER"  align="center" style="width: 100px; height: 50px; text-align:center; border-color:deepskyblue ; background-color:black; border-width: 5px; color:white;">		  
+                   </div>
+				</form>	
+				</div>	
+			</td>
+	   </tr>
+	
+    </table>
+</div>
+</body>
+</html>

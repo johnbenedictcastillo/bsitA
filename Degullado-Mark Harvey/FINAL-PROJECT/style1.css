@@ -1,0 +1,153 @@
+
+
+
+
+
+
+
+   .tbl1
+   {
+      width: 1280px;
+      height:70px;
+      margin-left: -8px;
+      text-align: center;
+      margin-top: -8px;
+      background-color:black;
+      font-family: Garamond;
+      font-size: 40px;
+      color:black;
+
+   
+   }
+
+
+   .tbl2
+   {
+      width: 1280px;
+      height: 30px;   
+      margin-left: -8px;
+      background-color:deepskyblue;
+      border-color: black;
+      color: navajowhite;
+   }
+
+   .a1
+   {
+    border-radius: 20px 20px 20px 20px;
+    background-image: linear-gradient(deepskyblue, whitesmoke, deepskyblue);
+    background-color:ghostwhite;
+    color: black;
+    font-size: 18px;
+    height: 40px; 
+    width:140px;
+    border-width: 5px;
+   }
+
+ 
+  .logo
+  {
+
+   width:150px;
+   height: 200px;
+  }
+
+  .tbl3
+  {
+   margin-left: 450px;
+   margin-top: -20px;
+   width: 500px;
+   height:300px;
+
+
+  }
+
+  .body-contuct
+  {
+   background-image: linear-gradient(deepskyblue,black);
+   background-repeat: no-repeat;
+   height: 650px;
+   width: 500px;
+  }
+
+  .tbl-Contuct
+  {
+   margin-left: 400px;
+   margin-top: 25px;
+   background-color:whitesmoke;
+  }
+   
+  .p2
+  {
+   text-align: center;
+  }
+
+   .tbl4
+  {
+   margin-left: -10.5px;
+   margin-top: -10px;
+   text-align: center;
+   font-size: 25px;
+   background-image: linear-gradient(black, deepskyblue);
+   color: whitesmoke;
+  }
+
+   .tbl5
+   {
+    margin-left:400px;
+    background-color: whitesmoke;
+   }
+
+   .lbl1
+   {
+     margin-top: -200px;
+      margin-left:60px;
+
+}
+   .input1
+   {
+      margin-top: -200px;
+      height: 30px;
+      background-color:deepskyblue;
+   }
+
+   .input2
+   {
+      width:250px; 
+      height: 80px;
+      margin-top:5px;
+      margin-left: 100px;
+       background-color: deepskyblue;
+   }
+
+   .lbl2
+   {
+      margin-left:100px;
+
+   }
+
+   .tdAU1
+   {
+      background-image: linear-gradient(black,deepskyblue);
+      color: whitesmoke;
+   }
+   .tbl01
+   {
+      background-image: linear-gradient(black, deepskyblue ,black);
+      color:whitesmoke;
+      font-size: 22px;
+   }
+   .tbl02
+   {
+      background-image: linear-gradient(Black, whitesmoke, deepskyblue);
+      width: 1281px;
+      height:100px;
+      margin-left:-9px;
+      margin-top: -9px;
+   }
+
+   .P1thick
+   {
+      font-weight: bold;
+   }
+
+   

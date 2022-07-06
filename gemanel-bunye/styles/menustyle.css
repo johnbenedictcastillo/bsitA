@@ -69,7 +69,7 @@ body{
 }
   /* CART */
 .cart {
-    height: 100%;
+    height: 50%;
     width: 100%;
     position: relative;
 }
@@ -90,7 +90,6 @@ body{
     display: flex;
     justify-content: space-around;
     padding: 10px 0;
-    height:100%;
 }
 .cart-item div {
     display: flex;
@@ -114,7 +113,7 @@ body{
     cursor: pointer;
 }
 .cart-item .item-info img {
-    width: 25%;
+    width: 30%;
     padding-right: 5px;
 }
   /* unit price */

@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <title>About Us</title>
+    <link rel="stylesheet" href="aboutus.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="about">
+
+        <h1>ABOUT US:</h1>
+        <h2>JAGA</h2>
+        <P>JAGA is a reatail store for your favorite shoes such as the famous
+            Jordan 1. <br>
+
+            <span> Jordan is a line of basketball shoes and athletic clothing
+            produced by American corporation NIKE. </span> <br>
+
+            The first <span> Air Jordan shoe</span> was 
+            produced for hall of Fame former basketball player <span>Michael Jordan</span>
+            suring his time with the Chicago Bulls in late 1984, and released 
+            to the public on April 1, 1985 <br>
+            We offer genuine and original comes from the nike store itself.
+            Order online and we deliver it to your door to save your time and worries.
+            Here at <span>JAGA or JAYSON ACUVERA AND GIAN ACUNO,</span> you take convenience.   
+        </P>
+      </div>
+</body>
+</html>

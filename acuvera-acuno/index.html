@@ -1,11 +1,82 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <script src="scripts/jquery-3.6.0.min.js"></script>
-    <script src="scripts/main.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FINAL PROJECT</title>
+    <link rel="stylesheet" href="1style.css">
+    <script src="..\Final Project\js\config.js"></script>
+    
 </head>
 <body>
-    <h1>Test</h1>
-    <p>Click or Double Click</p>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <img src="images/logo.png" class="logo">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="1index.html">HOME</a></li>
+                    <li><a href="productpage.html">PRODUCT</a></li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                    <li><a href="contactus.html">CONTACT US</a></li>
+                    <li><a href="#" onclick="register()">REGISTRATION</a></li>
+                </ul>
+            </div>
+
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="NANDITO AKO ">
+                <a href="#"> <button class="btn">Search</button></a>
+            </div>
+        </div>
+
+        <div class="content">
+            <h1>I Want Shoes! <br><span>I Want Shoes!</span> <br>I Want Shoes!</h1>
+
+            <p class="par">You must expect great things of yourself before you can do them.
+                <br>
+            Some people want it to happen,
+            <br>
+            Some wish it would happen, 
+            <br>
+            Others make it happen. -MJ </p>
+
+            <div class="form">
+                <h2>Login Here</h2>
+                <input type="text" name="" placeholder="Enter Username" id="userLOG">
+                <input type="password" name="" placeholder="Enter Password" id="passLOG">
+                <button class="btnn" onclick="login()"><a href="#">Login</a></button>
+
+                <p class="link">Don't have an account<br>
+                <a onclick="register()">Sign Up</a></p>
+                <p class="liw">Log in with</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="myModal" class="modal">
+
+        <div class="modal-content">
+            <span class="close" onclick="span()">&times;</span>
+            <br>
+            <form>
+                <h2>Register</h2>
+                <h4>Username</h4>
+                <input type="text" name="" placeholder="Enter Username" id="userREG">
+                <h4>Password</h4>
+                <input type="password" name="" placeholder="Enter Password" id="passREG">
+                <h4>Confirm Password</h4>
+                <input type="password" name="" placeholder="Enter Password" id="conpassREG">
+                <h5>show password?<input type="checkbox" id="chckbox" onclick="oncheck()"></h5>
+                <button class="btnn" onclick="createACC()"><a href="#">Confirm</a></button>
+            </form>
+            </div>
+        </div>
+    </div>
+
+    
 </body>
 </html>

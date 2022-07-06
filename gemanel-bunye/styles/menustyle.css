@@ -81,9 +81,7 @@ body{
 }
   /* cart items */
 .cart-items {
-    max-height: calc(100vh - 247px);
-    overflow-y: auto;
-    overflow-x: hidden;
+    height:100%;
 }
   /* cart item */
 .cart-item {
@@ -139,7 +137,7 @@ body{
   
 /* cart footer */
 .cart-footer {
-    width: 75%;
+    width: 100%;
     background-color: #A6FF9A;
     position: absolute;
     bottom: 0;

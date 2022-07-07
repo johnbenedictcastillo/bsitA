@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background:#D6D6D6;
+}
+.product{
+    display:block;
+    width: 75%;
+    height: auto;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:20px;
+}
+.productpart #latestpic1{
+    background-image: url("../assets/BG1.png");
+    background-position: center;
+    background-size: cover;
+}
+.productpart #latestpic2{
+    background-image: url("../assets/BG2.png");
+    background-position: center;
+    background-size: cover;
+}
+.table{
+    border:1px;
+}
+@media screen and (max-width: 800px){
+    .productpart .product{
+        width: 50%;
+        height: auto;
+    }
+}

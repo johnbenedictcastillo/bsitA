@@ -1,0 +1,286 @@
+body{
+  background-color: #D296EC;
+}
+.slideshow{
+	margin-top: 140px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+  border-radius: 10px;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+
+}
+
+/* Hide the images by default */
+.mySlides {
+  animation: fadeIn 1s;
+  -webkit-animation: fadeIn 1s;
+  -moz-animation: fadeIn 1s;
+  -o-animation: fadeIn 1s;
+  -ms-animation: fadeIn 1s;
+  display: none;
+  
+
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  border-radius: 50px;
+  background-color: rgba(166,84,201,0.77);
+  color: #FFF;
+}
+
+
+/* Container for image text */
+.caption-container {
+  margin: 10px 10px 10px 10px;
+  text-align: center;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  background: transparent;
+  padding: 2px 16px;
+  color: #FFF;
+  font-size: 30px;
+  letter-spacing: .1em;
+  text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0,0,0,0.9);
+}
+
+.navbar::-webkit-scrollbar {
+  display: none;
+
+}
+
+.brand,.brand2{
+  width: 111.38px;
+  border-radius: 100%;
+
+}
+
+
+.navbar {
+    overflow: scroll !important; 
+    max-height: 100vh;
+    top: 0; /* Stay on top */
+    width: 100%; /* Full width */
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+    display: block;
+    background-color: #ffffff;
+}
+
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+div .navbar-brand {
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 40px;
+}
+
+nav ul li a:hover{
+	border-radius: 40px;
+	background-color: #A654C9;
+	font-weight: bold;
+  transition: 0.1s;
+}
+
+.caption-container #caption {
+	margin-top: 10px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: right;
+  width: 25%;
+
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+
+
+.card-list {
+  justify-items: center;
+}
+
+.card-area { 
+  margin-top: 130px;
+
+}
+
+.login_your_account {
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+.login_column {
+  border-radius: 10px;
+  background-color: #FFE6FF;
+  height: 400px;
+  width: 400px;
+}
+
+#reset, #login {
+  padding: 5px 5px;
+  border-radius: 4px;
+  font-weight: bold;
+  background-color: #AE3FB2;
+  color: black;
+  margin-top: 10px;
+  border: none;
+}
+#reset {
+  margin-right: 20px;
+}
+
+#reset:hover {
+  background-color: #A6B23B;
+  color: white;
+}
+
+#login:hover {
+  background-color: #A6B23B;
+  color: white;
+}
+
+#loginpwd {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+#loginemail {
+  font-weight: bold;
+}
+
+#showpss {
+  font-size: 15px;
+}
+
+
+.intro_column {
+  text-align: center;
+  height: 200px;
+  width: auto;
+  background-color: white;
+  opacity: 50%;
+  border-radius: 40px;
+}
+
+.introduction {
+  margin: 50px;
+  font-size: 50px;
+  color: #8B1F7D;
+}
+
+.cart-page{
+  margin: 80px;
+}
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+.cart-info{
+  display: flex;
+  flex-wrap: wrap;
+}
+th{
+  text-align: left;
+  padding: 5px;
+  color: #fff;
+  background-color: #EBBEFF;
+  font-weight: normal;
+}
+td{
+  padding: 10px 5px;
+}
+td input{
+  width: 40px;
+  height: 30px;
+  padding: 5px;
+}
+td a{
+  color: #ffffff;
+  font-size: 12px;
+}
+td img{
+  margin-right: 10px;
+  height: 206px;
+  width: 206px;
+}
+.total-price{
+  display: flex;
+  justify-content: flex-end;
+}
+.total-price table{
+  border-top: 3px solid #EBBEFF;
+  width: 100%;
+  max-width: 400px;
+}
+td:last-child{
+  text-align:right ;
+}
+th:last-child{
+  text-align: right;
+}

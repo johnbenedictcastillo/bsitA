@@ -495,7 +495,11 @@ transform: scale(1.5);
   background: #5b632f;
   transition: all .35s;
 }
-
+.btn1 a
+{
+  text-decoration:none;
+  color: #fff;
+}
 .btn1:hover{
   color: #fff;
 }

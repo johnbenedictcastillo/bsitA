@@ -50,7 +50,18 @@ body
     color: #fff;
     background-color: #313327;
   }
+.btn1 a
+{
+  text-decoration:none;
+  color: #000;
 
+}
+.btn1 a:hover
+{
+  
+  color: #fff;
+
+}
 .served
 {
   background-color: #5b632f;

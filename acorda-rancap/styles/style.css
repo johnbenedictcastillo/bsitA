@@ -501,6 +501,12 @@ transform: scale(1.5);
   color: #000;
 
 }
+.btn1 a:hover
+{
+  
+  color: #fff;
+
+}
 .btn1:hover{
   color: #fff;
 }

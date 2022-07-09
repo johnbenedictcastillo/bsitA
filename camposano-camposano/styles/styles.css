@@ -353,6 +353,11 @@ box-shadow: -1px 0px 91px 32px rgba(14,196,110,1);
   padding-top: 20px;
 }
 
+.reqcom {
+  font-weight: bold;
+  padding-top: 50px;
+}
+
 .login_column {
   margin-bottom: 50px;
   color: black;
@@ -378,6 +383,7 @@ box-shadow: -1px 0px 91px 32px rgba(14,196,110,1);
   backdrop-filter: blur(5px);
   border-radius: 10px;
 }
+
 
 #reset, #login {
   padding: 5px 5px;
@@ -408,6 +414,10 @@ box-shadow: -1px 0px 91px 32px rgba(14,196,110,1);
 }
 
 #loginemail {
+  font-weight: bold;
+}
+
+#req {
   font-weight: bold;
 }
 
@@ -563,10 +573,20 @@ box-shadow: -1px 0px 91px 32px rgba(14,196,110,1);
   transition: 0.1s;
 }
 
+.card-area .row .contactus {
+  background-color: white;
+}
 
+#description {
+  height: 400px;
+}
 
 @media screen and (max-width: 991px) {
   .login_column {
+    width:100%; display: block; margin-left: auto; margin-right: auto;
+  }
+
+  .llogin_column {
     width:100%; display: block; margin-left: auto; margin-right: auto;
   }
 
@@ -927,4 +947,193 @@ box-shadow: -1px 0px 91px 32px rgba(14,196,110,1);
 .hiddenli {
   visibility: hidden;
   display: none;
+}
+
+.subpageTitle {
+    padding: 22px 0;
+}
+.u-bg10 {
+    background-color: #2361a0 !important;
+}
+.subpageTitle h1, .subpageTitle h2, .subpageTitle h3, .subpageTitle h4, .subpageTitle h5, .subpageTitle h6 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #ffffff;
+    margin: 0;
+}
+.subpageTitle h1 {
+    font-size: 45px;
+}
+#mainContent ul {
+    margin-top: 10px;
+}
+.breadcrumb {
+    padding: 18px 0;
+    margin: 0;
+    background: none;
+    border-radius: 0;
+}
+#mainContent ul > li {
+    margin-bottom: 5px;
+}
+.breadcrumb > li {
+    color: #0d5cab;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.breadcrumb > li a {
+    display: inline-block;
+}
+.breadcrumb > li img {
+    position: relative;
+    top: -1px;
+}
+img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+}
+#mainContent ul > li {
+    margin-bottom: 5px;
+}
+.breadcrumb > li {
+    color: #0d5cab;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.contactForm input[type="submit"] {
+    font-family: 'Roboto', sans-serif;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    background-color: #00aeef;
+}
+.contactForm input {
+  font-family: 'Roboto', sans-serif;
+}
+.contactForm textarea {
+  font-family: 'Roboto', sans-serif;
+}
+.list-group .navHighlight, .list-group .navHighlight:hover {
+    /* background-color: transparent; */
+    background-color: #cccccc;
+    border-color: #cccccc;
+}
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+.pageSidebar ul {
+  margin-top: 30px;
+}
+.pageSidebar {
+    padding-right: 70px;
+    font-family: 'Roboto', sans-serif;
+}
+.list-group .list-group-item:first-child {
+    border-top: none;
+    border-radius: 0;
+}
+.list-group .list-group-item {
+    padding: 18px 0 18px 9px;
+}
+.list-group .list-group-item {
+    border-left: none;
+    border-right: none;
+    font-weight: 600;
+    padding: 18px 0px;
+    border-color: #dce0e3;
+}
+.sidebar-widget a {
+    text-decoration: none;
+}
+.list-group .list-group-item {
+    padding: 18px 0 18px 9px;
+}
+.list-group .navHighlight, .list-group .navHighlight:hover {
+    background-color: #cccccc;
+    border-color: #cccccc;
+}
+.list-group .list-group-item {
+    border-left: none;
+    border-right: none;
+    font-weight: 600;
+    padding: 18px 0px;
+    border-color: #dce0e3;
+}
+.list-group .list-group-item {
+    padding: 18px 0 18px 9px;
+}
+
+.card-area5 {
+  background-color: white;
+  margin-top: 100px;
+  opacity: 95%; 
+  height: 100%;
+}
+
+.contactus {
+  padding-top: 50px;
+  padding-right: 500px;
+}
+
+.contactus #description {
+  height: 200px;
+}
+
+.card-area6 {
+  background-color: white;
+  margin-top: 100px;
+  height: 100%;
+}
+
+.lllogin_column {
+  text-align: left;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: black;
+  width: 30rem;
+  height: 72rem;
+  border-radius: 5px;
+  background-color: #F890FF;
+  opacity: 100%;
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+}
+
+#myfile {
+  padding-left: 100px;
+  text-align: center;
+}
+
+.btnsbmt {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.btnsubmit {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.btnsubmit:hover {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+
 }

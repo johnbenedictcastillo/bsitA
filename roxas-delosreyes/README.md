@@ -18,7 +18,7 @@ Delos Reyes, Jomarson
 
 	-Cart Page
 	
-	-Frontpage / About Us
+	-Frontpage / About Us and Ajax Contact Info
 	
 	-JS
 	

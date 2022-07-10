@@ -1137,3 +1137,19 @@ img {
   border: 2px solid #4CAF50;
 
 }
+
+
+#ajax {
+  margin-top: 20px;
+}
+
+#ajaxbtn {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+#ajaxbtn:hover {
+  background-color: #4CAF50;
+  color: white;
+}

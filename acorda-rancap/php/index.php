@@ -1,0 +1,714 @@
+<?php
+    session_start();
+    if (!isset($_SESSION["SESSION_EMAIL"])) {
+        header("Location: login.php");
+    }
+    include 'config.php';
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="C - Merged">
+    <meta name="author" content="Acorda, Jaedee & Rancap, Sharlyn">
+    <title>C - Merged</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="../styles/product.css">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+  
+ 
+<div class="wrapper">
+        <?php
+            $sql = "SELECT * FROM users WHERE email='{$_SESSION["SESSION_EMAIL"]}'";
+            $result = mysqli_query($conn, $sql);
+
+            if (mysqli_num_rows($result) > 0) {
+                $row = mysqli_fetch_assoc($result);
+        ?>
+        <?php } ?>
+    </div>   
+<header class="header_area" id="home">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+                <div class="container">
+                  <a class="navbar-brand" href="../php/index.php">C - Merged</a>
+                      <button 
+                          class="navbar-toggler" 
+                          type="button" 
+                          data-bs-toggle="collapse" 
+                          data-bs-target="#navbarSupportedContent" 
+                          aria-controls="navbarSupportedContent" 
+                          aria-expanded="false" 
+                          aria-label="Toggle navigation">
+
+                          <span class="navbar-toggler-icon" style="color: #000000"></span>
+                      </button>
+
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="navbar-nav me-auto mb-2 mb-lg-0"></div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                          <a class="nav-link" href="../php/index.php">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="../php/product.php" role="button" aria-expanded="false">Products</a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../php/product.php">Filipino Cuisine</a></li>
+                            <li><a class="dropdown-item" href="../php/product.php">Korean Cuisine</a></li>
+                            <li><a class="dropdown-item" href="../php/product.php">Japanese Cuisine</a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../php/about.php">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../php/contact.php">Contact Us</a>
+                        </li>
+                      </ul>
+                      <div class="icon-links">
+                    <div id="icon-shopping-cart"><span class="icon-cart-arrow-down ml-5"><span id="item-counter">0</span></div>
+                      </div>
+                      <div class="text-end">
+                          <button type="button" class="btn2"><?php echo $row["name"]; ?> <span class="form"><a href="logout.php">Logout</a></span></button>
+                      </div>
+                  </div>
+                </div>
+            </nav>
+        </header>
+       
+
+        <video id="video" poster="assets/img1.jpg" autoplay muted loop>
+          <source src="./assets/videoplayback.mp4" type="video/mp4">
+        </video>
+       
+      <div class="container">
+      <div class="row">
+              <div class="maincontent">
+                  <div class="left">
+                      <h1 class="text">C - Merged</h1>
+                      <p class="text1">We, are starting a new journey with our partners to make this business a success and attain a good partnership on our business collaborators.
+                        We, bring you the taste of different cultures in one site and one place that is reachable enough in order to gain access to it.</p>
+                      <a href="../php/about.php">Learn More >></a>
+              </div>
+          </div>
+        </div>     
+      </div>
+     
+      <div class="qoute mt-5">One thousand flavors in one place.</div> 
+       
+      
+      <div class="aboutcon">
+        <div class="featured">
+          <div class="featured-card">
+            <h2 class="name">Filipino cuisine</h2>
+            <p class="details">"There's no better taste like home."</p>
+            <a class="popup-btn">Read More...</a>
+            <img src="../assets/4.jpg" class="product-img" alt="">
+          </div>
+          <div class="popup-view">
+            <div class="popup-card">
+              <a><i class="fas fa-times close-btn"></i></a>
+              <div class="product-img">
+                <img src="../assets/4.jpg" alt="">
+              </div>
+              <div class="info">
+                <h2>Filipino Cuisine<br><span>Background: </span></h2>
+                <p>"There's no better taste like home."
+Indulge in that familiar tastes of an original fusion cuisine across the globe. What makes our very own dishes distant yet unique is because it draws many people's attention and making them inspired to also cook to; by just how simple the dishes are. The taste of Spanish, Chinese, Indian, and western dishes. 
+                  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="featured">
+          <div class="featured-card">
+            <h2 class="name">Korean Cuisine</h2>
+            <p class="details">"Experience that Korean zing!"</p>
+            <a class="popup-btn">Read More...</a>
+            <img src="../assets/8.jpg" class="product-img" alt="">
+          </div>
+          <div class="popup-view">
+            <div class="popup-card">
+              <a><i class="fas fa-times close-btn"></i></a>
+              <div class="product-img">
+                <img src="../assets/8.jpg" alt="">
+              </div>
+              <div class="info">
+                <h2>Korean Cuisine<br><span>Background: </span></h2>
+                <p>"Experience that Korean zing!"
+Known for having one of the most healthiest dishes on Earth, Koreans tend to have their meals low in fat, and high in nutrition. Their food is said to have a careful consideration of balance in temperature, spiciness, colour and texture, along with considered presentation. And also known for Koreans enthusiastically love eating spicy meals, they just don't eat tangy foods on a daily basis.             </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="featured">
+          <div class="featured-card">
+            <h2 class="name">Japanese Cuisine</h2>
+            <p class="details">"A glimpse into the Heart of Japan."</p>
+            <a class="popup-btn">Read More...</a>
+            <img src="../assets/12.jpg" class="product-img" alt="">
+          </div>
+          <div class="popup-view">
+            <div class="popup-card">
+              <a><i class="fas fa-times close-btn"></i></a>
+              <div class="product-img">
+                <img src="../assets/12.jpg" alt="">
+              </div>
+              <div class="info">
+                <h2>Japanese Cuisine<br><span>Background: </span></h2>
+                <p>"A glimpse into the Heart of Japan."
+As rice and fresh meats being the center of all their dishes, their dishes are said to have been long revered for its unique ingredients, innovative flavors, and distinct sense of culture and history. As behind every dish tells a story, it helps both the cook and the person tasting the dish emphasize life behind and in of the dish itself just by the meal's beautiful appearance and delightful subtle flavors. 
+                  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    <section id="menu" class="menu section-bg">
+        <div class="container" data-aos="fade-up">
+  
+          <div class="section-title">
+            <h2>Highlights</h2>
+            <p>Our Popular Dishes</p>
+          </div>
+  <hr>
+          <div class="row" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-12 d-flex justify-content-center">
+              <ul id="menu-flters">
+                <li data-filter="*" class="filter-active">All</li>
+                <li data-filter=".filter-filipino">Filipino</li>
+                <li data-filter=".filter-korean">Korean</li>
+                <li data-filter=".filter-japanese">Japanese</li>
+              </ul>
+            </div>
+          </div>
+  <hr>
+          <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
+  
+  
+            <div class="col-lg-6 menu-item filter-filipino">
+              <img src="../assets/bulalo.jpg" class="menu-img" alt="">
+              <div class="menu-content">
+                <a href="../php/product.php">Bulalo</a><span>90.00 Pesos</span>
+              </div>
+              <div class="menu-details">
+                Our classic light coloured soup with good dish of beef broth, reminding us the taste of home, comfort, and cozy words, warming us from head to toe. 
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-korean">
+              <img src="../assets/samgyeopsal.jpg" class="menu-img" alt="">
+              <div class="menu-content">
+                <a href="../php/product.php">Samgyeopsal (삼겹살)</a><span>190.00 Pesos</span>
+              </div>
+              <div class="menu-details">
+                Served with lettuce, perilla leaves, sliced onions and raw garlic kimchi, it's smudged in ssamjang (a mix of soybean paste called 'doenjang' and chili paste called 'gochujang') or salt and pepper in sesame oil.
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-filipino">
+              <img src="../assets/adobo.jpg" class="menu-img" alt="">
+              <div class="menu-content">
+                <a href="../php/product.php">Chicken Adobo</a><span>50.00 Pesos</span>
+              </div>
+              <div class="menu-details">
+                Our very own spicy marinade Latin American cuisine usually containing either meat pork, meat, fish and/or chicken in our very own classic dish. 
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-japanese">
+              <img src="../assets/ramen.jpg" class="menu-img" alt="">
+              <div class="menu-content">
+                <a href="../php/product.php">Ramen (ラーメン)</a><span>190.00 Pesos</span>
+              </div>
+              <div class="menu-details">
+                Having the four main types of Shoyu, Shio, Miso, and Tonkotsu, diners often sit shoulder-to-shoulder, slurping noodles and watching as the ramen shokunin (master) rapidly flash-cooks noodles in a boiling water as if choreographed, ladling scalding soup into bowls.
+              </div>
+            </div>
+  
+            <div class="col-lg-6 menu-item filter-filipino">
+              <img src="../assets/pininyahan.jpg" class="menu-img" alt="">
+              <div class="menu-content">
+                <a href="../php/product.php">Pininyahang Manok</a><span>70.00 Pesos</span>
+              </div>
+              <div class="menu-details">
+                Chicken slices to be marinated in a pumped pineapple juice and stewed with cuts of pineapple chunks/bits. 
+              </div>
+            </div>
+  
+            <div class="col-lg-6 menu-item filter-korean">
+              <img src="../assets/bibimbap.jpg" class="menu-img" alt="">
+              <div class="menu-content">
+                <a href="../php/product.php">Bibimbap (비빔밥)</a><span>70.00 Pesos</span>
+              </div>
+              <div class="menu-details">
+                Incorporated with steamed white rice with assorted fresh, marinated, and sauteed vegetables along with raw or seared meet, and is always served with an egg, bibimbap is said to be the quintessential Korean meal-in-a-bowl, and is a good candidate for the title to be ordered in a world cuisine.
+              </div>
+            </div>
+  
+            <div class="col-lg-6 menu-item filter-japanese">
+              <img src="../assets/takoyaki.jpg" class="menu-img" alt="">
+              <div class="menu-content">
+                <a href="../php/product.php">Takoyaki (たこ焼き)</a><span>80.00 Pesos</span>
+              </div>
+              <div class="menu-details">
+                A famous and one of the most popular street snacks in Japan, having the meaning and translated into Japanese octopus balls mostly eaten in summer festivals in their home country. 
+              </div>
+            </div>
+  
+            <div class="col-lg-6 menu-item filter-filipino">
+              <img src="../assets/sinigang.jpg" class="menu-img" alt="">
+              <div class="menu-content">
+                <a href="../php/product.php">Pork Sinigang</a><span>90.00 Pesos</span>
+              </div>
+              <div class="menu-details">
+                Marked as a Filipino comfort food, this is indeed a hit among us Filipinos, categorizing from not only pork but also shrimp, fish, and chicken which can bring anyone that asim-kilig taste comfort. 
+              </div>
+            </div>
+            
+            
+            <div class="col-lg-6 menu-item filter-filipino">
+              <img src="../assets/sisig.jpg" class="menu-img" alt="">
+              <div class="menu-content">
+                <a href="../php/product.php">Pork Sisig</a><span>110.00 Pesos</span>
+              </div>
+              <div class="menu-details">
+                A freshly served hot as the Filipino’s sizzling crispy pork with eggs, this is a Filipino street food of chopped pig parts and chicken livers, tossed with a spicy and sour dressings.
+              </div>
+            </div>
+            
+            
+            <div class="col-lg-6 menu-item filter-korean">
+              <img src="../assets/samgyetang.jpg" class="menu-img" alt="">
+              <div class="menu-content">
+                <a href="../php/product.php">Samgyetang (삼계탕)</a><span>90.00 Pesos</span>
+              </div>
+              <div class="menu-details">
+                A popular stamina food in summer served with salt and pepper on the side, so each person can season the broth to taste and use the remainder to dip the meat in. 
+              </div>
+            </div>
+            
+            
+            <div class="col-lg-6 menu-item filter-japanese">
+              <img src="../assets/tempura.jpg" class="menu-img" alt="">
+              <div class="menu-content">
+                <a href="../php/product.php">Tempura (天ぷら)</a><span>90.00 Pesos</span>
+              </div>
+              <div class="menu-details">
+                A crispy battered shrimps or any common seafoods that can be deep fried and be combined with vegetables, you can definitely either eat it on its own or much better to dip it with its sauce and/or even combine it when eating other Japanese dishes, like soba or an udon soup. 
+              </div>
+            </div>
+            
+            
+            <div class="col-lg-6 menu-item filter-korean">
+              <img src="../assets/bulgogi.jpg" class="menu-img" alt="">
+              <div class="menu-content">
+                <a href="../php/product.php">Bulgogi (불고기)</a><span>70.00 Pesos</span>
+              </div>
+              <div class="menu-details">
+                Generally prepared in a sweet and savory sauce made of soy sauce, sugar, and Korean pear juice, bulgogi brings that clear taste of thinly sliced beef, being marinated and dipped into the savory, sweet, and salty sauce. 
+              </div>
+            </div>
+            
+            
+            <div class="col-lg-6 menu-item filter-japanese">
+              <img src="../assets/okonomiyaki.jpg" class="menu-img" alt="">
+              <div class="menu-content">
+                <a href="../php/product.php">Okonomiyaki (お好み焼き)</a><span>50.00 Pesos</span>
+              </div>
+              <div class="menu-details">
+                A popular pan-fried dish, and is said to be a savory pancake containing the batter, cabbage, and selected toppings and ingredients (anything from meat and seafood to wasabi and cheese), the dish is all over Japan, having the dish’s meaning ‘to one’s liking’. 
+              </div>
+            </div>
+            
+            
+            <div class="col-lg-6 menu-item filter-japanese">
+              <img src="../assets/sukiyaki.jpg" class="menu-img" alt="">
+              <div class="menu-content">
+                <a href="../php/product.php">Sukiyaki (すき焼き)</a><span>50.00 Pesos</span>
+              </div>
+              <div class="menu-details">
+                Consisting of thinly-sliced beef, tofu, ito konnyaku (a jelly-like noodle), green onions, cabbage, and enokitake mushrooms, this dish is best eaten for the colder day of year: winter. 
+              </div>
+            </div>
+            
+            
+            <div class="col-lg-6 menu-item filter-korean">
+              <img src="../assets/kimchistew.jpg" class="menu-img" alt="">
+              <div class="menu-content">
+                <a href="../php/product.php">Kimchi Stew (김치찌개)</a><span>50.00 Pesos</span>
+              </div>
+              <div class="menu-details">
+                A flavorful kimchi stew from Korea, kimchi jjigae normally gets cooked in a large communal pot in the center of a table; combined with red cabbage kimchi is chopped, sauteed in oil, and cooked with tofu, cellophane noodles, pork (sometimes tuna), and other vegetables. 
+              </div>
+            </div>
+            
+  
+            <div class="col-lg-6 menu-item filter-japanese">
+              <img src="../assets/yakisoba.jpg" class="menu-img" alt="">
+              <div class="menu-content">
+                <a href="../php/product.php">Yakisoba (焼きそば)</a><span>40.00 Pesos</span>
+              </div>
+              <div class="menu-details">
+                An authentic Japanese fried noodle dish, normally served with pork, chicken, shrimp/calamari, and vegetables, seasoned with some special sauces to bring that extra color and flavor/s. 
+              </div>
+            </div>
+            
+            
+            <div class="col-lg-6 menu-item filter-korean">
+              <img src="../assets/Jajangmyeo.jpg" class="menu-img" alt="">
+              <div class="menu-content">
+                <a href="../php/product.php">Jajangmyeon (자장면)</a><span>50.00 Pesos</span>
+              </div>
+              <div class="menu-details">
+                Smothered and tossed together in a silky smooth, savory black bean sauce with diced pork, zucchini and onion, Jajangmyeon is originally a Chinese dish, in which Koreans have taken the noodles and created a thicker, yummier version.
+              </div>
+            </div>
+            
+            
+            <div class="col-lg-6 menu-item filter-filipino">
+              <img src="../assets/bikol.jpg" class="menu-img" alt="">
+              <div class="menu-content">
+                <a href="../php/product.php">Bicol Express</a><span>70.00 Pesos</span>
+              </div>
+              <div class="menu-details">
+                It is also a popular dish in which slices of pork meat is cooked with coconut milk, shrimp paste, and chili pepper. With the authentic Bicol version, you can surely taste the creamy flavors with a friendlier or even more strong and powerful heat. 
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+
+      <section class="divider">
+        <div class="container">
+        <div class="section-title">
+            <p>Dishes Gallery</p>
+          </div>
+
+          <div class="row gallery">
+            <div class="col-md-3 col-sm-6">
+                <div class="single-brand">
+                <img src="../assets/takoyaki.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="single-brand">
+                <img src="../assets/sisig.jpg" alt="">
+                </div>
+             </div>   
+            <div class="col-md-3 col-sm-6">
+                <div class="single-brand">
+                <img src="../assets/tteokbokki.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="single-brand">
+                <img src="../assets/okonomiyaki.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="single-brand">
+                <img src="../assets/kimchistew.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="single-brand">
+                <img src="../assets/nilaga.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="single-brand">
+                <img src="../assets/bibimbap.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="single-brand">
+                <img src="../assets/ramen.jpg" alt="">
+                </div>
+            </div>
+      </div>    
+    </div>
+  </div>
+         
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+        <div class="contact-title">
+          <h1>Contact Us</h1>
+        </div>
+      </div>
+<div class="contact-text">
+      <div class="container" data-aos="fade-up">
+        <div class="row mt-5">
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h3>Location:</h3>
+                <p>V. Maliwanag St. Calumpang, Famy, Laguna</p>
+              </div>
+
+              <div class="open-hours">
+                <i class="bi bi-clock"></i>
+                <h3>Service Hours:</h3>
+                <p>
+                  Monday-Saturday:<br>
+                  10:00 AM - 8:00 PM
+                </p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h3>Email:</h3>
+                <p><a href="">cmergedfoodie@gmail.com</a></p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h3>Mobile #:</h3>
+                <p><a href="">09122149381</a></p>
+                <br>
+                <p><a href="">09270541241</a></p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0">
+
+            <form action="" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" id="name" name="name" class="form-control" placeholder="Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email"  id="email"  class="form-control" name="email" placeholder="Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" id="subject" class="form-control" name="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="8" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+      <div data-aos="fade-up" style="margin-top:50px">
+            <iframe style="border:0; width: 100%; height: 400px;" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d30912.70965349077!2d121.45431261960883!3d14.422049672249473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sRestaurants!5e0!3m2!1sen!2sph!4v1656654578335!5m2!1sen!2sph" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+    </section>
+
+<section class="served">
+    <div class="container">
+      <footer class="container py-5">
+        <div class="row">
+          <div class="col-md-3">
+            <h5>DEVELOPED BY</h5>
+            <small class="d-block mb-3 text-white">&copy; 2022 All rights reserved. <br>
+              C-Merged</small>
+          </div>
+          <div class="col-md-3">
+            <h5>FEATURES</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="mb-2" href="../php/product.php">FILIPINO</a></li>
+              <li><a class="mb-2" href="../php/product.php">KOREAN</a></li>
+              <li><a class="mb-2" href="../php/product.php">JAPANESE</a></li>
+              
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>RESOURCES</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="" href="../php/product.php">PRODUCT</a></li>
+                <li><a class="mb-2" href="../php/contact.php">CONTACT US </a> </li>
+                <li><a class="mb-2" href="../php/about.php">ABOUT US </a> </li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>BE THE FIRST TO KNOW</h5>
+            <ul class="list-unstyled text-small">
+              <li><p>
+                Check out C - Merged 's latest culinary discoveries, events, promotions, & more.
+              </p></li>
+                <li><a class="mb-2" href="../php/register.php">
+                <p>SIGN-UP NOW
+              </p></a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>  
+</section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+      var textWrapper = document.querySelector('.text');
+                    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+                     anime.timeline({loop: true})
+                          .add({
+                            targets: '.text .letter',
+                            translateX: [40,0],
+                            translateZ: 0,
+                            opacity: [0,1],
+                            easing: "easeOutExpo",
+                            duration: 1200,
+                            delay: (el, i) => 500 + 30 * i
+                          }).add({
+                            targets: '.text .letter',
+                            translateX: [0,-30],
+                            opacity: [1,0],
+                            easing: "easeInExpo",
+                            duration: 1100,
+                            delay: (el, i) => 100 + 30 * i
+                          });
+var textWrapper = document.querySelector('.text1');
+                    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+                     anime.timeline({loop: true})
+                          .add({
+                            targets: '.text1 .letter',
+                            translateX: [40,0],
+                            translateZ: 0,
+                            opacity: [0,1],
+                            easing: "easeOutExpo",
+                            duration: 1200,
+                            delay: (el, i) => 500 + 30 * i
+                          }).add({
+                            targets: '.text1 .letter',
+                            translateX: [0,-30],
+                            opacity: [1,0],
+                            easing: "easeInExpo",
+                            duration: 1100,
+                            delay: (el, i) => 100 + 30 * i
+                          });
+                        
+  var textWrapper = document.querySelector('.qoute');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+                        anime.timeline({loop: true})
+                        .add({
+                            targets: '.qoute .letter',
+                            translateX: [40,0],
+                            translateZ: 0,
+                            opacity: [0,1],
+                            easing: "easeOutExpo",
+                            duration: 1200,
+                            delay: (el, i) => 500 + 30 * i
+                        }).add({
+                            targets: '.qoute .letter',
+                            translateX: [0,-30],
+                            opacity: [1,0],
+                            easing: "easeInExpo",
+                            duration: 1100,
+                            delay: (el, i) => 100 + 30 * i
+                        });                     
+
+
+                        var popupViews = document.querySelectorAll('.popup-view');
+                        var popupBtns = document.querySelectorAll('.popup-btn');
+                        var closeBtns = document.querySelectorAll('.close-btn');
+                    
+                      
+                        var popup = function(popupClick){
+                          popupViews[popupClick].classList.add('active');
+                        }
+                    
+                        popupBtns.forEach((popupBtn, i) => {
+                          popupBtn.addEventListener("click", () => {
+                            popup(i);
+                          });
+                        });
+                    
+                        
+                        closeBtns.forEach((closeBtn) => {
+                          closeBtn.addEventListener("click", () => {
+                            popupViews.forEach((popupView) => {
+                              popupView.classList.remove('active');
+                            });
+                          });
+                        });
+                  
+                  
+                    
+                    const select = (el, all = false) => {
+                      el = el.trim()
+                      if (all) {
+                        return [...document.querySelectorAll(el)]
+                      } else {
+                        return document.querySelector(el)
+                      }
+                    }
+                  
+                    const on = (type, el, listener, all = false) => {
+                      let selectEl = select(el, all)
+                      if (selectEl) {
+                        if (all) {
+                          selectEl.forEach(e => e.addEventListener(type, listener))
+                        } else {
+                          selectEl.addEventListener(type, listener)
+                        }
+                      }
+                    }
+                  
+                        window.addEventListener('load', () => {
+                      let menuContainer = select('.menu-container');
+                      if (menuContainer) {
+                        let menuIsotope = new Isotope(menuContainer, {
+                          itemSelector: '.menu-item',
+                          layoutMode: 'fitRows'
+                        });
+                  
+                        let menuFilters = select('#menu-flters li', true);
+                  
+                        on('click', '#menu-flters li', function(e) {
+                          e.preventDefault();
+                          menuFilters.forEach(function(el) {
+                            el.classList.remove('filter-active');
+                          });
+                          this.classList.add('filter-active');
+                  
+                          menuIsotope.arrange({
+                            filter: this.getAttribute('data-filter')
+                          });
+                          menuIsotope.on('arrangeComplete', function() {
+                            AOS.refresh()
+                          });
+                        }, true);
+                      }
+                  
+                    });
+                  
+                      
+    </script>
+
+</body>
+</html>

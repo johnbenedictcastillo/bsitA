@@ -132,7 +132,25 @@
                                     <a id="registerlink" href="#">Already have an account? Click here to Login Now!</a>
                                 </div>
 
+                                 <div id="ajax">
+                                    <button id="ajaxbtn" type="button" onclick="loadDoc()">Why Create an Account?</button>
+                                    </div>
 
+                                    <script>
+                                    function loadDoc() {
+                                      const xhttp = new XMLHttpRequest();
+                                      xhttp.onload = function() {
+                                        document.getElementById("ajax").innerHTML =
+                                        this.responseText;
+                                      }
+                                      xhttp.open("GET", "../info.txt");
+                                      xhttp.send();
+                                    }
+                                    </script>
+
+                                </div>
+                                    
+                                    
                                 </div>
 
 

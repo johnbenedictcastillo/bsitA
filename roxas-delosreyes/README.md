@@ -20,4 +20,6 @@ Delos Reyes, Jomarson
 	
 	-Frontpage / About Us
 	
+	-JS
+	
 	-CSS

@@ -43,7 +43,7 @@
     <meta name="description" content="C - Merged">
     <meta name="author" content="Acorda, Jaedee & Rancap, Sharlyn">
     <link rel="stylesheet" href="../php/register.css">
-    <title>C - Merged Registration <Form></Form></title>
+    <title>C - Merged Registration</title>
 </head>
 <body>
 <main>

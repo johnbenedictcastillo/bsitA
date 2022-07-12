@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image:url(../images/frontpage.jpeg);
+    height: 110vh;
+    display: grid;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contact-wrap{
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.contact-in{
+    flex: 30%;
+    background: url(../images/scrollpage.jpeg);
+    color: black;
+}
+.contact-in h1{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font: bold;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.contact-in h2{
+    text-align: left;
+    font-size: 40px;
+    font: bold;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.contact-in h2 i{
+    font-size: 40px;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    background: white;
+    color: black;
+    border-radius: 20px;
+    line-height: 50px;
+    text-align: center;
+}
+.contact-in a{
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    color: white;
+    font: bold;
+}
+.contact-in a:hover{
+    color: brown;
+}

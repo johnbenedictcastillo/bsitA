@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image:url(../images/frontpage.jpeg);
+    height: 110vh;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.about h1{
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+.about h2{
+    text-align: left;
+    color: white;
+    font-size: 40px;
+    margin-left: 40px;
+}
+.about p{
+    font-size: 35px;
+    margin-left: 50px;
+    color: orchid;
+}
+.about span{
+    color: lightcoral;
+    font-size: 43px;
+}
+
+
+.bckBtn {
+    float: right;
+    margin-right: 5%;
+    color: red;
+    font-size: 32px;
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.bckBtn:hover {
+    color: black;
+    text-decoration: none;
+}

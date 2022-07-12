@@ -1,0 +1,152 @@
+<html lang="en">
+<head>
+    <title>PRODUCT PAGE WOMENS</title>
+    <link rel="stylesheet" href="..\style\productmens.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="..\script\config.js"></script>
+    <script src="..\script\product.js"></script>
+    
+</head>
+<body onload="onRUN()">
+    <div class="container">
+        <div class="navBar">
+            <button class="btn btn-secondary navBtnQS" title="Quick Shop">
+                <i class="fa fa-eye" aria-hidden="true"></i>
+            </button>
+            <button class="btn btn-secondary navBtnWL" title="Wishlist">
+                <i class="fa fa-heart-o" aria-hidden="true"></i>
+            </button>
+            <button class="btn btn-secondary navBtnCart" title="My Cart">
+                <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+            </button>
+            <a href="..\page\productpage.html" class="bckBtn">Back</a>
+        </div>
+        <br>
+        <h2> WOMENS </h2>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="product-top">
+                    <img src="../images/high2.jpeg" width="300px" height="350px">
+                    <div class="overlay">
+                        <input type="button" class="btn btn-secondary" title="Quick Shop" onclick="buyA()">
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                        <button class="btn btn-secondary" title="Wishlist" onclick="reactA()">
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                        </button>
+                        <button class="btn btn-secondary" title="Add to Cart" onclick="cartA()">
+                            <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-bottom text-center">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                  
+                    <h3>Jordan 1 HIGH</h3>
+                    <h5>$500.00</h5>
+                </div> 
+            </div>
+
+            <div class="col-md-3">
+                <div class="product-top">
+                    <img src="../images/mid2.jpeg" width="300px" height="350px">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Quick Shop">
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                        </button>
+                        <button type="button" class="btn btn-secondary" title="Wishlist">
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                        </button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart">
+                            <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-bottom text-center">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    <h3>Jordan 1 MID</h3>
+                    <h5>$350.00</h5>
+                </div> 
+            </div>
+
+            <div class="col-md-3">
+                <div class="product-top">
+                    <img src="../images/low2.jpeg" width="300px" height="350px">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Quick Shop">
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                        </button>
+                        <button type="button" class="btn btn-secondary" title="Wishlist">
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                        </button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart">
+                            <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-bottom text-center">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <h3>Jordan 1 LOW</h3>
+                    <h5>$400.00</h5>
+                </div> 
+            </div>
+        </div>
+
+        <div class="field">
+            <div class="buy-content field-box" id="buyCon">
+                <form>
+                    <h5>Quick Shop</h5>
+                    <h6 id="Item">Item </h6>
+                    <img src="..\images\" alt="" width="auto" height="160px">
+                    <h6>Description:</h6>
+                    <h5 id="descript">...</h5>
+                    <h6>Total Cost:</h6>
+                    <h5 id="tcost">...</h5>
+                    <br>
+                    <input type="submit" value="Confirm Buy">
+                    <input type="submit" value="Cancel">
+                </form>
+            </div>
+
+            <div class="react-content field-box" id="reactCon">
+                <form>
+                    <h5>Wishlist</h5>
+                    <h6 id="Items">Items: </h6>
+                </form>
+            </div>
+
+            <div class="cart-content field-box" id="cartCon">
+                <form>
+                    <h5>My Cart</h5>
+                    <h6 id="Items">Items: </h6>
+                    <br>
+                    <h6 id="Total">Total Cost: </h6>
+                    <br>
+                    <input type="submit" value="Buy All">
+                    <input type="submit" value="Cancel">
+                </form>
+            </div>
+
+        </div>
+
+
+    </div>
+    
+</body>
+</html>

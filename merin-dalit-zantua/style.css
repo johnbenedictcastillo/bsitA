@@ -15,7 +15,7 @@
 }
 
 *::selection{
-  background:var(--orange);
+  background:var(--light blue);
   color:#fff;
 }
 
@@ -50,17 +50,17 @@ section{
 .btn{
   display: inline-block;
   margin-top: 1rem;
-  background:var(--orange);
+  background:var(--lightblue);
   color:#fff;
   padding:.8rem 3rem;
-  border:.2rem solid var(--orange);
+  border:.2rem solid var(--lightblue);
   cursor: pointer;
   font-size: 1.7rem;
 }
 
 .btn:hover{
   background:rgba(255, 165, 0,.2);
-  color:var(--orange);
+  color:var(--lightblue);
 }
 
 header{
@@ -82,7 +82,7 @@ header .logo{
 }
 
 header .logo span{
-  color:var(--orange);
+  color:var(--lightblue);
 }
 
 header .navbar a{
@@ -92,7 +92,7 @@ header .navbar a{
 }
 
 header .navbar a:hover{
-  color:var(--orange);
+  color:var(--lightblue);
 }
 
 header .icons i{
@@ -103,7 +103,7 @@ header .icons i{
 }
 
 header .icons i:hover{
-  color:var(--orange);
+  color:var(--lightblue);
 }
 
 header .search-bar-container{
@@ -139,7 +139,7 @@ header .search-bar-container label{
 }
 
 header .search-bar-container label:hover{
-  color:var(--orange);
+  color:var(--lightblue);
 }
 
 .login-form-container{
@@ -185,7 +185,7 @@ header .search-bar-container label:hover{
 }
 
 .login-form-container form .box:focus{
-  border-color: var(--orange);;
+  border-color: var(--lightblue);;
 }
 
 .login-form-container form #remember{
@@ -208,7 +208,7 @@ header .search-bar-container label:hover{
 }
 
 .login-form-container form p a{
-  color:var(--orange);
+  color:var(--lightblue);
 }
 
 .login-form-container form p a:hover{
@@ -289,7 +289,7 @@ header .search-bar-container label:hover{
 }
 
 .home .controls .vid-btn.active{
-  background:var(--orange);
+  background:var(--lightblue);
 }
 
 .book .row{
@@ -362,7 +362,7 @@ header .search-bar-container label:hover{
 }
 
 .packages .box-container .box .content h3 i{
-  color:var(--blue);
+  color:var(--lightblue);
 }
 
 .packages .box-container .box .content p{
@@ -373,7 +373,7 @@ header .search-bar-container label:hover{
 
 .packages .box-container .box .content .stars i{
   font-size:1.7rem;
-  color:var(--blue);
+  color:var(--lightblue);
 }
 
 .packages .box-container .box .content .price{
@@ -404,7 +404,7 @@ header .search-bar-container label:hover{
 .services .box-container .box i{
   padding:1rem;
   font-size: 5rem;
-  color:var(--blue);
+  color:var(--lightblue);
 }
 
 .services .box-container .box h3{
@@ -461,7 +461,7 @@ header .search-bar-container label:hover{
 
 .gallery .box-container .box .content h3{
   font-size: 2.5rem;
-  color:var(--blue);
+  color:var(--lightblue);
 }
 
 .gallery .box-container .box .content p{
@@ -501,7 +501,7 @@ header .search-bar-container label:hover{
 }
 
 .review .box .stars i{
-  color:var(--blue);
+  color:var(--lightblue);
   font-size: 1.7rem;
 }
 
@@ -588,7 +588,7 @@ header .search-bar-container label:hover{
 }
 
 .footer .box-container .box a:hover{
-  color:var(--blue);
+  color:var(--lightblue);
   text-decoration: underline;
 }
 
@@ -603,7 +603,7 @@ header .search-bar-container label:hover{
 }
 
 .footer .credit span{
-  color:var(--blue);
+  color:var(--lightblue);
 }
 
 

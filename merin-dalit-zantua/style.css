@@ -362,7 +362,7 @@ header .search-bar-container label:hover{
 }
 
 .packages .box-container .box .content h3 i{
-  color:var(--orange);
+  color:var(--blue);
 }
 
 .packages .box-container .box .content p{
@@ -373,7 +373,7 @@ header .search-bar-container label:hover{
 
 .packages .box-container .box .content .stars i{
   font-size:1.7rem;
-  color:var(--orange);
+  color:var(--blue);
 }
 
 .packages .box-container .box .content .price{
@@ -404,7 +404,7 @@ header .search-bar-container label:hover{
 .services .box-container .box i{
   padding:1rem;
   font-size: 5rem;
-  color:var(--orange);
+  color:var(--blue);
 }
 
 .services .box-container .box h3{
@@ -461,7 +461,7 @@ header .search-bar-container label:hover{
 
 .gallery .box-container .box .content h3{
   font-size: 2.5rem;
-  color:var(--orange);
+  color:var(--blue);
 }
 
 .gallery .box-container .box .content p{
@@ -501,7 +501,7 @@ header .search-bar-container label:hover{
 }
 
 .review .box .stars i{
-  color:var(--orange);
+  color:var(--blue);
   font-size: 1.7rem;
 }
 
@@ -588,7 +588,7 @@ header .search-bar-container label:hover{
 }
 
 .footer .box-container .box a:hover{
-  color:var(--orange);
+  color:var(--blue);
   text-decoration: underline;
 }
 
@@ -603,7 +603,7 @@ header .search-bar-container label:hover{
 }
 
 .footer .credit span{
-  color:var(--orange);
+  color:var(--blue);
 }
 
 

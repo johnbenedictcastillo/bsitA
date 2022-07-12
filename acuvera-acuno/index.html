@@ -4,11 +4,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FINAL PROJECT</title>
-    <link rel="stylesheet" href="1style.css">
-    <script src="..\Final Project\js\config.js"></script>
+    <link rel="stylesheet" href="..\Final Project\style\style.css">
+    <script src="..\Final Project\script\config.js"></script>
     
 </head>
-<body>
+<body onload="onRUN()">
     <div class="main">
         <div class="navbar">
             <div class="icon">
@@ -16,17 +16,13 @@
             </div>
             <div class="menu">
                 <ul>
-                    <li><a href="1index.html">HOME</a></li>
-                    <li><a href="productpage.html">PRODUCT</a></li>
-                    <li><a href="aboutus.html">ABOUT US</a></li>
-                    <li><a href="contactus.html">CONTACT US</a></li>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="..\Final Project\page\productpage.html">PRODUCT</a></li>
+                    <li><a href="..\Final Project\page\aboutus.html">ABOUT US</a></li>
+                    <li><a href="..\Final Project\page\contactus.html">CONTACT US</a></li>
                     <li><a href="#" onclick="register()">REGISTRATION</a></li>
+                    <li><a href="#" onclick="profile()" class="userNAME" id="userNAME">LogIn</a></li>
                 </ul>
-            </div>
-
-            <div class="search">
-                <input class="srch" type="search" name="" placeholder="NANDITO AKO ">
-                <a href="#"> <button class="btn">Search</button></a>
             </div>
         </div>
 
@@ -62,19 +58,39 @@
         <div class="modal-content">
             <span class="close" onclick="span()">&times;</span>
             <br>
-            <form>
+            <form method="post" action='..\Final Project\php\account.php'>
                 <h2>Register</h2>
                 <h4>Username</h4>
-                <input type="text" name="" placeholder="Enter Username" id="userREG">
+                <input type="text" name="txtbUser" placeholder="Enter Username" id="userREG">
                 <h4>Password</h4>
-                <input type="password" name="" placeholder="Enter Password" id="passREG">
+                <input type="password" name="txtbPass" placeholder="Enter Password" id="passREG">
                 <h4>Confirm Password</h4>
-                <input type="password" name="" placeholder="Enter Password" id="conpassREG">
+                <input type="password" placeholder="Enter Password" id="conpassREG">
                 <h5>show password?<input type="checkbox" id="chckbox" onclick="oncheck()"></h5>
+                <br>
+                <h4>Firstname</h4>
+                <input type="text" name="txtbFname" placeholder="Enter Firstname">
+                <h4>Lastname</h4>
+                <input type="text" name="txtbLname" placeholder="Enter Lastname">
                 <button class="btnn" onclick="createACC()"><a href="#">Confirm</a></button>
             </form>
             </div>
         </div>
+        
+        <div id="myInfo" class="profile">
+
+            <div class="profile-content">
+                <form>
+                    <h2>Account</h2>
+                    <br>
+                    <h4 id="Uname">Username: </h4>
+                    <br>
+                    <h4 id="Fname">Firstname: </h4>
+                    <h4 id="Lname">Lastname: </h4>
+                </form>
+            </div>
+        </div>
+
     </div>
 
     

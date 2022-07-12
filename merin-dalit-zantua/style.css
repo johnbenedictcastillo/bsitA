@@ -15,7 +15,7 @@
 }
 
 *::selection{
-  background:var(--light blue);
+  background:var(--lightblue);
   color:#fff;
 }
 

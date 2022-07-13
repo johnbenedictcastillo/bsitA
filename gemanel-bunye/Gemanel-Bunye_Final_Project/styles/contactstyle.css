@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background:#D6D6D6;
+}
+h3{
+    margin-bottom:20px;
+}
+
+/*Business Owner's Part*/
+.ownerContact .owner{
+    display:block;
+    height:330px;
+    width:auto;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius: 500px;
+}
+.ownerContact .items{
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom:20px;
+}
+.ownerContact .text{
+    color:#000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    padding-left:10px;
+}
+.ownerContact i{
+    font-size:38px;
+}
+.ownerContact #facebook{
+    color:#4267B2;
+}
+.ownerContact .num{
+    color:#37474F;
+}
+.ownerContact .email{
+    color:#820000;
+}
+.ownerContact #location{
+    color:#FF3D00;
+}
+
+/*Developer's Part*/
+.developerContact .developer{
+    display:block;
+    height:180px;
+    width:auto;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius: 500px;
+}
+.developerContact a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+.developerContact .items{
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom:10px;
+}
+.developerContact .text{
+    color:#000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    padding-left:10px;
+}
+.developerContact i{
+    font-size:28px;
+}
+.developerContact .email{
+    color:#820000;
+}
+.developerContact .num{
+    color:#37474F;
+}
+@media screen and (max-width: 800px){
+    /*Business Owner's Part*/
+    .ownerContact .owner{
+        height:300px;
+        width:auto;
+    }
+    .ownerContact .text{
+        font-size: 18px;
+    }
+    .ownerContact i{
+        font-size:28px;
+    }
+
+    /*Developer's Part*/
+    .developerContact .developer{
+        height:190px;
+        width:auto;
+    }
+    .developerContact .text{
+        font-size: 18px;
+    }
+    .developerContact i{
+        font-size:28px;
+    }
+}

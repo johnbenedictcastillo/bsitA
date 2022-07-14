@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+
+
+.topnav {
+  overflow: hidden;
+  
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: black;
+  text-align: right;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-emphasis-color: black;
+  margin-top: 20px;
+}
+
+
+.topnav a:hover {
+  background-color: white;
+  color: black;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 40%;
+  margin-bottom: 10px;
+  padding: 0 8px;
+}
+
+.column-2 {
+  float: right;
+  width: 40%;
+  margin-bottom: 10px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-image: url("bggg.jpg");
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+  padding: 5px;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+h1 {
+color: black;
+font-size: 220%;
+}
+
+p {
+  color: grey;
+  font-size: 120%;
+}
+
+h3 {
+  color: rgb(243, 147, 163);
+  font-size: 300%;
+  padding: 10px;
+}
+
+#profile-image {
+  height: 100px;
+  width: 100px;
+  float: left;
+  padding-left: 2%;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+#profile-image img {
+  height: 100%;
+  width: 135%;
+}
+
+</style>
+</head>
+<body>
+
+    <div class="topnav">
+      <div id="profile-image"><img src="logo.JPG"></div>
+        <a href="file:///F:/BSIT%202A/Porcincula-Cajumban/Log%20In.html">Log In</a>
+        <a href="file:///F:/BSIT%202A/Porcincula-Cajumban/About%20Us.html">About Us</a>
+        <a href="file:///F:/BSIT%202A/Porcincula-Cajumban/Register.html">Register</a>
+        <a href="file:///F:/BSIT%202A/Porcincula-Cajumban/All%20Products.html">All Products</a>
+        <a href="file:///F:/BSIT%202A/Porcincula-Cajumban/Home.html">Home</a>
+      </div>
+    
+
+<div class="about-section">
+  <h1>DABRIA COSMETICS</h1>
+  <p>Dabria/Dab Cosmetics is town-renowned brand of cosmetics with high quality and best price.</p>
+   <p>We are committed to providing the highest standard of customer service to every customer.</p> 
+<p>OUR VISION : Is to create cosmetics with art and bring beauty to  all.</p>  
+</div>
+
+<h3 style="text-align:center" >Our Team</h3>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="kate.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Kate Aileen Porcincula</h2>
+        <p class="title">CEO & Founder</p>
+        <p>Mobile No: +639501985641</p>
+        <p>Address: 421 Sitio Porusa Brgy. Bulihan Famy, Laguna</p>
+        <p>Email: kateaileen.porcincula@lspu.edu.ph</p>
+        <p>Facebook: Kate Aileen Porcincula</p>
+        <p><button class="button" onclick="_openWin()">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column-2">
+    <div class="card">
+      <img src="crisna.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Crisna Cajumban</h2>
+        <p class="title">Manager</p>
+        <p>Mobile No: +639532312518</p>
+        <p>Address: Fb Cadawas St. Bagumbayan Paete, Laguna</p>
+        <p>Email: crisna.cajumban@lspu.edu.ph</p>
+        <p>Facebook: Crisna Cajumban</p>
+        <p><button class="button" onclick="openWin()">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+ 
+</div>
+
+<script>
+  function openWin() {
+  window.open("https://www.facebook.com/crisna.cajumban.39");
+}
+function _openWin() {
+  window.open("https://www.facebook.com/profile.php?id=100079686604722");
+}
+</script>
+
+</body>
+</html>

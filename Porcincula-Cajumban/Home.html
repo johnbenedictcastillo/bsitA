@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+    }
+
+  
+   * {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 5s;
+}
+
+@keyframes fade {
+  from {opacity: .8} 
+  to {opacity: 1}
+}
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+    body {
+  background-color: pink;
+}
+   
+    
+.topnav {
+  overflow: hidden;
+  background-color: white;
+  
+}
+section {
+  text-align: center;
+  
+}
+
+.w3-wide {
+  text-align: center;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: black;
+  text-align: right;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-emphasis-color: black;
+  margin-top: 20px;
+
+}
+
+
+.topnav a:hover {
+  background-color: white;
+  color: black;
+}
+
+h1 {
+  text-align: center;
+  color: black;
+  font-style: italic;
+  
+}
+body {
+ background-color: white;
+}
+
+p {
+  text-align: center;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+#profile-image {
+  height: 100px;
+  width: 100px;
+  float: left;
+  padding-left: 2%;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+#profile-image img {
+  height: 100%;
+  width: 135%;
+}
+
+    </style>
+</head>
+<body>
+<div class="topnav">
+  <div id="profile-image"><img src="logo.JPG"></div>
+
+    <a href="file:///F:/BSIT%202A/Porcincula-Cajumban/Log%20In.html">Log In</a>
+    <a href="file:///F:/BSIT%202A/Porcincula-Cajumban/About%20Us.html">About Us</a>
+    <a href="file:///F:/BSIT%202A/Porcincula-Cajumban/Register.html">Register</a>
+    <a href="file:///F:/BSIT%202A/Porcincula-Cajumban/All%20Products.html">All Products</a>
+    <a href="file:///F:/BSIT%202A/Porcincula-Cajumban/Home.html">Home</a>
+
+
+</div>
+
+
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="bg.jpg" style="width:100%">
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="bgg.jpg" style="width:100%">
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="bgbg.jpg" style="width:100%">
+  </div>
+  
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+  
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+  </div>
+
+  <section class="w3-container w3-center w3-content" style="max-width:1900px">
+    <h2 class="w3-wide">ALWAYS HYDRATE!</h2>
+    <p class="w3-justify">Hydrate your body from the inside out. When you drink enough water throughout the day, your skin and lips will thrive, especially during the spring and summer seasons. 
+
+      Try to drink at least 10 cups of water a day. We know it may sound like a lot, but if you make it part of your daily routine, it will be easy. Set a timer on your phone or add a reminder on your computer, and start getting the hydration your lips deserve. 
+      
+    You may think you know everything you need to about lip balm. After all, you buy a stick, apply it to your lips, and you are done. But lip balm is only simple when you buy the right product.</P>
+      <h2 class="w3-wide">The Power of Cosmetics
+      </h2>
+    <p class="w3-justify">Cosmetics are used to enhance your appearance. Makeup has been around for many centuries. The first known people who used cosmetics to enhance their beauty were the Egyptians. Makeup those days was just simple eye coloring or some material for the body. Now-a-days makeup plays an important role for both men and women. That's right, even men have become more beauty conscious and are concerned about their looks. Cosmetics can be produced in the organic and hypoallergenic form to meet the demands of users. Makeup is used as a beauty aid to help build up the self esteem and confidence of an individual. The importance of cosmetics has increased as many people want to stay young and attractive. Cosmetics are readily available today in the form of creams, lipstick, perfumes, eye shadows, nail polishes, hair sprays etc.</p>
+      <br>
+      <p class="w3-justify">Other cosmetics like face powder give glow to the skin after applying the base cream. Then we have lipsticks, which are applied by many women of all ages. They are made from wax and cocoa butter in the desired amount. Cosmetics like creams, gels, and colognes are used on a daily basis by both women and men. Creams act as a cleanser for the face in many circumstances. More recently anti ageing creams have been manufactured which can retain younger looking skin for many years. The best cleansing agents are cleansing cream, soap and water. Cosmetic creams serve as a skin food for hard, dry and chapped skin. It mainly lubricates, softens and removes unwanted dirt from the skin. 
+  
+      </p>
+
+    </section>
+
+ 
+  <script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+  
+  </script>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/8b49c1b1b1.js" crossorigin="anonymous"></script>
+    <title>Contact</title>
+    <script type = "text/javascript">
+        function fun() {
+           alert ("Message sent");
+        }
+  </script>     
+</head>
+<style type="text/css">
+  *{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: beige;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+} 
+.admin-btn{
+    border: 0;
+    margin: 5px;
+    background-color: #ffffff00;
+    width: 50px;
+    height: 100%;
+}
+.contact-section .form-control{
+    border: 1px solid  #2fbfbc;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      box-shadow: none;
+  }
+  .contact-fields {
+    padding:40px 0px 0px;
+  }
+  .phone {
+    padding-top: 50px;
+  }
+  .phone,
+  .email,
+  .working-hours {
+    margin-bottom:30px;
+  }
+  .phone h2,
+  .email h2,
+  .working-hours h2 {
+    margin-top:0px;
+  }
+  .phone a,
+  .email a,
+  .location a {
+    color: #fd4f00;
+    font-size:18px;
+  }
+  .contact-h2 {
+    color: #fd4f00;
+    padding-top:20px;
+  }
+  .contact-fields .form-group {
+    margin-bottom: 35px;
+  }
+  .contact-info {
+    margin-top: -40px;
+  }
+  .contact-fields .form-group input,
+  .contact-fields .form-group textarea {
+    font-size: 16px;
+  }
+  .location a.btn1.btn1-accent {
+    padding: 12px 26px 10px;
+    margin-top: 30px;
+    font-size: 16px;
+  }
+  .location a.btn1.btn1-accent img {
+    margin-right: 20px;
+  }
+  .location hr {
+    margin-bottom: 10px;
+  }
+  .btn1 {
+      font-size: 15px;
+      padding: 22px 46px 18px;
+      line-height: 1;
+      text-transform: uppercase;
+      border: none;
+      border-radius: 0;
+      position: relative;
+      letter-spacing: 0.3px;
+  }
+  .btn1.btn1-accent {
+      background: #2fbfbc;
+      color: white;
+  }
+  .btn1.btn1-accent:hover {
+      background: #269694;
+  }
+  .ct-newsletter-section .container {
+      width: 100%;
+      max-width: 1360px;
+  }
+  h2 {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 900;
+      color: #101f1d;
+      font-size: 35px;
+      letter-spacing: 1.25px;
+  }
+  .ct-section-head {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 900;
+      color: #101f1d;
+      font-size: 35px;
+      text-transform: uppercase;
+      padding-top: 45px;
+      letter-spacing: 1.25px;
+      margin-bottom: 5px;
+  }
+  .ct-section-header {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 900;
+      color: #101f1d;
+      font-size: 35px;
+      text-transform: uppercase;
+      text-align: center;
+      padding-top: 45px;
+      letter-spacing: 1.25px;
+      margin-bottom: 5px;
+  }
+  .ct-newsletter-inline {
+      display: table;
+      width: 100%;
+      color: white;
+      margin: 69px 0 138px;
+      text-align: center;
+  }
+  .ct-newsletter-inline__facebook {
+      background-color: #3b5997;
+  }
+  .ct-newsletter-inline__facebook, .ct-newsletter-inline__twitter {
+      width: 16%;
+  }
+  a {
+      -webkit-transition: all 250ms cubic-bezier(0.55, 0, 0.1, 1);
+      transition: all 250ms cubic-bezier(0.55, 0, 0.1, 1);
+  }
+  .ct-newsletter-inline__facebook i, .ct-newsletter-inline__twitter i {
+      font-size: 109px;
+      padding-top: 25px;
+  }
+  .ct-newsletter-inline__facebook span, .ct-newsletter-inline__twitter span {
+      font-family: 'Raleway', sans-serif;
+      font-size: 13px;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 4px;
+      display: block;
+      padding-top: 15px;
+  }
+  .ct-newsletter-inline__twitter {
+      background-color: #2fc2ee;
+  }
+  .ct-newsletter-inline__facebook, .ct-newsletter-inline__twitter {
+      width: 16%;
+  }
+  .ct-newsletter-inline__facebook i, .ct-newsletter-inline__twitter i {
+      font-size: 109px;
+      padding-top: 25px;
+  }
+  .ct-newsletter-inline__facebook span, .ct-newsletter-inline__twitter span {
+      font-family: 'Raleway', sans-serif;
+      font-size: 13px;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 4px;
+      display: block;
+      padding-top: 15px;
+  }
+  .ct-newsletter-inline__form {
+      background-color: #fd4f00;
+      padding: 24px;
+  }
+  .ct-newsletter-inline__form .ct-newsletter {
+      text-align: left;
+      width: 100%;
+      max-width: 668px;
+      margin: 0px auto;
+  }
+  .ct-newsletter-inline__form .form-inline {
+      display: table;
+      width: 100%;
+      height: 65px;
+  }
+  .ct-newsletter-inline__form .form-inline input {
+      width: 50%;
+      width: calc(100% - 137px);
+      padding: 0 40px;
+      font-size: 16px;
+      letter-spacing: 0.3px;
+      color: #111f1d;
+      text-transform: uppercase;
+  }
+  .ct-newsletter-inline__form .form-inline input, .ct-newsletter-inline__form .form-inline .btn {
+      display: table-cell;
+      vertical-align: middle;
+      height: 65px;
+      border: none;
+      margin: 0;
+  }
+  .ct-newsletter-inline__form .form-inline .btn {
+      width: 137px;
+      font-family: 'Oswald', sans-serif;
+      font-size: 25px;
+      padding-left: 0;
+      padding-right: 3px;
+      text-align: center;
+  }
+  .ct-newsletter-inline__form .form-inline input, .ct-newsletter-inline__form .form-inline .btn {
+      display: table-cell;
+      vertical-align: middle;
+      height: 65px;
+      border: none;
+      margin: 0;
+  }
+  .btn1.btn1-dark {
+      background: #111f1d;
+      color: white;
+  }
+  .btn1 {
+      font-size: 15px;
+      padding: 22px 46px 18px;
+      line-height: 1;
+      text-transform: uppercase;
+      border: none;
+      border-radius: 0;
+      position: relative;
+      letter-spacing: 0.3px;
+  }
+  @media screen and (min-width: 980px) {
+    .contact-info {
+      padding-left: 110px;
+    }
+  }
+  .footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #fdfcfa;
+    position: relative;
+    top: 0%;
+    bottom: 0%;
+    margin-top: 20px;
+    
+}
+.footer-content h3{
+    padding-top: 20px;
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: black;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: black;
+    border: 1.1px solid white;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.socials a i{
+    font-size: 1.1rem;
+    width: 20px;
+    transition: color .4s ease;
+}
+
+.socials a:hover i{
+    color: aqua;
+}
+</style>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <button onclick="window.location.href='Login.html'" class="admin-btn btn-outline-success" type="submit"></a><i class="fas fa-user-cog"></i></button>
+      <a class="navbar-brand" href="index.html">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="services.html">Services</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Products
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="products.html">Products</a></li>
+             
+              <li><hr class="dropdown-divider"></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="About.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="Contact Us.html" aria-current="page" href="cart.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <button class="btn btn-outline-success" type="submit" onclick="window.location.href='cart.html'"><i class="fas fa-shopping-cart"></i></button>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+      
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="contact-section">
+        <h2 class="ct-section-head">
+                            CONTACT US
+                        </h2>
+        <div class="row contact-fields">
+          <div class="col-md-8 left-form">
+          <!-- <form method="post" action="Login.html"> -->
+                <div class="form-group">
+                    <label class="sr-only" for="fname">First Name *</label>
+                    <input class="required form-control" id="fname" name="fname" placeholder="First Name&nbsp;*" type="text">
+                </div>
+                <div class="form-group">
+                    <label class="sr-only" for="lname">Last Name *</label>
+                    <input class="required form-control" id="lname" name="lname" placeholder="Last Name&nbsp;*" type="text">
+                </div>
+                <div class="form-group">
+                    <label class="sr-only" for="contactEmail">Email *</label>
+                    <input class="required form-control h5-email" id="contactEmail" name="contactEmail" placeholder="Email&nbsp;*" type="text">
+                </div>
+                <div class="form-group">
+                    <label class="sr-only" for="contactPhone">Phone *</label>
+                    <input class="required form-control h5-phone" id="contactPhone" name="contactPhone" placeholder="Phone&nbsp;*" type="text">
+                </div>
+                <div class="form-group">
+                    <label class="sr-only" for="comment">Type your message here</label>
+                    <textarea class="required form-control" id="comment" name="comment" placeholder="Type your message here&nbsp;*" rows="6"></textarea>
+                </div>
+                    <!-- <button onclick="window.location.href='Contact Us.html'"  class="btn1 btn1-accent" ></a>Submit</button>   -->
+                    <input class="btn1 btn1-accent"  type = "button" value = "Send" onclick = "fun();" />
+          </form>
+                </div>
+            <div class="col-md-4 contact-info">
+                <div class="phone">
+                    <h2>Call</h2>
+                    <a href="tel:+4046872730">+63 912 3456 789</a>
+                </div>
+                <div class="email">
+                    <h2>Email</h2>
+                    <a href="mailto:info@decidedekalb.com">silverjewelry@gmail.com</a>
+                </div>
+                <div class="location">
+                    <h2>Visit</h2>
+                    <p>Brgy. Halayhayin, Siniloan, Laguna</br>
+                       
+                        
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+     <div class="footer-content">
+                    <h3>F & A Jewelry | Ecommerce</h3>
+                        <ul class="socials">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                      
+                     </ul>
+                </div>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>

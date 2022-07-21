@@ -1,0 +1,89 @@
+<?php 
+
+if(!isset($_SESSION)){
+  session_start();
+}
+
+if(isset($_SESSION['UserInfo'])){
+  echo "Welcome ". $_SESSION['UserInfo'];
+}else{
+  header("Location: login.php");
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/8b49c1b1b1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <title>Home</title>
+    
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <button onclick="window.location.href='login.php'" class="admin-btn btn-outline-success" type="submit"></a><i class="fas fa-user-cog"></i></button>
+      <a class="navbar-brand" href="home.php">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="Services.html">Services</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Products
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="products.html">Products</a></li>
+           
+              <li><hr class="dropdown-divider"></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="About.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="Contact Us.html" aria-current="page" href="cart.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <button class="btn btn-outline-success" type="submit" onclick="window.location.href='cart.html'"><i class="fas fa-shopping-cart"><sup> 4</sup></i></button>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+      
+    </div>
+  </nav>
+    <div class="bg-image container ">
+        <div class="container-fluid">
+            <div class="title container-md col-md-5">
+                <h1>
+              F & A Jewelry
+                </h1>
+                <p>Jewellery or jewelry consists of decorative items worn for personal adornment, such as brooches, rings, necklaces, earrings, pendants, bracelets, and cufflinks 
+                </p>
+                <!-- <button>Menu</button> -->
+            </div>
+            <div class="img_front container col-md-7">
+                   
+                <img class="front" src="bg.jpg" alt="front" > 
+            </div>
+      </div>
+    </div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>
